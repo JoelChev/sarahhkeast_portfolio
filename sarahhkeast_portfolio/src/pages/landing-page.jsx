@@ -13,38 +13,17 @@ const landingPage = 'landingPage';
 
 class LandingPage extends Component {
 
-    state = {
-        isTop: true
-    }
-
-    handleScroll = (event) => {
-        console.log("Yo");
-        const { isTop } = this.state;
-        console.log(isTop);
-        console.log(window.scrollY);
-        if (window.scrollY === 0 && !isTop) {
-            this.setState({ isTop: true });
-        } else if (window.scrollY !== 0 && isTop) {
-            this.setState({ isTop: false });
-        }
-    }
-
-    componentDidMount() {
-        this.setState({ isTop: window.pageYOffset === 0 })
-        window.addEventListener('scroll', this.handleScroll);
-    }
-
-    componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll);
-    }
-
     render() {
-        const { isTop } = this.state;
         return (
             <div className={`${landingPage}`}>
-                <div className={classnames(`${landingPage}__header`, !isTop ? `${landingPage}__header--white` : '')} id='header'>
-                    <span className={`${landingPage}__header-name`}>Sarah Keast</span>
-                    <span className={`${landingPage}__header-about`}>About</span>
+                <div className={`${landingPage}__header`}>
+                    <div className={`${landingPage}__header-text-container`}>
+                        <span className={`${landingPage}__header-name`}>Sarah Keast</span>
+                        <span className={`${landingPage}__header-about`}>About</span>
+                    </div>
+                    <div className={`${landingPage}__header-space-container`}>
+
+                    </div>
                 </div>
                 <div className={`${landingPage}__hero`}>
                     <div className={`${landingPage}__text-container`}>

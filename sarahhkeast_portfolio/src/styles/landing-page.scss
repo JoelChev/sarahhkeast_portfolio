@@ -11,30 +11,36 @@
         display: flex;
         position: sticky;
         top: 0;
-        margin-bottom: -90px;
-        margin-top: 24px;
-        padding: 16px 0;
-        &--white {
-            background: $color-white;
-            padding-top: 30px;
-        }
+        height: 109px;
+        background: $color-white;
+        border-bottom: 1px solid $color-grey-border;
+        z-index: 10;
+    }
+
+    &__header-text-container {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
     }
 
     &__header-name{
-        flex: 0.5 1 auto;
         color: $color-blue-1;
         font-weight: 500;
-        font-size: 13.2791px;
+        font-size: 16px;
         line-height: 33px;
         align-items: flex-start;
     }
 
     &__header-about {
-        flex: 0.5 1 auto;
-        color: $color-blue-1;
+        color: $color-black;
         font-weight: 500;
         font-size: 13.2791px;
         line-height: 33px;
+    }
+
+    &__header-space-container {
+        width: 50%;
     }
 
     &__hero {
@@ -153,7 +159,7 @@
         align-items: flex-end;
         background: $color-grey-background;
         border-radius: 8px;
-        height: 554px;
+        height: 484px;
         position: relative;
         width: 71%;
     }
