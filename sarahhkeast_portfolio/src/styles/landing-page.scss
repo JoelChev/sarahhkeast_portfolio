@@ -91,6 +91,79 @@
 
     }
 
+    &__project-list-container {
+        margin: 106px 0;
+    }
+
+    &__project-list-title-container {
+        display: flex;
+    }
+
+    &__project-list-title {
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+    }
+
+    &__project-card-container {
+        margin: 132px 0;
+        display: flex;
+        //flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__project-text-container {
+        display: flex;
+        flex: 1 1 auto;
+        align-items: flex-end;
+        flex-direction: column;
+        margin-right: -36px;
+        z-index: 2;
+    }
+
+    &__project-title-container {
+        display: flex;
+    }
+
+    &__project-title-align-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__project-title {
+        color: $color-blue-1;
+        font-size: 32px;
+        margin-right: 24px;
+        font-weight: 500;
+    }
+
+    &__project-sub-title {
+        color: $color-black;
+        font-size: 24px;
+        margin-left: 4px;
+        font-weight: 500;
+    }
+
+    &__project-image-container {
+        display: flex;
+        align-items: flex-end;
+        background: $color-grey-background;
+        border-radius: 8px;
+        height: 554px;
+        position: relative;
+        width: 71%;
+    }
+
+    &__project-image-two {
+        position: absolute;
+        top: 0%;
+        left: 400px;
+    }
+
     &__question-contact-container {
         display: flex;
         background-color: $color-blue-3;
@@ -120,6 +193,7 @@
         align-items: center;
         margin: auto 0;
         flex-direction: column;
+        padding-top: 100px;
     }
 
     &__contact-item {
@@ -145,24 +219,20 @@
         height: 50px;
         width: 100%;
         background-color: $color-blue-1;
-        flex: 0.5 1 auto;
         margin: auto 0;
-        //flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
     }
 
     &__footer-wrapper {
         display: flex;
-        flex: 1 1 auto;
-        align-items: center;
         justify-content: center;
+        align-items: flex-start;
         width: 50%;
     }
 
     &__footer-spacer {
         display: flex;
-        flex: 0.5 1 auto;
         width: 50%;
     }
 
