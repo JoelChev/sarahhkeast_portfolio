@@ -2,9 +2,12 @@
 @import './variables.scss';
 @import './font-variables.scss';
 
+/* Components */
+@import './components/contact-item.scss';
+
 /* Pages */
-@import './landing-page.scss';
-@import './project-page.scss';
+@import './pages/landing-page.scss';
+@import './pages/project-page.scss';
 
 /* Global */
 @import './global.scss';

@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
 
+import ContactItem from '../components/contact-item';
+
 import HeroFlowers from '../assets/hero_flowers.png';
 import Mail from '../assets/mail.svg';
 import LinkedIn from '../assets/linkedin.svg';
 import Dribbble from '../assets/dribbble.svg';
+import ArrowRightWhite from '../assets/arrow-right-white.svg';
 import ArrowRightBlue from '../assets/arrow-right-blue.svg';
-import Yokko1 from '../assets/Yokko 1.png';
-import Yokko2 from '../assets/Yokko 2.png';
+import Yokko from '../assets/yokko-home-page.png';
 
 const landingPage = 'landingPage';
 
@@ -56,8 +58,7 @@ class LandingPage extends Component {
                             </div>
                         </div>
                         <div className={`${landingPage}__project-image-container`}>
-                            <img className={`${landingPage}__project-image-one`} src={Yokko1} alt='project image one' />
-                            <img className={`${landingPage}__project-image-two`} src={Yokko2} alt='project image one' />
+                            <img className={`${landingPage}__project-image`} src={Yokko} alt='project image one' />
                         </div>
                     </div>
 
@@ -69,24 +70,9 @@ class LandingPage extends Component {
                     </div>
                     <div className={`${landingPage}__contact-container`}>
                         <div classname={`${landingPage}__contact-alignment-container`}>
-                            <div className={`${landingPage}__contact-item`}>
-                                <img className={`${landingPage}__contact-image`}
-                                    src={Mail}
-                                    alt="mail-icon"></img>
-                                <span className={`${landingPage}__contact-text`}>sarah.keast1@gmail.com</span>
-                            </div>
-                            <div className={`${landingPage}__contact-item`}>
-                                <img className={`${landingPage}__contact-image`}
-                                    src={LinkedIn}
-                                    alt="linkedin-icon"></img>
-                                <span className={`${landingPage}__contact-text`}>Sarah Keast</span>
-                            </div>
-                            <div className={`${landingPage}__contact-item`}>
-                                <img className={`${landingPage}__contact-image`}
-                                    src={Dribbble}
-                                    alt="dribbble-icon"></img>
-                                <span className={`${landingPage}__contact-text`}>Sarah Keast</span>
-                            </div>
+                            <ContactItem image={Mail} alt_text='mail-icon' text='sarah.keast1@gmail.com' url='mailto:sarah.keast1@gmail.com' />
+                            <ContactItem image={LinkedIn} alt_text='linkedin-icon' text='Sarah Keast' url='https://www.linkedin.com/in/sarah-keast-68ba27b8/' />
+                            <ContactItem image={Dribbble} alt_text='dribbble-icon' text='Sarah Keast' url='https://dribbble.com/sarahkeast' />
                         </div>
                     </div>
                 </div>
