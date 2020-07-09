@@ -1,0 +1,88 @@
+.landingPage {
+    background: $color-white;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto 0;
+
+    &__header {
+        display: flex;
+        position: sticky;
+        top: 0;
+        margin-bottom: -90px;
+        margin-top: 56px;
+    }
+
+    &__header-name{
+        flex: 0.55 1 auto;
+        color: $color-blue-1;
+        font-weight: 500;
+        font-size: 13.2791px;
+        line-height: 33px;
+        align-items: flex-start;
+    }
+
+    &__header-about {
+        flex: 1 1 auto;
+        color: $color-blue-1;
+        font-weight: 500;
+        font-size: 13.2791px;
+        line-height: 33px;
+    }
+
+    &__hero {
+        height: 750px;
+        width: 100%;
+        background: $color-blue-2;
+        display: flex;
+    }
+
+    &__text-container {
+        margin: auto;
+        flex: 0.1 1 auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text-align-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    &__title {
+        color: $color-blue-1;
+        font-size: 40px;
+        line-height: 72px;
+    }
+
+    &__subtitle {
+        color: $color-black;
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 500;
+        margin-bottom: 24px;
+    }
+
+    &__sub-text {
+        color: $color-black;
+        font-size: 32px;
+        line-height: 52px;
+        font-weight: 400;
+    }
+
+    &__image-container {
+        margin: auto 0;
+        flex: 0 1 auto;
+        text-align: right;
+    }
+
+    &__image-hero {
+
+    }
+}

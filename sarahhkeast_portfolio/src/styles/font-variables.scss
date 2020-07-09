@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'HeyWow';
+    src: local('HeyWow'), url(./fonts/HeyWow-Regular.woff) format('woff');
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'HeyWow';
+    src: local('HeyWow'), url(./fonts/HeyWow-SemiBold.woff) format('woff');
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: 'HeyWow';
+    src: local('HeyWow'), url(./fonts/HeyWow-Bold.woff) format('woff');
+    font-weight: bold;
+  }
+  @font-face {
+    font-family: 'HeyWow';
+    src: local('HeyWow'), url(./fonts/HeyWow-Light.woff) format('woff');
+    font-weight: lighter;
+  }
