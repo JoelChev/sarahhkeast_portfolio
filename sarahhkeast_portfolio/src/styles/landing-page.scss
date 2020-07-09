@@ -12,11 +12,16 @@
         position: sticky;
         top: 0;
         margin-bottom: -90px;
-        margin-top: 56px;
+        margin-top: 24px;
+        padding: 16px 0;
+        &--white {
+            background: $color-white;
+            padding-top: 30px;
+        }
     }
 
     &__header-name{
-        flex: 0.55 1 auto;
+        flex: 0.5 1 auto;
         color: $color-blue-1;
         font-weight: 500;
         font-size: 13.2791px;
@@ -25,7 +30,7 @@
     }
 
     &__header-about {
-        flex: 1 1 auto;
+        flex: 0.5 1 auto;
         color: $color-blue-1;
         font-weight: 500;
         font-size: 13.2791px;
@@ -84,5 +89,86 @@
 
     &__image-hero {
 
+    }
+
+    &__question-contact-container {
+        display: flex;
+        background-color: $color-blue-3;
+        height: 345px;
+        width: 100%;
+    }
+
+    &__question-container {
+        display: flex;
+        flex: 1 1 auto;
+        justify-items: flex-start;
+        align-items: center;
+        margin: auto 0;
+        flex-direction: column;
+    }
+
+    &__question-text {
+        color: $color-white;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    &__contact-container {
+        display: flex;
+        flex: 1 1 auto;
+        justify-items: center;
+        align-items: center;
+        margin: auto 0;
+        flex-direction: column;
+    }
+
+    &__contact-item {
+        display: flex;
+        align-items: flex-start;
+        text-align: left;
+        margin-bottom: 24px;
+    }
+
+    &__contact-image {
+        margin-right: 18px;
+    }
+
+    &__contact-text {
+        color: $color-white;
+        font-size: 18px;
+        line-height: 26px;
+        margin-top: 2px;
+    }
+
+    &__footer {
+        display: flex;
+        height: 50px;
+        width: 100%;
+        background-color: $color-blue-1;
+        flex: 0.5 1 auto;
+        margin: auto 0;
+        //flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    &__footer-wrapper {
+        display: flex;
+        flex: 1 1 auto;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+    }
+
+    &__footer-spacer {
+        display: flex;
+        flex: 0.5 1 auto;
+        width: 50%;
+    }
+
+    &__copyright-text {
+        color: white;
+        font-size: 10px;
+        line-height: 20px;
     }
 }
