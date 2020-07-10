@@ -15,10 +15,35 @@ const landingPage = 'landingPage';
 
 class LandingPage extends Component {
 
+
+    state = {
+        isTop: true
+    }
+
+    handleScroll = (event) => {
+        const { isTop } = this.state;
+        if (window.scrollY === 0 && !isTop) {
+            this.setState({ isTop: true });
+        } else if (window.scrollY !== 0 && isTop) {
+            this.setState({ isTop: false });
+        }
+    }
+
+    componentDidMount() {
+        this.setState({ isTop: window.pageYOffset === 0 })
+        window.addEventListener('scroll', this.handleScroll);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+    }
+
+
     render() {
+        const { isTop } = this.state;
         return (
             <div className={`${landingPage}`}>
-                <div className={`${landingPage}__header`}>
+                <div className={classnames(`${landingPage}__header`, !isTop ? `${landingPage}__header--shadow` : '')}>
                     <div className={`${landingPage}__header-text-container`}>
                         <span className={`${landingPage}__header-name`}>Sarah Keast</span>
                         <span className={`${landingPage}__header-about`}>About</span>
@@ -45,7 +70,7 @@ class LandingPage extends Component {
                         <h2 className={`${landingPage}__project-list-title`}>Work</h2>
                         <div className={`${landingPage}__project-list-spacer`}></div>
                     </div>
-                    <div className={`${landingPage}__project-card-container`}>
+                    <a className={`${landingPage}__project-card-container`} href="/project">
                         <div className={`${landingPage}__project-text-container`}>
                             <div className={`${landingPage}__project-title-container`}>
                                 <div className={`${landingPage}__project-title-align-container`}>
@@ -60,7 +85,7 @@ class LandingPage extends Component {
                         <div className={`${landingPage}__project-image-container`}>
                             <img className={`${landingPage}__project-image`} src={Yokko} alt='project image one' />
                         </div>
-                    </div>
+                    </a>
 
                 </div>
                 <div className={`${landingPage}__question-contact-container`}>
