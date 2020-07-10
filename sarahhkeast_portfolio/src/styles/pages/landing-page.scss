@@ -120,10 +120,12 @@
     }
 
     &__project-card-highlight {
-        
-        width: 5px;
-        height: 100%;
-        background-color: yellow;
+        width:10px;
+        background-color: $color-yellow-highlight;
+        position:absolute;
+        top:0;
+        bottom:0;
+        left: 50%;
         border-radius: 4px;
     }
 
@@ -132,6 +134,15 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        text-decoration: none;
+        cursor: pointer;
+        border: none;
+        outline: none;
+        &:visited{
+            outline: none;
+            border: none;
+            -moz-outline-style: none;
+          }
     }
 
     &__project-text-container {
@@ -141,6 +152,7 @@
         flex-direction: column;
         margin-right: -36px;
         z-index: 2;
+        position: relative;
     }
 
     &__project-title-container {

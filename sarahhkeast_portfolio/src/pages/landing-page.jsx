@@ -15,10 +15,23 @@ const landingPage = 'landingPage';
 
 class LandingPage extends Component {
 
+    state = {
+        highLightedProject: null
+    }
+
+    handleProjectMouseEnter(projectId) {
+        this.setState({ highLightedProject: projectId });
+    }
+
+    handleProjectMouseLeave() {
+        this.setState({ highLightedProject: null });
+    }
+
     render() {
+        const { highLightedProject } = this.state;
         return (
             <div className={`${landingPage}`}>
-                <Header />
+                {/* <Header /> */}
                 <div className={`${landingPage}__hero`}>
                     <div className={`${landingPage}__text-container`}>
                         <div className={`${landingPage}__text-align-container`}>
@@ -37,9 +50,18 @@ class LandingPage extends Component {
                         <h2 className={`${landingPage}__project-list-title`}>Work</h2>
                         <div className={`${landingPage}__project-list-spacer`}></div>
                     </div>
-                    <a className={`${landingPage}__project-card-container`} href="/project">
+                    <a className={`${landingPage}__project-card-container`}
+                        href="/project"
+                        onMouseEnter={() => this.handleProjectMouseEnter(0)}
+                        onMouseLeave={() => this.handleProjectMouseLeave()}
+                        id='project-0'>
                         <div className={`${landingPage}__project-text-container`}>
                             <div className={`${landingPage}__project-title-container`}>
+                                {
+                                    highLightedProject === 0 ?
+                                        <div className={`${landingPage}__project-card-highlight`} />
+                                        : null
+                                }
                                 <div className={`${landingPage}__project-title-align-container`}>
                                     <h4 className={`${landingPage}__project-title`}>Yokko</h4>
                                     <h4 className={`${landingPage}__project-sub-title`}>UX/UI</h4>
