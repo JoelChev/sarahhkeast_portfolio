@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import classnames from 'classnames';
 
 import Header from '../components/header';
+import Footer from '../components/footer';
 import ContactItem from '../components/contact-item';
 
 import HeroFlowers from '../assets/hero_flowers.png';
@@ -31,7 +32,7 @@ class LandingPage extends Component {
         const { highLightedProject } = this.state;
         return (
             <div className={`${landingPage}`}>
-                {/* <Header /> */}
+                <Header />
                 <div className={`${landingPage}__hero`}>
                     <div className={`${landingPage}__text-container`}>
                         <div className={`${landingPage}__text-align-container`}>
@@ -90,14 +91,7 @@ class LandingPage extends Component {
                         </div>
                     </div>
                 </div>
-                <div className={`${landingPage}__footer`}>
-                    <div className={`${landingPage}__footer-wrapper`}>
-                        <span className={`${landingPage}__copyright-text`}>Sarah Keast 2020</span>
-                    </div>
-                    <div className={`${landingPage}__footer-spacer`}>
-
-                    </div>
-                </div>
+                <Footer isDark={false} showIcons={false} />
             </div>
         )
     }

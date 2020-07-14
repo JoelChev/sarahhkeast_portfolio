@@ -5,7 +5,7 @@ import ArrowRightWhite from '../assets/arrow-right-white.svg';
 const contactItem = 'contact-item';
 
 const ContactItem = ({ image, alt_text, text, url }) => (
-    <a className={`${contactItem}`} href={url} target="_blank">
+    <a className={`${contactItem}`} href={url} target="_blank" rel="noopener noreferrer">
         <div className={`${contactItem}__image-text-container`}>
             <img className={`${contactItem}__image`}
                 src={image}

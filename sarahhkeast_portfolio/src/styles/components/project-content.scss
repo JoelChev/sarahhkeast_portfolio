@@ -1,0 +1,50 @@
+.project-content {
+    padding: 72px 0;
+    display: flex;
+
+    &__text-highlight-container {
+        width: 40%;
+        display: flex;
+        position: relative;
+        justify-content: space-evenly;
+    }
+    
+    &__highlight {
+        height: 5px;
+        width: 85px;
+        background-color: $color-yellow-highlight;
+        content: '';
+        position: absolute;
+        left: 10%;
+        top: 10px;
+    }
+    
+    &__text-container {
+        width: 200px;
+    }
+    
+    &__title {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 16px;
+    }
+    
+    &__text {
+        font-size: 13px;
+        line-height: 21px;
+    }
+    
+    &__images {
+        display: flex;
+        width: 50%;
+        align-items: flex-start;
+    }
+    
+    &__image {
+        margin: 0 16px;
+    }
+
+
+}
+
+

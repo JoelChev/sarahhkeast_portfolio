@@ -1,13 +1,34 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
 
+import Footer from '../components/footer.jsx';
 import Header from '../components/header.jsx';
+import ProjectContent from '../components/project-content.jsx';
+
+import Projects from '../constants/projects.json';
 
 import ArrowLeftBlue from '../assets/arrow-left-blue.svg';
+import YokkoSignup1 from '../assets/yokko-sign-up-1.png';
+import YokkoSignup2 from '../assets/yokko-sign-up-2.png';
 
 const projectPage = 'projectPage';
 
 class ProjectPage extends Component {
+
+    renderProjectContent() {
+        const { yokko } = Projects;
+        return yokko.content.map((contentItem, index) => {
+            console.log('Yo');
+            console.log(contentItem);
+            return (
+                <ProjectContent
+                    key={`contentItem-${index}`}
+                    title={contentItem.title}
+                    text={contentItem.text}
+                    images={contentItem.images} />
+            );
+        });
+    }
 
     render() {
         return (
@@ -48,6 +69,12 @@ class ProjectPage extends Component {
                             </div>
                         </div>
                     </div>
+                    <div className={`${projectPage}__content-container`}>
+                        {
+                            this.renderProjectContent()
+                        }
+                    </div>
+                    <Footer isDark={true} showIcons={true} />
                 </div>
             </div>
         )
