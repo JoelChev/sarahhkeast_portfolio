@@ -8,8 +8,9 @@ import ProjectContent from '../components/project-content.jsx';
 import Projects from '../constants/projects.json';
 
 import ArrowLeftBlue from '../assets/arrow-left-blue.svg';
-import YokkoSignup1 from '../assets/yokko-sign-up-1.png';
-import YokkoSignup2 from '../assets/yokko-sign-up-2.png';
+import YokkoBanner from '../assets/yokko-banner.png';
+import ArrowRightBlack from '../assets/arrow-right-black.svg';
+import MovemberNextProject from '../assets/movember-next-project.png';
 
 const projectPage = 'projectPage';
 
@@ -73,6 +74,39 @@ class ProjectPage extends Component {
                         {
                             this.renderProjectContent()
                         }
+                    </div>
+                    <div className={`${projectPage}__banner-container`}>
+                        <div className={`${projectPage}__banner-title-container`}>
+                            <div className={`${projectPage}__banner-title-wrapper`}>
+                                <h4 className={`${projectPage}__banner-title`}>More to come soon.</h4>
+                                <span className={`${projectPage}__banner-text`}>Hold on tight. More screens to come!</span>
+                            </div>
+                        </div>
+                        <div className={`${projectPage}__banner-image-container`}>
+                            <img className={`${projectPage}__banner-image`} src={YokkoBanner} alt="Yokko Banner Image" />
+                        </div>
+                    </div>
+                    <div className={`${projectPage}__next-project-container`}>
+                        <div className={`${projectPage}__next-project-title-container`}>
+                            <div className={`${projectPage}__next-project-title-wrapper`}>
+                                <span className={`${projectPage}__next-project-text`}>Up Next</span>
+                                <h4 className={`${projectPage}__next-project-title`}>Movember Project</h4>
+                                <div className={`${projectPage}__next-project-link-container`}>
+                                    <a className={`${projectPage}__next-project-link`}
+                                        href='/project'>
+                                        <span className={`${projectPage}__next-project-link-text`}>Let's Go</span>
+                                        <img className={`${projectPage}__next-project-link-image`}
+                                            src={ArrowRightBlack}
+                                            alt='Next Project Arrow' />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={`${projectPage}__next-project-image-container`}>
+                            <img className={`${projectPage}__next-project-image`}
+                                src={MovemberNextProject}
+                                alt='Movember Project Toucan' />
+                        </div>
                     </div>
                     <Footer isDark={true} showIcons={true} />
                 </div>

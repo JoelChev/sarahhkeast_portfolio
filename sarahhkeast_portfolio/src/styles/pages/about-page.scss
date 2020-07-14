@@ -1,0 +1,106 @@
+.aboutPage {
+
+    &__content-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 32px;
+        margin-bottom: 56px;
+    }
+
+    &__text-container {
+        width: 50%;
+        margin-top: 72px;
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 52px;
+
+        &--highlight {
+            color: $color-yellow-highlight;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    &__image-container {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__contact-resume-container {
+        display: flex;
+        width: 50%;
+        justify-content: space-evenly;
+        margin-bottom: 260px;
+    }
+
+    &__contact-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__contact-title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 40px;
+        margin-bottom: 32px;
+    }
+
+    &__contact-item {
+        margin-bottom: 24px;
+        text-decoration: none;
+        &:hover, &:active {
+            text-decoration: underline;
+            text-decoration-color: $color-blue-1;
+        }
+    }
+
+    &__contact-image {
+        margin-right: 18px;
+    }
+
+    &__contact-text {
+        color: $color-blue-1;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    &__resume-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__resume-title {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 40px;
+        margin-bottom: 32px;
+    }
+
+    &__resume-item {
+        text-decoration: none;
+        &:hover, &:active {
+            text-decoration: underline;
+            text-decoration-color: $color-blue-1;
+        }
+    }
+
+    &__resume-text {
+        color: $color-blue-1;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    &__resume-image {
+        margin-left: 18px;
+    }
+
+}

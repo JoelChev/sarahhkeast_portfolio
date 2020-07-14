@@ -21,11 +21,21 @@ const Header = () => {
         };
     });
 
+    const isAboutPage = () => {
+        return window.location.href.includes("about");
+    };
+
     return (
+
         <div className={classnames(`${header}`, bodyOffset.top ? `${header}--shadow` : '')}>
             <div className={`${header}__text-container`}>
-                <span className={`${header}__name`}>Sarah Keast</span>
-                <span className={`${header}__about`}>About</span>
+                <a className={`${header}__name`} href='/'>Sarah Keast</a>
+                {
+                    isAboutPage() ?
+                        <span className={`${header}__about-selected`} href='/about' >About</span>
+                        :
+                        <a className={`${header}__about`} href='/about' >About</a>
+                }
             </div>
             <div className={`${header}__space-container`} />
         </div>

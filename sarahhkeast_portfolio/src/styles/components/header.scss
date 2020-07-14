@@ -26,6 +26,11 @@
         font-size: 16px;
         line-height: 33px;
         align-items: flex-start;
+        text-decoration: none;
+        &:hover, &:active {
+            text-decoration: underline;
+            text-decoration-color: $color-blue-1;
+        }
     }
     
     &__about {
@@ -33,6 +38,17 @@
         font-weight: 500;
         font-size: 13.2791px;
         line-height: 33px;
+        text-decoration: none;
+        &:hover, &:active {
+            text-decoration: underline;
+            text-decoration-color: $color-black;
+        }
+    }
+
+    &__about-selected {
+        font-size: 13.2791px;
+        line-height: 24px;
+        border-bottom: 1.5px solid $color-black;
     }
     
     &__space-container {
