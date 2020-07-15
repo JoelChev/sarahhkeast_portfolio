@@ -13,6 +13,7 @@ import LinkedIn from '../assets/linkedin.svg';
 import Dribbble from '../assets/dribbble.svg';
 import ArrowRightBlue from '../assets/arrow-right-blue.svg';
 import Yokko from '../assets/yokko-home-page.png';
+import YokkoSmall from '../assets/yokko-home-page-small.png';
 
 const landingPage = 'landingPage';
 
@@ -75,7 +76,12 @@ class LandingPage extends Component {
                             </div>
                         </div>
                         <div className={`${landingPage}__project-image-container`}>
-                            <img className={`${landingPage}__project-image`} src={Yokko} alt='project image one' />
+                            <img className={`${landingPage}__project-image`}
+                                src={Yokko}
+                                alt='project image one' />
+                            <img className={`${landingPage}__project-image-mobile`}
+                                src={YokkoSmall}
+                                alt='project image one' />
                         </div>
                     </a>
 
