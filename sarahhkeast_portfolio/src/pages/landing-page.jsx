@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
 
+import { EMAIL, LINKEDIN, DRIBBBLE } from '../constants/contact';
+
 import Header from '../components/header';
 import Footer from '../components/footer';
 import ContactItem from '../components/contact-item';
@@ -85,9 +87,9 @@ class LandingPage extends Component {
                     </div>
                     <div className={`${landingPage}__contact-container`}>
                         <div classname={`${landingPage}__contact-alignment-container`}>
-                            <ContactItem image={Mail} alt_text='mail-icon' text='sarah.keast1@gmail.com' url='mailto:sarah.keast1@gmail.com' />
-                            <ContactItem image={LinkedIn} alt_text='linkedin-icon' text='Sarah Keast' url='https://www.linkedin.com/in/sarah-keast-68ba27b8/' />
-                            <ContactItem image={Dribbble} alt_text='dribbble-icon' text='Sarah Keast' url='https://dribbble.com/sarahkeast' />
+                            <ContactItem image={Mail} alt_text='mail-icon' text={EMAIL} url={`mailto:${EMAIL}`} />
+                            <ContactItem image={LinkedIn} alt_text='linkedin-icon' text='Sarah Keast' url={LINKEDIN} />
+                            <ContactItem image={Dribbble} alt_text='dribbble-icon' text='Sarah Keast' url={DRIBBBLE} />
                         </div>
                     </div>
                 </div>

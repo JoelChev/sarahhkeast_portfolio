@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
 
+import { EMAIL, LINKEDIN, DRIBBBLE } from '../constants/contact';
+
 import Header from '../components/header';
 import Footer from '../components/footer';
 
@@ -39,14 +41,14 @@ class AboutPage extends Component {
                             Contact
                         </h4>
                         <a className={`${aboutPage}__contact-item`}
-                            href="mailto:sarah.keast1@gmail.com">
+                            href={`mailto:${EMAIL}`}>
                             <img className={`${aboutPage}__contact-image`}
                                 src={MailBlue}
                                 alt="Email" />
-                            <span className={`${aboutPage}__contact-text`}>sarah.keast1@gmail.com</span>
+                            <span className={`${aboutPage}__contact-text`}>{EMAIL}</span>
                         </a>
                         <a className={`${aboutPage}__contact-item`}
-                            href="https://www.linkedin.com/in/sarah-keast-68ba27b8/"
+                            href={LINKEDIN}
                             target="_blank" rel="noopener noreferrer">
                             <img className={`${aboutPage}__contact-image`}
                                 src={LinkedInBlue}
@@ -54,7 +56,7 @@ class AboutPage extends Component {
                             <span className={`${aboutPage}__contact-text`}>Sarah Keast</span>
                         </a>
                         <a className={`${aboutPage}__contact-item`}
-                            href="https://dribbble.com/sarahkeast"
+                            href={DRIBBBLE}
                             target="_blank" rel="noopener noreferrer">
                             <img className={`${aboutPage}__contact-image`}
                                 src={DribbbleBlue}
