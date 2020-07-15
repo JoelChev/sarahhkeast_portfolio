@@ -11,6 +11,13 @@
     &__text-container {
         width: 50%;
         margin-top: 72px;
+        @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) { 
+            padding: 0 18px;
+        }
+        @media (max-width: $breakpoint-tablet) { 
+            width: 100%;
+            padding: 0 18px;
+        }
     }
 
     &__title {
@@ -21,18 +28,38 @@
         &--highlight {
             color: $color-yellow-highlight;
         }
+        @media (max-width: $breakpoint-tablet) { 
+            font-size: 24px;
+        }
     }
 
     &__text {
         font-size: 16px;
         line-height: 26px;
+        @media (max-width: $breakpoint-tablet) { 
+            font-size: 14px;
+        }
     }
 
     &__image-container {
-        width: 50%;
+        @media (max-width: $breakpoint-desktop) {
+            width: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
+        }
+
+        @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) { 
+            padding: 0 18px;
+        }
+
+        @media (max-width: $breakpoint-tablet) { 
+            display: none;
+        }
+    }
+
+    &__image {
+        max-width: 100%;
     }
 
     &__contact-resume-container {
@@ -40,6 +67,15 @@
         width: 50%;
         justify-content: space-evenly;
         margin-bottom: 260px;
+        @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) { 
+            padding: 0 18px;
+        }
+        @media (max-width: $breakpoint-tablet){
+            flex-direction: column;
+            padding: 0 18px;
+            margin-bottom: 120px;
+            width: calc( 100% - 36px);
+        }
     }
 
     &__contact-container {
@@ -52,6 +88,10 @@
         font-size: 24px;
         line-height: 40px;
         margin-bottom: 32px;
+        @media (max-width: $breakpoint-tablet){
+            font-size: 18px;
+            line-height: 23px;
+        }
     }
 
     &__contact-item {
@@ -83,6 +123,11 @@
         font-size: 24px;
         line-height: 40px;
         margin-bottom: 32px;
+        @media (max-width: $breakpoint-tablet){
+            font-size: 18px;
+            line-height: 23px;
+            margin-top: 32px;
+        }
     }
 
     &__resume-item {

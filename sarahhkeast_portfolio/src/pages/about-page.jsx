@@ -29,7 +29,7 @@ class AboutPage extends Component {
                         When I am not working, you can find me at the AGO drawing on my iPad. I love visiting the gallery whenever I can. I also enjoy travelling, taking photos and meeting new creatives. <br /><br />
                         In anything you do, you should always keep your passions close. My ability to think outside the box and find meaning within has brought out my best when approaching any project.</p>
                     </div>
-                    <div classname={`${aboutPage}__image-container`}>
+                    <div className={`${aboutPage}__image-container`}>
                         <img className={`${aboutPage}__image`}
                             src={AboutSarah}
                             alt="Sarah Keast" />
