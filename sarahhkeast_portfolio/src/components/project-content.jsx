@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 const projectContent = 'project-content';
 
 const ProjectContent = ({ title, text, images }) => (
+
     <div className={`${projectContent}`}>
         <div className={`${projectContent}__text-highlight-container`}>
             <div className={`${projectContent}__highlight`} />
