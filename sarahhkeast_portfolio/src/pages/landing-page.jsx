@@ -86,7 +86,7 @@ class LandingPage extends Component {
                         <h3 className={`${landingPage}__question-text`}>Happy to help!</h3>
                     </div>
                     <div className={`${landingPage}__contact-container`}>
-                        <div classname={`${landingPage}__contact-alignment-container`}>
+                        <div className={`${landingPage}__contact-alignment-container`}>
                             <ContactItem image={Mail} alt_text='mail-icon' text={EMAIL} url={`mailto:${EMAIL}`} />
                             <ContactItem image={LinkedIn} alt_text='linkedin-icon' text='Sarah Keast' url={LINKEDIN} />
                             <ContactItem image={Dribbble} alt_text='dribbble-icon' text='Sarah Keast' url={DRIBBBLE} />

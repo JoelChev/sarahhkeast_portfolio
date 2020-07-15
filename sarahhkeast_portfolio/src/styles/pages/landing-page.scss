@@ -7,54 +7,21 @@
     justify-content: center;
     margin: auto 0;
 
-    &__header {
-        display: flex;
-        position: sticky;
-        top: 0;
-        height: 109px;
-        background: $color-white;
-        border-bottom: 1px solid $color-grey-border;
-        z-index: 10;
-
-        &--shadow {
-            box-shadow: 1px 4px 8px $color-grey-border;
-        }
-    }
-
-    &__header-text-container {
-        padding-top: 56px;
-        padding-bottom: 32px;
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-    }
-
-    &__header-name{
-        color: $color-blue-1;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 33px;
-        align-items: flex-start;
-    }
-
-    &__header-about {
-        color: $color-black;
-        font-weight: 500;
-        font-size: 13.2791px;
-        line-height: 33px;
-    }
-
-    &__header-space-container {
-        width: 50%;
-    }
-
     &__hero {
         height: 750px;
         width: 100%;
         background: $color-blue-2;
         display: flex;
+        @media (max-width: $breakpoint-tablet) {
+            flex-direction: column;
+        }
     }
+
+    // @media (max-width: $breakpoint-tablet) {
+    //     &__hero {
+            
+    //     }
+    // }
 
     &__text-container {
         margin: auto;
@@ -76,6 +43,9 @@
         color: $color-blue-1;
         font-size: 40px;
         line-height: 72px;
+        @media (max-width: $breakpoint-desktop) {
+            font-size: 28px;
+        }
     }
 
     &__subtitle {
@@ -84,6 +54,9 @@
         line-height: 40px;
         font-weight: 500;
         margin-bottom: 24px;
+        @media (max-width: $breakpoint-desktop) {
+            font-size: 24px;
+        }
     }
 
     &__sub-text {
@@ -91,17 +64,32 @@
         font-size: 32px;
         line-height: 52px;
         font-weight: 400;
+        @media (max-width: $breakpoint-desktop) {
+            font-size: 24px;
+        }
     }
 
     &__image-container {
         margin: auto 0;
         flex: 0 1 auto;
-        text-align: right;
+        align-items: flex-end;
+        overflow: hidden;
+        @media (max-width: $breakpoint-desktop) and (min-width: $breakpoint-tablet) {
+            width: 50%;
+        }
     }
 
     &__image-hero {
-
+        @media (max-width: $breakpoint-desktop) and (min-width: $breakpoint-tablet) {
+            max-width: 100%;
+            float: right;
+        }
+        @media (max-width: $breakpoint-tablet) {
+            max-width: 100%;
+            float: left;
+        }
     }
+
 
     &__project-list-container {
         margin: 106px 0;
@@ -142,7 +130,10 @@
             outline: none;
             border: none;
             -moz-outline-style: none;
-          }
+        }
+        @media (max-width: $breakpoint-tablet) {
+            flex-direction: column-reverse;
+        }
     }
 
     &__project-text-container {
@@ -187,6 +178,9 @@
         height: 484px;
         position: relative;
         width: 71%;
+        @media (max-width: $breakpoint-desktop) {
+            height: 332px;
+        }
     }
 
     &__project-image {
@@ -200,6 +194,13 @@
         background-color: $color-blue-3;
         height: 345px;
         width: 100%;
+        @media (max-width: $breakpoint-tablet) {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 0 18px;
+            width: calc(100% - 36px);
+        }
     }
 
     &__question-container {
@@ -209,12 +210,18 @@
         align-items: center;
         margin: auto 0;
         flex-direction: column;
+        @media (max-width: $breakpoint-tablet) {
+            padding-top: 56px;
+        }
     }
 
     &__question-text {
         color: $color-white;
         font-size: 32px;
         line-height: 40px;
+        @media (max-width: $breakpoint-desktop) {
+            font-size: 24px;
+        }
     }
 
     &__contact-container {
@@ -224,11 +231,18 @@
         margin: auto 0;
         flex-direction: column;
         padding-top: 96px;
+        @media (max-width: $breakpoint-tablet) {
+            padding-top: 24px;
+            width: 100%;
+        }
     }
 
     &__contact-alignment-container {
         display: flex;
         flex-direction: column;
+        @media (max-width: $breakpoint-tablet) {
+            width: 100%;
+        }
     }
 
     &__footer {
