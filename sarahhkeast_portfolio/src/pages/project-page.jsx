@@ -39,7 +39,7 @@ class ProjectPage extends Component {
                     <div className={`${projectPage}__back-link-container`}>
                         <a className={`${projectPage}__back-link`} href='/#project-0'>
                             <img className={`${projectPage}__back-link-icon`} src={ArrowLeftBlue} />
-                            <span>Back</span>
+                            <span className={`${projectPage}__back-link-text`}>Back</span>
                         </a>
                     </div>
                     <div className={`${projectPage}__hero-container`}>
