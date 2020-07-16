@@ -226,6 +226,7 @@
         @media (max-width: $breakpoint-tablet) {
             width: calc(100% - 18px);
             padding-left: 18px;
+            height: 751px;
         }
     }
 
@@ -235,7 +236,10 @@
         margin-top: 120px;
         align-items: center;
         width: 50%;
-        z-index: 3;
+        z-index: 3; 
+        @media (max-width: $breakpoint-tablet) {
+            margin-top: 56px;
+        }
     }
 
     &__banner-title {
