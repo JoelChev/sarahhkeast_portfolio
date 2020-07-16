@@ -7,10 +7,12 @@
                 "images": [
                     {
                         "src": "yokko-sign-up-1",
+                        "src_mobile": "yokko-sign-up-1-small",
                         "alt_text": "Yokko Signup Screen 1"
                     },
                     {
                         "src": "yokko-sign-up-2",
+                        "src_mobile": "yokko-sign-up-2-small",
                         "alt_text": "Yokko Signup Screen 2"
                     }
                 ]
@@ -21,10 +23,12 @@
                 "images": [
                     {
                         "src": "yokko-track-1",
+                        "src_mobile": "yokko-track-1-small",
                         "alt_text": "Yokko Track Screen 1"
                     },
                     {
                         "src": "yokko-track-2",
+                        "src_mobile": "yokko-track-2-small",
                         "alt_text": "Yokko Track Screen 2"
                     }
                 ]
@@ -35,6 +39,7 @@
                 "images": [
                     {
                         "src": "yokko-connect",
+                        "src_mobile": "yokko-connect-small",
                         "alt_text": "Yokko Connect Screen 1"
                     }
                 ]

@@ -38,6 +38,9 @@
             font-size: 14px;
             line-height: 22px;  
             margin-top: 4px;
+            @media (max-width: $breakpoint-tablet) {
+                font-size: 12px;
+            }
         }
     }
 
@@ -46,16 +49,33 @@
         align-items: center;
         justify-content: flex-end;
         width: 50%;
-        margin-top: -4px;
+        @media (max-width: $breakpoint-tablet) {
+            padding-right: 18px;
+        }
+    }
+
+    &__icon-link {
+        margin: 0;
+        padding: 0;
     }
 
     &__icon {
         margin: 0 16px;
-        width: 14px;
-        height: 14px;
+
+        @media (max-width: $breakpoint-tablet) {
+            margin: 0 8px;
+            width: 16px;
+            height: 16px;
+        }
 
         &--instagram {
             margin-top: -2px;
+
+            @media (max-width: $breakpoint-tablet) {
+                margin: 0 8px;
+                width: 16px;
+                height: 16px;
+            }
         }
     }
 

@@ -34,6 +34,7 @@
         width: 200px;
         @media (max-width: $breakpoint-tablet) {
             width: 75%;
+            margin-bottom: 32px;
         }
     }
     
@@ -60,17 +61,28 @@
         width: 50%;
         align-items: flex-start;
         @media (max-width: $breakpoint-tablet) {
-            align-items: space-evenly;
-            max-width: 100%;
+            width: 100%;
+            justify-content: space-evenly;
         }
     }
     
     &__image {
-        margin: 0 16px;
         @media (max-width: $breakpoint-tablet) {
-            display: flex;
-            //width: 100%;
-            align-items: center;
+            display: none;
+        }
+        &--show-mobile {
+            @media (max-width: $breakpoint-tablet) {
+                display: flex;
+                align-items: center;;
+            }
+        }
+    }
+
+    &__image-mobile {
+        display: flex;
+        align-items: center;
+        @media (min-width: $breakpoint-tablet) {
+            display: none;
         }
     }
 

@@ -1,4 +1,5 @@
 import React, { memo } from 'react';
+import classnames from 'classnames';
 import PropTypes from "prop-types";
 
 const projectContent = 'project-content';
@@ -16,12 +17,22 @@ const ProjectContent = ({ title, text, images }) => (
         <div className={`${projectContent}__content-images`}>
             {
                 images.map((image, index) => {
-                    console.log(image);
                     return (
-                        <img key={`${title}-img-${index}`}
-                            className={`${projectContent}__image`}
-                            src={require(`../assets/${image.src}.png`)}
-                            alt={image.alt_text} />
+                        <React.Fragment>
+                            <img key={`${title}-img-${index}`}
+                                className={classnames(`${projectContent}__image`, !image.src_mobile ? `${projectContent}__image--show-mobile` : '')}
+                                src={require(`../assets/${image.src}.png`)}
+                                alt={image.alt_text} />
+                            {
+                                image.src_mobile ?
+                                    <img key={`${title}-img-${index}`}
+                                        className={`${projectContent}__image-mobile`}
+                                        src={require(`../assets/${image.src_mobile}.png`)}
+                                        alt={image.alt_text} />
+                                    : null
+                            }
+
+                        </React.Fragment>
                     )
                 })
             }

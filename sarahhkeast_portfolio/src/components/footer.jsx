@@ -19,9 +19,9 @@ const Footer = ({ isDark, showIcons }) => (
         {
             showIcons ?
                 <div className={`${footer}__icon-container`}>
-                    <a className={`${footer}__icon`} href={DRIBBBLE} target="_blank" rel="noopener noreferrer"><img src={Dribble}></img></a>
-                    <a className={`${footer}__icon`} href={LINKEDIN} target="_blank" rel="noopener noreferrer"><img src={LinkedIn}></img></a>
-                    <a className={classnames(`${footer}__icon`, `${footer}__icon--instagram`)} href={INSTAGRAM} target="_blank" rel="noopener noreferrer"><img src={Instagram}></img></a>
+                    <a className={`${footer}__icon-link`} href={DRIBBBLE} target="_blank" rel="noopener noreferrer"><img className={`${footer}__icon`} src={Dribble}></img></a>
+                    <a className={`${footer}__icon-link`} href={LINKEDIN} target="_blank" rel="noopener noreferrer"><img className={`${footer}__icon`} src={LinkedIn}></img></a>
+                    <a className={`${footer}__icon-link`} href={INSTAGRAM} target="_blank" rel="noopener noreferrer"><img className={classnames(`${footer}__icon`, `${footer}__icon--instagram`)} src={Instagram}></img></a>
                 </div>
                 :
                 <div className={`${footer}__spacer`} />

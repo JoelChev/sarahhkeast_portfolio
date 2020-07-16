@@ -9,6 +9,7 @@ import Projects from '../constants/projects.json';
 
 import ArrowLeftBlue from '../assets/arrow-left-blue.svg';
 import YokkoBanner from '../assets/yokko-banner.png';
+import YokkoBannerSmall from '../assets/yokko-banner-small.png';
 import ArrowRightBlack from '../assets/arrow-right-black.svg';
 import MovemberNextProject from '../assets/movember-next-project.png';
 
@@ -84,6 +85,7 @@ class ProjectPage extends Component {
                         </div>
                         <div className={`${projectPage}__banner-image-container`}>
                             <img className={`${projectPage}__banner-image`} src={YokkoBanner} alt="Yokko Banner Image" />
+                            <img className={`${projectPage}__banner-image-mobile`} src={YokkoBannerSmall} alt="Yokko Banner Image" />
                         </div>
                     </div>
                     <div className={`${projectPage}__next-project-container`}>
