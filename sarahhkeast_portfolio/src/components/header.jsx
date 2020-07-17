@@ -60,7 +60,10 @@ const Header = () => {
                             <div className={`${menuModal}__overlay`} />
                             <div className={`${menuModal}__content`}>
                                 <div className={`${menuModal}__close-button-container`}>
-                                    <button className={`${menuModal}__close-button`} onClick={() => setShowModal(false)}><img src={Close} /></button>
+                                    <button className={`${menuModal}__close-button`}
+                                        onClick={() => setShowModal(false)}>
+                                        <img src={Close} />
+                                    </button>
                                 </div>
                                 <div className={`${menuModal}__menu-option-container`}>
                                     <a className={`${menuModal}__menu-option`} href='/'>
