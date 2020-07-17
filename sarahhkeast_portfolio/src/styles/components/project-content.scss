@@ -24,7 +24,10 @@
         content: '';
         position: absolute;
         left: 10%;
-        top: 10px;
+        top: 16px;
+        @media (max-width: $breakpoint-desktop) {
+            width: 40px;
+        }
         @media (max-width: $breakpoint-tablet) {
             display: none;
         }
