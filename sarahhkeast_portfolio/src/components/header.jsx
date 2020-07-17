@@ -49,7 +49,6 @@ const Header = () => {
                         <a className={`${header}__about`} href='/about' >About</a>
                 }
             </div>
-            <div className={`${header}__space-container`} />
             <div className={`${header}__mobile-container`}>
                 <button className={`${header}__mobile-menu-button`}
                     onClick={() => setShowModal(true)}>

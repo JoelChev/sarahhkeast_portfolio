@@ -20,14 +20,10 @@
     &__text-container {
         padding-top: 56px;
         padding-bottom: 32px;
-        width: 12.5%;
-        margin-left: 12.5%;
+        width: calc(100% - 56px);
+        padding-left: 56px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        @media (max-width: $breakpoint-desktop) {
-            width: 20%;
-        }
         @media (max-width: $breakpoint-tablet) {
             display: none;
         }
@@ -40,6 +36,7 @@
         line-height: 33px;
         align-items: flex-start;
         text-decoration: none;
+        margin-right: 56px;
         &:hover, &:active {
             text-decoration: underline;
             text-decoration-color: $color-blue-1;
@@ -61,18 +58,9 @@
     &__about-selected {
         font-weight: 600;
         font-size: 13.2791px;
+        margin-top: 2px;
         line-height: 24px;
         border-bottom: 1.5px solid $color-black;
-    }
-    
-    &__space-container {
-        width: 70%;
-        @media (max-width: $breakpoint-desktop) {
-            width: 62.5%;
-        }
-        @media (max-width: $breakpoint-tablet) {
-            display: none;
-        }
     }
 
     &__mobile-container {
