@@ -51,7 +51,10 @@ const Header = () => {
             </div>
             <div className={`${header}__space-container`} />
             <div className={`${header}__mobile-container`}>
-                <button className={classnames(showModal ? `${header}__mobile-menu-button--hide` : `${header}__mobile-menu-button`)} onClick={() => setShowModal(true)}><img src={MenuMobile} /></button>
+                <button className={`${header}__mobile-menu-button`}
+                    onClick={() => setShowModal(true)}>
+                    <img src={MenuMobile} />
+                </button>
             </div>
             {
                 showModal ?

@@ -71,6 +71,10 @@
         display: flex;
         padding-left: 18px;
         align-items: flex-start;
+
+        @media (min-width: $breakpoint-tablet) {
+            display: none;
+        }
     }
 
     &__mobile-menu-button {
@@ -81,15 +85,6 @@
             border: none;
             outline: none;
         }
-
-        &--hide {
-            display: none;
-        }
-    }
-
-    &__mobile-menu {
-        height: 20px;
-        width: 100%;
     }
 }
 

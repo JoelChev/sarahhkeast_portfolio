@@ -9,6 +9,10 @@
     height: 100%;
     overflow: hidden;
 
+    @media (min-width: $breakpoint-tablet) {
+        display: none;
+    }
+
     &__overlay {
         position: fixed;
         top: 234px;
