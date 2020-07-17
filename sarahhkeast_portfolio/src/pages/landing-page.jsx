@@ -88,8 +88,10 @@ class LandingPage extends Component {
                 </div>
                 <div className={`${landingPage}__question-contact-container`}>
                     <div className={`${landingPage}__question-container`}>
-                        <h3 className={`${landingPage}__question-text`}>Any questions?</h3>
-                        <h3 className={`${landingPage}__question-text`}>Happy to help!</h3>
+                        <div className={`${landingPage}__question-alignment-container`}>
+                            <h3 className={`${landingPage}__question-text`}>Any questions?</h3>
+                            <h3 className={`${landingPage}__question-text`}>Happy to help!</h3>
+                        </div>
                     </div>
                     <div className={`${landingPage}__contact-container`}>
                         <div className={`${landingPage}__contact-alignment-container`}>
