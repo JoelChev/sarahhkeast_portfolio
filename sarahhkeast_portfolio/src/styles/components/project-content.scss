@@ -70,6 +70,7 @@
     }
     
     &__image {
+        max-width: 50%;
         @media (max-width: $breakpoint-tablet) {
             display: none;
         }

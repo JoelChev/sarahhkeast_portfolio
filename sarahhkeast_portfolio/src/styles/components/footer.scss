@@ -1,27 +1,19 @@
 .footer {
     display: flex;
     height: 50px;
-    width: 100%;
+    width: calc(100% - 72px);
     background-color: $color-blue-1;
     margin: auto 0;
     align-items: center;
-    justify-content: space-evenly;
-
+    justify-content: space-between;
+    padding: 0 36px;
     &--dark {
      background-color: $color-black;  
     }
 
-    &__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 10%;
-        @media (max-width: $breakpoint-tablet) {
-            width: 100%;
-            padding-left: 18px;
-            align-items: flex-start;
-            justify-content: flex-start;
-        }
+    @media (max-width: $breakpoint-tablet) {
+        width: calc(100% - 36px);
+        padding: 0 18px;
     }
 
     &__spacer {
@@ -49,18 +41,16 @@
         align-items: center;
         justify-content: flex-end;
         width: 50%;
-        @media (max-width: $breakpoint-tablet) {
-            padding-right: 18px;
-        }
     }
 
     &__icon-link {
+        display: flex;
         margin: 0;
         padding: 0;
     }
 
     &__icon {
-        margin: 0 16px;
+        margin-left: 32px;
 
         @media (max-width: $breakpoint-tablet) {
             margin: 0 8px;

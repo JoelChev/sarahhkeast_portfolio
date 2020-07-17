@@ -13,9 +13,7 @@ const footer = 'footer';
 const Footer = ({ isDark, showIcons }) => (
 
     <div className={classnames(`${footer}`, isDark ? `${footer}--dark` : '')}>
-        <div className={`${footer}__wrapper`}>
-            <span className={classnames(`${footer}__copyright-text`, isDark ? `${footer}__copyright-text--large` : '')}>Sarah Keast 2020</span>
-        </div>
+        <span className={classnames(`${footer}__copyright-text`, isDark ? `${footer}__copyright-text--large` : '')}>Sarah Keast 2020</span>
         {
             showIcons ?
                 <div className={`${footer}__icon-container`}>
