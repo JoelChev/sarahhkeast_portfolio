@@ -18,17 +18,18 @@
     }
 
     &__text-container {
-        margin: auto;
-        flex: 0.1 1 auto;
+        display: flex;
+        width: 50%;
         text-align: center;
         justify-content: center;
         align-items: center;
 
         @media (max-width: $breakpoint-tablet) {
-            margin: 0;
+            margin-top: 56px;
             padding-left: 32px;
             align-items: flex-start;
             justify-content: flex-start;
+            width: calc(100% - 32px);
         }
     }
 
@@ -71,12 +72,14 @@
     }
 
     &__image-container {
-        margin: auto 0;
-        flex: 0 1 auto;
+        display: flex;
+        width: 50%;
+        margin: auto 0 auto auto;
+        justify-content: flex-end;
         align-items: flex-end;
         overflow: hidden;
-        @media (max-width: $breakpoint-desktop) and (min-width: $breakpoint-tablet) {
-            width: 50%;
+        @media (max-width: $breakpoint-tablet) {
+            width: 100%;
         }
     }
 
