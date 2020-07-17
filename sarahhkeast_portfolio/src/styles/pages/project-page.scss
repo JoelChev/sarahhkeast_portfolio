@@ -272,7 +272,7 @@
         }
     }
 
-    &__banner-image-small {
+    &__banner-image-mobile {
         @media (min-width: $breakpoint-tablet) {
             display: none;
         }
