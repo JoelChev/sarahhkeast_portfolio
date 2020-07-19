@@ -292,6 +292,8 @@
         @media (max-width: $breakpoint-tablet) {
             flex-direction: column;;
             height: 524px;
+            padding: 0 18px;
+            width: calc(100% - 36px);
         }
     }
 
@@ -339,7 +341,12 @@
             width: 100%;
             flex-direction: row;
             align-items: baseline;
+            overflow: hidden;
         }
+    }
+
+    &__next-project-image {
+        max-height: 100%;
     }
 
     &__next-project-link-container {
