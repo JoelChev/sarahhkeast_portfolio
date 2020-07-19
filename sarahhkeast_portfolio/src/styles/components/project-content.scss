@@ -37,7 +37,9 @@
     
     &__text-container {
         width: 200px;
+        margin-left: 32px;
         @media (max-width: $breakpoint-tablet) {
+            margin-left: 0;
             width: 75%;
             margin-bottom: 32px;
         }

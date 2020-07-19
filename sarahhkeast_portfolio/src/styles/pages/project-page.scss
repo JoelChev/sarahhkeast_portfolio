@@ -23,7 +23,7 @@
     }
 
     &__back-link-icon {
-        margin-right: 18px;
+        margin-right: 8px;
         margin-bottom: -4px;
     }
 
@@ -98,7 +98,10 @@
         border-radius: 8px;
         height: 276px;
         position: relative;
-        width: 80%;
+        width: 78%;
+        @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+            width: 72%
+        }
         @media (max-width: $breakpoint-tablet) {
             height: 203px;
         }
