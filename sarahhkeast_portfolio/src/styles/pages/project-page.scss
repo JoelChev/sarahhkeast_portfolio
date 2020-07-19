@@ -242,6 +242,7 @@
         z-index: 2; 
         @media (max-width: $breakpoint-tablet) {
             margin-top: 56px;
+            align-items: flex-start;
         }
     }
 
