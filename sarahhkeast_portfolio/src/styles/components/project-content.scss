@@ -7,11 +7,12 @@
     }
 
     &__text-highlight-container {
-        width: 40%;
+        width: 50%;
         display: flex;
         position: relative;
-        justify-content: space-evenly;
+        margin-left: 15%;
         @media (max-width: $breakpoint-tablet) {
+            margin-left: 0;
             width: 100%;
             justify-content: flex-start;
         }
@@ -23,13 +24,9 @@
         background-color: $color-yellow-highlight;
         content: '';
         position: absolute;
-        left: 20%;
+        left: -77px;
         top: 16px;
         border-radius: 4px;
-        @media (max-width: $breakpoint-desktop) {
-            width: 22px;
-            left: 12%;
-        }
         @media (max-width: $breakpoint-tablet) {
             display: none;
         }
@@ -37,9 +34,7 @@
     
     &__text-container {
         width: 200px;
-        margin-left: 32px;
         @media (max-width: $breakpoint-tablet) {
-            margin-left: 0;
             width: 75%;
             margin-bottom: 32px;
         }
@@ -65,9 +60,11 @@
     
     &__content-images {
         display: flex;
+        margin-left: -15%;
         width: 50%;
         align-items: flex-start;
         @media (max-width: $breakpoint-tablet) {
+            margin-left: 0;
             width: 100%;
             justify-content: space-evenly;
         }

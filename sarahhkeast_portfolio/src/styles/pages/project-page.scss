@@ -4,9 +4,11 @@
         margin-top: 56px;
         display: flex;
         width: 33%;
-        align-items: center;
-        justify-content: space-evenly;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 15%;
         @media (max-width: $breakpoint-tablet) {
+            margin-left: 0;
             width: calc(100% - 18px);
             align-items: flex-start;
             justify-content: flex-start;
@@ -16,6 +18,7 @@
 
     &__back-link {
         text-decoration: none;
+        display: flex;
         &:hover, &:active {
             text-decoration: underline;
             text-decoration-color: $color-blue-1;
@@ -24,7 +27,6 @@
 
     &__back-link-icon {
         margin-right: 8px;
-        margin-bottom: -4px;
     }
 
     &__back-link-text {
@@ -47,12 +49,13 @@
 
     &__hero-text-container {
         display: flex;
-        flex: 1 1 auto;
-        align-items: flex-end;
+        margin-left: 15%;
+        align-items: flex-start;
         flex-direction: column;
         margin-right: -4%;
         z-index: 2;
         @media (max-width: $breakpoint-tablet) {
+            margin-left: 0;
             margin-right: -20%;
         }
     }
@@ -99,10 +102,9 @@
         height: 276px;
         position: relative;
         width: 78%;
-        @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
-            width: 72%
-        }
+        margin-left: -15%;
         @media (max-width: $breakpoint-tablet) {
+            margin-left: 0;
             height: 203px;
         }
     }
@@ -118,7 +120,7 @@
         justify-content: space-evenly;
         width: 75%;
         margin-top: 56px;
-        margin-left: 14.5%;
+        margin-left: 15%;
         @media (max-width: $breakpoint-tablet) {
             flex-direction: column;
             justify-content: flex-start;
