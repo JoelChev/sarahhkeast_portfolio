@@ -5,7 +5,10 @@ import { EMAIL, LINKEDIN, DRIBBBLE } from '../constants/contact';
 
 import Header from '../components/header';
 import Footer from '../components/footer';
+import ProjectCard from '../components/project-card';
 import ContactItem from '../components/contact-item';
+
+import Projects from '../constants/projects.json';
 
 import HeroFlowers from '../assets/hero_flowers.png';
 import Mail from '../assets/mail.svg';
@@ -23,12 +26,31 @@ class LandingPage extends Component {
         highLightedProject: null
     }
 
-    handleProjectMouseEnter(projectId) {
+    handleProjectMouseEnter = (projectId) => {
         this.setState({ highLightedProject: projectId });
     }
 
-    handleProjectMouseLeave() {
+    handleProjectMouseLeave = () => {
         this.setState({ highLightedProject: null });
+    }
+
+    renderProjectCards() {
+        const { highLightedProject } = this.state;
+        const { projects } = Projects;
+        return projects.map((project, index) => {
+            const { landing } = project;
+            return (
+                <ProjectCard
+                    key={`projectCard-${index}`}
+                    id={index}
+                    title={landing.title}
+                    subTitle={landing.subTitle}
+                    highLightedProject={highLightedProject}
+                    handleProjectMouseEnter={this.handleProjectMouseEnter}
+                    handleProjectMouseLeave={this.handleProjectMouseLeave}
+                    images={landing.images} />
+            );
+        });
     }
 
     render() {
@@ -54,37 +76,9 @@ class LandingPage extends Component {
                         <h2 className={`${landingPage}__project-list-title`}>Work</h2>
                         <div className={`${landingPage}__project-list-spacer`}></div>
                     </div>
-                    <a className={`${landingPage}__project-card-container`}
-                        href="/project"
-                        onMouseEnter={() => this.handleProjectMouseEnter(0)}
-                        onMouseLeave={() => this.handleProjectMouseLeave()}
-                        id='project-0'>
-                        <div className={`${landingPage}__project-text-container`}>
-                            <div className={`${landingPage}__project-title-container`}>
-                                {
-                                    highLightedProject === 0 ?
-                                        <div className={`${landingPage}__project-card-highlight`} />
-                                        : null
-                                }
-                                <div className={`${landingPage}__project-title-align-container`}>
-                                    <h4 className={`${landingPage}__project-title`}>Yokko</h4>
-                                    <h4 className={`${landingPage}__project-sub-title`}>UX/UI</h4>
-                                </div>
-                                <img className={`${landingPage}__project-title-arrow`}
-                                    src={ArrowRightBlue}
-                                    alt='project-title-arrow' />
-                            </div>
-                        </div>
-                        <div className={`${landingPage}__project-image-container`}>
-                            <img className={`${landingPage}__project-image`}
-                                src={Yokko}
-                                alt='project image one' />
-                            <img className={`${landingPage}__project-image-mobile`}
-                                src={YokkoSmall}
-                                alt='project image one' />
-                        </div>
-                    </a>
-
+                    {
+                        this.renderProjectCards()
+                    }
                 </div>
                 <div className={`${landingPage}__question-contact-container`}>
                     <div className={`${landingPage}__question-container`}>

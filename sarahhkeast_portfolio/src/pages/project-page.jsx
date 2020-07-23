@@ -18,10 +18,8 @@ const projectPage = 'projectPage';
 class ProjectPage extends Component {
 
     renderProjectContent() {
-        const { yokko } = Projects;
-        return yokko.content.map((contentItem, index) => {
-            console.log('Yo');
-            console.log(contentItem);
+        const { projects } = Projects;
+        return projects[0].content.map((contentItem, index) => {
             return (
                 <ProjectContent
                     key={`contentItem-${index}`}
