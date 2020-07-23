@@ -6,14 +6,9 @@
                 "text": "Quick sign up flow to get expecting mothers started.",
                 "images": [
                     {
-                        "src": "yokko-sign-up-1",
-                        "src_mobile": "yokko-sign-up-1-small",
+                        "src": "yokko/sign-up",
+                        "src_mobile": "yokko/sign-up-mobile",
                         "alt_text": "Yokko Signup Screen 1"
-                    },
-                    {
-                        "src": "yokko-sign-up-2",
-                        "src_mobile": "yokko-sign-up-2-small",
-                        "alt_text": "Yokko Signup Screen 2"
                     }
                 ]
             },
@@ -22,14 +17,9 @@
                 "text": "Check-in with Yoko every week for information about your soon to be newborn.",
                 "images": [
                     {
-                        "src": "yokko-track-1",
-                        "src_mobile": "yokko-track-1-small",
+                        "src": "yokko/track",
+                        "src_mobile": "yokko/track-mobile",
                         "alt_text": "Yokko Track Screen 1"
-                    },
-                    {
-                        "src": "yokko-track-2",
-                        "src_mobile": "yokko-track-2-small",
-                        "alt_text": "Yokko Track Screen 2"
                     }
                 ]
             },
@@ -38,8 +28,8 @@
                 "text": "Connect your motion tracking device to see the position and movement of your little one. ",
                 "images": [
                     {
-                        "src": "yokko-connect",
-                        "src_mobile": "yokko-connect-small",
+                        "src": "yokko/connect",
+                        "src_mobile": "yokko/connect-mobile",
                         "alt_text": "Yokko Connect Screen 1"
                     }
                 ]

@@ -8,8 +8,8 @@ import ProjectContent from '../components/project-content.jsx';
 import Projects from '../constants/projects.json';
 
 import ArrowLeftBlue from '../assets/arrow-left-blue.svg';
-import YokkoBanner from '../assets/yokko-banner.png';
-import YokkoBannerSmall from '../assets/yokko-banner-small.png';
+import YokkoBanner from '../assets/yokko/yokko-banner.png';
+import YokkoBannerSmall from '../assets/yokko/yokko-banner-mobile.png';
 import ArrowRightBlack from '../assets/arrow-right-black.svg';
 import MovemberNextProject from '../assets/movember-next-project.png';
 

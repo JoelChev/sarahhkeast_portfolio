@@ -1,9 +1,11 @@
 .project-content {
     padding: 72px 0;
     display: flex;
+    max-height: 623px;
     @media (max-width: $breakpoint-tablet) {
         flex-direction: column;
         padding: 28px 18px;
+        max-height: 424px;
     }
 
     &__text-highlight-container {
@@ -62,7 +64,8 @@
         display: flex;
         margin-left: -15%;
         width: 50%;
-        align-items: flex-start;
+        justify-content: flex-start;
+        margin-right: 15%;
         @media (max-width: $breakpoint-tablet) {
             margin-left: 0;
             width: 100%;
@@ -71,7 +74,8 @@
     }
     
     &__image {
-        max-width: 50%;
+        max-width: 100%;
+        max-height: 100%;
         @media (max-width: $breakpoint-tablet) {
             display: none;
         }
@@ -84,6 +88,8 @@
     }
 
     &__image-mobile {
+        max-width: 100%;
+        max-height: 344px;
         display: flex;
         align-items: center;
         @media (min-width: $breakpoint-tablet) {
