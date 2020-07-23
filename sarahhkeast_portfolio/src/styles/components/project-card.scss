@@ -57,8 +57,12 @@
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        white-space: pre-wrap;
+        text-align: left;
 
         @media (max-width: $breakpoint-tablet) {
+            white-space: normal;
+            text-align: default;
             margin-top: 36px;  
         }
     }
@@ -80,7 +84,6 @@
     &__sub-title {
         color: $color-black;
         font-size: 24px;
-        margin-left: 4px;
         font-weight: 500;
 
         @media (max-width: $breakpoint-tablet) {

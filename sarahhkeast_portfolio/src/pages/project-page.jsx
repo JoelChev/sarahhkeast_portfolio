@@ -3,6 +3,7 @@ import classnames from 'classnames';
 
 import Footer from '../components/footer';
 import Header from '../components/header';
+import ProjectHeading from '../components/project-heading';
 import ProjectDescription from '../components/project-description';
 import ProjectContent from '../components/project-content';
 
@@ -17,6 +18,18 @@ import MovemberNextProject from '../assets/movember-next-project.png';
 const projectPage = 'projectPage';
 
 class ProjectPage extends Component {
+
+    renderProjectHeading() {
+        const { projects } = Projects;
+        const { projectId } = this.props.match.params;
+        const { heading } = projects[projectId];
+        return (
+            <ProjectHeading
+                title={heading.title}
+                subTitle={heading.subTitle}
+                backgroundColor={heading.backgroundColor} />
+        )
+    }
 
     renderProjectDescription() {
         const { projects } = Projects;
@@ -56,17 +69,9 @@ class ProjectPage extends Component {
                             <span className={`${projectPage}__back-link-text`}>Back</span>
                         </a>
                     </div>
-                    <div className={`${projectPage}__hero-container`}>
-                        <div className={`${projectPage}__hero-text-container`}>
-                            <div className={`${projectPage}__hero-title-container`}>
-                                <div className={`${projectPage}__hero-title-align-container`}>
-                                    <h2 className={`${projectPage}__hero-title`}>Meet Yokko.</h2>
-                                    <h2 className={`${projectPage}__hero-sub-title`}>UX/UI</h2>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={`${projectPage}__hero-image-container`} />
-                    </div>
+                    {
+                        this.renderProjectHeading()
+                    }
                     {
                         this.renderProjectDescription()
                     }

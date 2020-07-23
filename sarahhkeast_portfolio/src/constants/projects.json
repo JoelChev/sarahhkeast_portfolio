@@ -9,9 +9,10 @@
                     "src_mobile": "yokko-home-page-mobile"
                 }
             },
-            "hero": {
+            "heading": {
                 "title": "Meet Yokko.",
-                "subTitle": "UX/UI"
+                "subTitle": "UX/UI",
+                "backgroundColor": "#f6f9e1"
             },
             "description": {
                 "text": "The connection between a mother and a baby begins from the moment of conception. With the mobile application Yokko, women are able to better connect with their children throughout their journey as one. Yokko enables parents carefully monitor their baby’s development without having to leverage medical personnel.",
@@ -59,16 +60,17 @@
         },
         {
             "landing": {
-                "title": "Movember Project",
+                "title": "Movember\nProject",
                 "subTitle": "Illustration",
                 "images": {
                     "src": "movember-home-page",
                     "src_mobile": "movember-home-page-mobile"
                 }
             },
-            "hero": {
+            "heading": {
                 "title": "Movember Project",
-                "subTitle": "Illustration"
+                "subTitle": "Illustration",
+                "backgroundColor": "#fde2b4"
             },
             "description": {
                 "text": "For this project, I drew 30 illustrations of moustaches over a span of 30 days to raise money and awreness for Movember. The illustrations were posted on my art instagram everyday, encouraging my following to donate towards the cause. Every illustration is named after a style of moustache in support of the initative.",
