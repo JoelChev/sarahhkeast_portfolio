@@ -19,7 +19,8 @@ class ProjectPage extends Component {
 
     renderProjectContent() {
         const { projects } = Projects;
-        return projects[0].content.map((contentItem, index) => {
+        const { projectId } = this.props.match.params;
+        return projects[projectId].content.map((contentItem, index) => {
             return (
                 <ProjectContent
                     key={`contentItem-${index}`}
@@ -31,12 +32,13 @@ class ProjectPage extends Component {
     }
 
     render() {
+        const { projectId } = this.props.match.params;
         return (
             <div className={`${projectPage}`}>
                 <Header />
                 <div className={`${projectPage}__header`}>
                     <div className={`${projectPage}__back-link-container`}>
-                        <a className={`${projectPage}__back-link`} href='/#project-0'>
+                        <a className={`${projectPage}__back-link`} href={`/#project-${projectId}`}>
                             <img className={`${projectPage}__back-link-icon`} src={ArrowLeftBlue} />
                             <span className={`${projectPage}__back-link-text`}>Back</span>
                         </a>

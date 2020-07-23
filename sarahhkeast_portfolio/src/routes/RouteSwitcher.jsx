@@ -11,7 +11,7 @@ const RouteSwitcher = () => (
         <Switch>
             <Route exact path='/' component={LandingPage} />
             <Route exact path='/about' component={AboutPage} />
-            <Route path='/project' component={ProjectPage} />
+            <Route path='/project/:projectId' component={ProjectPage} />
         </Switch>
     </BrowserRouter>
 
