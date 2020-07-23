@@ -243,6 +243,7 @@
         position: absolute;
         top: -9%;
         left: 10%;
+        max-height: 125%;
         @media (max-width: $breakpoint-desktop) and (min-width: $breakpoint-tablet) {
             left: 0%;
             margin-right: 0;
@@ -259,7 +260,8 @@
         @media (max-width: $breakpoint-tablet) {
             display: block;
             position: absolute;
-            left: -10%;
+            left: -20%;
+            max-height: 100%;
         }
     }
 

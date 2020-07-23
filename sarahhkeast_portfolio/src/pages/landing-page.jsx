@@ -12,8 +12,8 @@ import Mail from '../assets/mail.svg';
 import LinkedIn from '../assets/linkedin.svg';
 import Dribbble from '../assets/dribbble.svg';
 import ArrowRightBlue from '../assets/arrow-right-blue.svg';
-import Yokko from '../assets/yokko-home-page.png';
-import YokkoSmall from '../assets/yokko-home-page-small.png';
+import Yokko from '../assets/landing/yokko-home-page.png';
+import YokkoSmall from '../assets/landing/yokko-home-page-mobile.png';
 
 const landingPage = 'landingPage';
 
