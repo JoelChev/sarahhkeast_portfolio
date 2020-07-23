@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import classnames from 'classnames';
 
-import Footer from '../components/footer.jsx';
-import Header from '../components/header.jsx';
-import ProjectContent from '../components/project-content.jsx';
+import Footer from '../components/footer';
+import Header from '../components/header';
+import ProjectDescription from '../components/project-description';
+import ProjectContent from '../components/project-content';
 
 import Projects from '../constants/projects.json';
 
@@ -16,6 +17,18 @@ import MovemberNextProject from '../assets/movember-next-project.png';
 const projectPage = 'projectPage';
 
 class ProjectPage extends Component {
+
+    renderProjectDescription() {
+        const { projects } = Projects;
+        const { projectId } = this.props.match.params;
+        const { description } = projects[projectId];
+        return (
+            <ProjectDescription
+                text={description.text}
+                tools={description.tools}
+                date={description.date} />
+        );
+    }
 
     renderProjectContent() {
         const { projects } = Projects;
@@ -54,23 +67,9 @@ class ProjectPage extends Component {
                         </div>
                         <div className={`${projectPage}__hero-image-container`} />
                     </div>
-                    <div className={`${projectPage}__information-container`}>
-                        <div className={`${projectPage}__description-container`}>
-                            <h4 className={`${projectPage}__description-title`}>Project</h4>
-                            <p className={`${projectPage}__description-text`}>The connection between a mother and a baby begins from the moment of conception. With the mobile application Yokko, women are able to better connect with their children throughout their journey as one. Yokko enables parents carefully monitor their baby’s development without having to leverage medical personnel. </p>
-                        </div>
-                        <div className={`${projectPage}__tool-date-container`}>
-                            <div className={`${projectPage}__tools-container`}>
-                                <h4 className={`${projectPage}__tools-title`}>Tools Used</h4>
-                                <span className={`${projectPage}__tools-text`}>Sketch</span>
-                                <span className={`${projectPage}__tools-text`}>Principle</span>
-                            </div>
-                            <div className={`${projectPage}__date-container`}>
-                                <h4 className={`${projectPage}__date-title`}>Date</h4>
-                                <span className={`${projectPage}__date-text`}>January 2018</span>
-                            </div>
-                        </div>
-                    </div>
+                    {
+                        this.renderProjectDescription()
+                    }
                     <div className={`${projectPage}__content-container`}>
                         {
                             this.renderProjectContent()

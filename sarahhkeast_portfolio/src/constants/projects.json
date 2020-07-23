@@ -9,6 +9,75 @@
                     "src_mobile": "yokko-home-page-mobile"
                 }
             },
+            "hero": {
+                "title": "Meet Yokko.",
+                "subTitle": "UX/UI"
+            },
+            "description": {
+                "text": "The connection between a mother and a baby begins from the moment of conception. With the mobile application Yokko, women are able to better connect with their children throughout their journey as one. Yokko enables parents carefully monitor their baby’s development without having to leverage medical personnel.",
+                "tools": [
+                    "Sketch",
+                    "Principle"
+                ],
+                "date": "January 2018"
+            },
+            "content": [
+                {
+                    "title": "Sign Up",
+                    "text": "Quick sign up flow to get expecting mothers started.",
+                    "images": [
+                        {
+                            "src": "yokko/sign-up",
+                            "src_mobile": "yokko/sign-up-mobile",
+                            "alt_text": "Yokko Signup Screen 1"
+                        }
+                    ]
+                },
+                {
+                    "title": "Track",
+                    "text": "Check-in with Yoko every week for information about your soon to be newborn.",
+                    "images": [
+                        {
+                            "src": "yokko/track",
+                            "src_mobile": "yokko/track-mobile",
+                            "alt_text": "Yokko Track Screen 1"
+                        }
+                    ]
+                },
+                {
+                    "title": "Connect",
+                    "text": "Connect your motion tracking device to see the position and movement of your little one. ",
+                    "images": [
+                        {
+                            "src": "yokko/connect",
+                            "src_mobile": "yokko/connect-mobile",
+                            "alt_text": "Yokko Connect Screen 1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "landing": {
+                "title": "Movember Project",
+                "subTitle": "Illustration",
+                "images": {
+                    "src": "movember-home-page",
+                    "src_mobile": "movember-home-page-mobile"
+                }
+            },
+            "hero": {
+                "title": "Movember Project",
+                "subTitle": "Illustration"
+            },
+            "description": {
+                "text": "For this project, I drew 30 illustrations of moustaches over a span of 30 days to raise money and awreness for Movember. The illustrations were posted on my art instagram everyday, encouraging my following to donate towards the cause. Every illustration is named after a style of moustache in support of the initative.",
+                "tools": [
+                    "Procreate",
+                    "Figma"
+                ],
+                "date": "November 2019"
+            },
             "content": [
                 {
                     "title": "Sign Up",
