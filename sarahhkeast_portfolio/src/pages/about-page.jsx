@@ -22,12 +22,12 @@ class AboutPage extends Component {
                 <Header />
                 <div className={`${aboutPage}__content-container`}>
                     <div className={`${aboutPage}__text-container`}>
-                        <h1 className={`${aboutPage}__title`}>Hi, I'm <span className={classnames(`${aboutPage}__title`, `${aboutPage}__title--highlight`)}>Sarah -</span></h1>
+                        <h1 className={`${aboutPage}__title`}>About <span className={classnames(`${aboutPage}__title`, `${aboutPage}__title--highlight`)}>Me</span></h1>
                         <p className={`${aboutPage}__text`}>Since the day that I can remember, I have always found ways to express my creativity. Whether it be colouring the walls when I was five, to painting on people when I was twenty, I have always had a passion for bringing my ideas to life. My creativity is a large portion of who I am, and this carries through in every project I encounter. <br /><br />
-                        I am currently an Experience Designer at Konrad Group and have been with the company since June 2018. I have worked on various projects for clients such as Deloitte, Tweed, SoulCycle, and CF (Cadillac Fairview). I have also made significant contributions to the social culture of Konrad Group, hosting paint nights and smaller design power hours for my colleagues. <br /><br />
-                        I graduated with a Bachelor of Design from York University / Sheridan College in June 2018. Being apart of YSDN (York Sheridan Design) has taught me more about myself and has shown me my place in the world. My  interpersonal skills, as well as my ability to build a stronger connection with those involved in my designs will forever be strengthened by what this program has taught me. <br /><br />
-                        When I am not working, you can find me at the AGO drawing on my iPad. I love visiting the gallery whenever I can. I also enjoy travelling, taking photos and meeting new creatives. <br /><br />
-                        In anything you do, you should always keep your passions close. My ability to think outside the box and find meaning within has brought out my best when approaching any project. </p>
+                        I am currently an Experience Designer at Konrad Group and have been with the company since June 2018. I have worked on various projects for clients such as Deloitte, Tweed, SoulCycle, and Cadillac Fairview. <br /><br />
+                        I graduated with a Bachelor of Design from York University / Sheridan College in June 2018. My experience at unviersity taught me many technical skills and also developed my strong interpersonal skills. I built many excellent connections with those involved with my designs. <br /><br />
+                        When I am not working, I love visiting the Art Gallery of Ontario, where I love to draw on my iPad. I also enjoy travelling, taking photos and meeting new creatives. <br /><br />
+                        In anything I do, I always keep my passions close. My ability to think outside the box and find meaning within has brought out my best when approaching any project. </p>
                     </div>
                     <div className={`${aboutPage}__image-container`}>
                         <img className={`${aboutPage}__image`}
@@ -69,7 +69,7 @@ class AboutPage extends Component {
                             Resumé
                         </h4>
                         <a className={`${aboutPage}__resume-item`}
-                            target="_blank" rel="noopener noreferrer">
+                            href={`${process.env.PUBLIC_URL}/resume.pdf`} target="_blank" rel="noopener noreferrer">
                             <span className={`${aboutPage}__resume-text`}>Sarah Keast Resumé</span>
                             <img className={`${aboutPage}__resume-image`}
                                 src={LinkBlue}

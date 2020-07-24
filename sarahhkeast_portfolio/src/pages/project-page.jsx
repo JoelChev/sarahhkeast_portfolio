@@ -58,7 +58,10 @@ class ProjectPage extends Component {
     }
 
     render() {
+        const { projects } = Projects;
         const { projectId } = this.props.match.params;
+        //This makes a circular next-index.
+        const nextProjectId = (projects.length - (projectId + 1)) % (projects.length + 1);
         return (
             <div className={`${projectPage}`}>
                 <Header />
@@ -99,7 +102,7 @@ class ProjectPage extends Component {
                                 <h4 className={`${projectPage}__next-project-title`}>Movember Project</h4>
                                 <div className={`${projectPage}__next-project-link-container`}>
                                     <a className={`${projectPage}__next-project-link`}
-                                        href='/project'>
+                                        href={`/project/${nextProjectId}`}>
                                         <span className={`${projectPage}__next-project-link-text`}>Let's Go</span>
                                         <img className={`${projectPage}__next-project-link-image`}
                                             src={ArrowRightBlack}
