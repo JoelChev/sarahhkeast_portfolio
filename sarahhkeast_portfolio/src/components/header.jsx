@@ -16,6 +16,7 @@ const Header = () => {
     );
 
     const [showModal, setShowModal] = useState(false);
+    const [hidingModal, setHidingModal] = useState(false);
 
     const listener = e => {
         setBodyOffset(document.body.getBoundingClientRect());
@@ -36,6 +37,14 @@ const Header = () => {
     const isAboutPage = () => {
         return window.location.href.includes("about");
     };
+
+    const handleCloseModal = () => {
+        setHidingModal(true);
+        setTimeout(() => {
+            setShowModal(false);
+            setHidingModal(false);
+        }, 201);
+    }
 
     return (
 
@@ -60,10 +69,10 @@ const Header = () => {
                     <MenuModal>
                         <div className={`${menuModal}`}>
                             <div className={`${menuModal}__overlay`} />
-                            <div className={`${menuModal}__content`}>
+                            <div className={classnames(`${menuModal}__content`, hidingModal ? `${menuModal}__content--hiding` : '')}>
                                 <div className={`${menuModal}__close-button-container`}>
                                     <button className={`${menuModal}__close-button`}
-                                        onClick={() => setShowModal(false)}>
+                                        onClick={() => handleCloseModal()}>
                                         <img src={Close} />
                                     </button>
                                 </div>
