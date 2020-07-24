@@ -21,21 +21,37 @@
     &__highlight {
         width: 10px;
         background-color: $color-yellow-highlight;
-        position:absolute;
-        top:0;
-        bottom:0;
-        left: 50%;
+        position: absolute;
+        bottom: 0;
+        left: -25%;
         border-radius: 4px;
-
+        max-height: 100%;
+        animation: slide-up-highlight 0.2s ease-out forwards;
         @media (max-width: $breakpoint-tablet) {
             display: none;
         }
+        &--hiding {
+            animation: slide-down-highlight 0.2s ease-out forwards;
+        }
+    }
+
+    @keyframes slide-up-highlight
+    {
+        from {height: 0; opacity: 0;}
+        to {height: 100%; opacity: 1;}
+    }
+
+    @keyframes slide-down-highlight
+    {
+        from {height: 100%; opacity: 1;}
+        to {height: 0; opacity: 0;}
     }
 
     &__text-container {
         display: flex;
         flex: 1 1 auto;
-        align-items: flex-end;
+        align-items: flex-start;
+        margin-left: 15%;
         flex-direction: column;
         margin-right: -36px;
         z-index: 2;
@@ -101,6 +117,7 @@
         height: 484px;
         position: relative;
         width: 81%;
+        margin-left: -15%;
         @media (max-width: $breakpoint-desktop) {
             height: 332px;
         }
@@ -134,13 +151,22 @@
         left: 10%;
         max-height: 125%;
         @media (max-width: $breakpoint-desktop) and (min-width: $breakpoint-tablet) {
-            left: 0%;
-            margin-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            left: 0;
+            right: 0;
             max-width: 100%;
-            max-height: 150%;
         }
         @media (max-width: $breakpoint-tablet) {
             display: none;
+        }
+        &--center {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            left: 0;
+            right: 0;
         }
     }
 

@@ -23,19 +23,24 @@ const landingPage = 'landingPage';
 class LandingPage extends Component {
 
     state = {
-        highLightedProject: null
+        highLightedProject: null,
+        leavingHighlight: null
     }
 
     handleProjectMouseEnter = (projectId) => {
         this.setState({ highLightedProject: projectId });
     }
 
-    handleProjectMouseLeave = () => {
-        this.setState({ highLightedProject: null });
+    handleProjectMouseLeave = (projectId) => {
+        this.setState({ leavingHighlight: projectId });
+        setTimeout(() => {
+            this.setState({ highLightedProject: null });
+            this.setState({ leavingHighlight: null });
+        }, 201);
     }
 
     renderProjectCards() {
-        const { highLightedProject } = this.state;
+        const { highLightedProject, leavingHighlight } = this.state;
         const { projects } = Projects;
         return projects.map((project, index) => {
             const { landing } = project;
@@ -46,6 +51,7 @@ class LandingPage extends Component {
                     title={landing.title}
                     subTitle={landing.subTitle}
                     highLightedProject={highLightedProject}
+                    leavingHighlight={leavingHighlight}
                     handleProjectMouseEnter={this.handleProjectMouseEnter}
                     handleProjectMouseLeave={this.handleProjectMouseLeave}
                     images={landing.images} />

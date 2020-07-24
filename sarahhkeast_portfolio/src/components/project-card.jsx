@@ -1,26 +1,29 @@
 import React, { memo } from 'react';
+import classnames from 'classnames';
 import PropTypes from "prop-types";
 
 import ArrowRightBlue from '../assets/arrow-right-blue.svg';
 
 const projectCard = 'project-card';
 
-const ProjectCard = ({ id, title, subTitle, highLightedProject,
+const ProjectCard = ({ id, title, subTitle, highLightedProject, leavingHighlight,
     handleProjectMouseEnter, handleProjectMouseLeave, images }) => (
 
         <a className={`${projectCard}`}
             href={`/project/${id}`}
             onMouseEnter={() => handleProjectMouseEnter(id)}
-            onMouseLeave={() => handleProjectMouseLeave()}
+            onMouseLeave={() => handleProjectMouseLeave(id)}
             id={`project-${id}`}>
             <div className={`${projectCard}__text-container`}>
                 <div className={`${projectCard}__title-container`}>
-                    {
-                        highLightedProject === id ?
-                            <div className={`${projectCard}__highlight`} />
-                            : null
-                    }
                     <div className={`${projectCard}__title-align-container`}>
+                        {
+                            highLightedProject === id ?
+                                <div className={classnames(`${projectCard}__highlight`,
+                                    leavingHighlight === id ? `${projectCard}__highlight--hiding` : ''
+                                )} />
+                                : null
+                        }
                         <h4 className={`${projectCard}__title`}>{title}</h4>
                         <h4 className={`${projectCard}__sub-title`}>{subTitle}</h4>
                     </div>
@@ -32,7 +35,8 @@ const ProjectCard = ({ id, title, subTitle, highLightedProject,
 
             <div className={`${projectCard}__image-container`}>
                 <div className={`${projectCard}__image-background-mobile`} />
-                <img className={`${projectCard}__image`}
+                <img className={classnames(`${projectCard}__image`,
+                    images.align === 'center' ? `${projectCard}__image--center` : '')}
                     src={require(`../assets/landing/${images.src}.png`)}
                     alt={`Project ${title} image`} />
                 <img className={`${projectCard}__image-mobile`}
@@ -47,6 +51,7 @@ ProjectCard.propTypes = {
     title: PropTypes.string,
     subTitle: PropTypes.string,
     highLightedProject: PropTypes.bool,
+    leavingHighlight: PropTypes.bool,
     handleProjectMouseEnter: PropTypes.func,
     handleProjectMouseLeave: PropTypes.func,
     images: PropTypes.arrayOf(PropTypes.object),

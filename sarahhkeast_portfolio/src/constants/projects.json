@@ -5,6 +5,7 @@
                 "title": "Yokko",
                 "subTitle": "UX/UI",
                 "images": {
+                    "align": "left",
                     "src": "yokko-home-page",
                     "src_mobile": "yokko-home-page-mobile"
                 }
@@ -63,6 +64,7 @@
                 "title": "Movember\nProject",
                 "subTitle": "Illustration",
                 "images": {
+                    "align": "center",
                     "src": "movember-home-page",
                     "src_mobile": "movember-home-page-mobile"
                 }
