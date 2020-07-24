@@ -39,7 +39,7 @@
     &__content-container {
         background-color: $color-grey-background;
         @media (max-width: $breakpoint-tablet) {
-            padding: 23px 0;
+            padding: 23px 0 56px;
         }
     }
 
