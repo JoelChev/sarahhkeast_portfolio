@@ -31,6 +31,7 @@ const ProjectCard = ({ id, title, subTitle, highLightedProject,
             </div>
 
             <div className={`${projectCard}__image-container`}>
+                <div className={`${projectCard}__image-background-mobile`} />
                 <img className={`${projectCard}__image`}
                     src={require(`../assets/landing/${images.src}.png`)}
                     alt={`Project ${title} image`} />
