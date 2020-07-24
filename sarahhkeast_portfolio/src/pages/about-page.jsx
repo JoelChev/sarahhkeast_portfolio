@@ -69,7 +69,7 @@ class AboutPage extends Component {
                             Resumé
                         </h4>
                         <a className={`${aboutPage}__resume-item`}
-                            href={`${process.env.PUBLIC_URL}/resume.pdf`} target="_blank" rel="noopener noreferrer">
+                            href={`${process.env.PUBLIC_URL}/SarahKeastResume.pdf`} target="_blank" rel="noopener noreferrer">
                             <span className={`${aboutPage}__resume-text`}>Sarah Keast Resumé</span>
                             <img className={`${aboutPage}__resume-image`}
                                 src={LinkBlue}

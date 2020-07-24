@@ -57,6 +57,9 @@ const Header = () => {
                         :
                         <a className={`${header}__about`} href='/about' >About</a>
                 }
+                <a className={`${header}__resume`} href={`${process.env.PUBLIC_URL}/SarahKeastResume.pdf`} target="_blank" rel="noopener noreferrer">
+                    Resume
+                </a>
             </div>
             <div className={`${header}__mobile-container`}>
                 <button className={`${header}__mobile-menu-button`}
@@ -79,10 +82,13 @@ const Header = () => {
                                 <div className={`${menuModal}__menu-option-container`}>
                                     <a className={`${menuModal}__menu-option`} href='/'>
                                         Home
-                                </a>
+                                    </a>
                                     <a className={`${menuModal}__menu-option`} href='/about'>
                                         About
-                                </a>
+                                    </a>
+                                    <a className={`${menuModal}__menu-option`} href={`${process.env.PUBLIC_URL}/SarahKeastResume.pdf`} target="_blank" rel="noopener noreferrer">
+                                        Resume
+                                    </a>
                                 </div>
                             </div>
                         </div>

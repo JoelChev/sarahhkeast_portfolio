@@ -1,6 +1,6 @@
 .project-card {
 
-    margin: 132px 0;
+    margin: 110px 0 220px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,7 +14,7 @@
         -moz-outline-style: none;
     }
     @media (max-width: $breakpoint-tablet) {
-        margin: 56px 0;
+        margin: 56px 0 110px;
         flex-direction: column-reverse;
     }
 

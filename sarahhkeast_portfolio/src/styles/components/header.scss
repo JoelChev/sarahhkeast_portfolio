@@ -63,6 +63,19 @@
         border-bottom: 1.5px solid $color-black;
     }
 
+    &__resume {
+        color: $color-black;
+        font-weight: 600;
+        font-size: 13.2791px;
+        line-height: 33px;
+        text-decoration: none;
+        margin-left: 48px;
+        &:hover, &:active {
+            text-decoration: underline;
+            text-decoration-color: $color-black;
+        }
+    }
+
     &__mobile-container {
         display: flex;
         padding-left: 18px;
