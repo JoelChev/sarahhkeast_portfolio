@@ -6,6 +6,7 @@ import Header from '../components/header';
 import ProjectHeading from '../components/project-heading';
 import ProjectDescription from '../components/project-description';
 import ProjectContent from '../components/project-content';
+import NextProjectCard from '../components/next-project-card';
 
 import Projects from '../constants/projects.json';
 
@@ -58,10 +59,25 @@ class ProjectPage extends Component {
         });
     }
 
+    renderNextProjectCard() {
+        const { projects } = Projects;
+        const { projectId } = this.props.match.params;
+        const nextProjectId = (projects.length - (projectId + 1)) % (projects.length + 1);
+        const { nextProject } = projects[projectId];
+        return (
+            <NextProjectCard
+                nextProjectId={nextProjectId}
+                title={nextProject.title}
+                backgroundColor={nextProject.backgroundColor}
+                image={nextProject.image}
+            />
+        );
+    }
+
     render() {
         const { projects } = Projects;
         const { projectId } = this.props.match.params;
-        const { contentType } = projects[projectId];
+        const { contentType, showMoreScreensBanner } = projects[projectId];
         //This makes a circular next-index.
         const nextProjectId = (projects.length - (projectId + 1)) % (projects.length + 1);
         return (
@@ -86,40 +102,26 @@ class ProjectPage extends Component {
                             this.renderProjectContent()
                         }
                     </div>
-                    <div className={`${projectPage}__banner-container`}>
-                        <div className={`${projectPage}__banner-title-container`}>
-                            <div className={`${projectPage}__banner-title-wrapper`}>
-                                <h4 className={`${projectPage}__banner-title`}>More to come soon.</h4>
-                                <span className={`${projectPage}__banner-text`}>Hold on tight. More screens to come!</span>
-                            </div>
-                        </div>
-                        <div className={`${projectPage}__banner-image-container`}>
-                            <img className={`${projectPage}__banner-image`} src={YokkoBanner} alt="Yokko Banner Image" />
-                            <img className={`${projectPage}__banner-image-mobile`} src={YokkoBannerSmall} alt="Yokko Banner Image" />
-                        </div>
-                    </div>
-                    <div className={`${projectPage}__next-project-container`}>
-                        <div className={`${projectPage}__next-project-title-container`}>
-                            <div className={`${projectPage}__next-project-title-wrapper`}>
-                                <span className={`${projectPage}__next-project-text`}>Up Next</span>
-                                <h4 className={`${projectPage}__next-project-title`}>Movember Project</h4>
-                                <div className={`${projectPage}__next-project-link-container`}>
-                                    <a className={`${projectPage}__next-project-link`}
-                                        href={`/project/${nextProjectId}`}>
-                                        <span className={`${projectPage}__next-project-link-text`}>Let's Go</span>
-                                        <img className={`${projectPage}__next-project-link-image`}
-                                            src={ArrowRightBlack}
-                                            alt='Next Project Arrow' />
-                                    </a>
+                    {
+                        showMoreScreensBanner ?
+                            <div className={`${projectPage}__banner-container`}>
+                                <div className={`${projectPage}__banner-title-container`}>
+                                    <div className={`${projectPage}__banner-title-wrapper`}>
+                                        <h4 className={`${projectPage}__banner-title`}>More to come soon.</h4>
+                                        <span className={`${projectPage}__banner-text`}>Hold on tight. More screens to come!</span>
+                                    </div>
+                                </div>
+                                <div className={`${projectPage}__banner-image-container`}>
+                                    <img className={`${projectPage}__banner-image`} src={YokkoBanner} alt="Yokko Banner Image" />
+                                    <img className={`${projectPage}__banner-image-mobile`} src={YokkoBannerSmall} alt="Yokko Banner Image" />
                                 </div>
                             </div>
-                        </div>
-                        <div className={`${projectPage}__next-project-image-container`}>
-                            <img className={`${projectPage}__next-project-image`}
-                                src={MovemberNextProject}
-                                alt='Movember Project Toucan' />
-                        </div>
-                    </div>
+                            : null
+                    }
+
+                    {
+                        this.renderNextProjectCard()
+                    }
                     <Footer isDark={true} showIcons={true} />
                 </div>
             </div>

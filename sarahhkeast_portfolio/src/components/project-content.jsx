@@ -1,7 +1,6 @@
 import React, { memo } from 'react';
 import classnames from 'classnames';
 import PropTypes from "prop-types";
-import { render } from '@testing-library/react';
 
 const projectContent = 'project-content';
 
@@ -54,12 +53,12 @@ const ProjectContent = ({ type, title, text, images }) => {
                                 <React.Fragment>
                                     <img className={`${projectContent}__gallery-image`}
                                         src={require(`../assets/${image.src}.png`)}
-                                        alt_text={image.alt_text} />
+                                        alt={image.alt_text} />
                                     {
                                         image.src_mobile ?
                                             <img className={`${projectContent}__gallery-image-mobile`}
                                                 src={require(`../assets/${image.src_mobile}.png`)}
-                                                alt_text={image.alt_text} />
+                                                alt={image.alt_text} />
                                             : null
                                     }
                                 </React.Fragment>
