@@ -47,6 +47,7 @@ class ProjectPage extends Component {
     renderProjectContent() {
         const { projects } = Projects;
         const { projectId } = this.props.match.params;
+        const { highlightColor } = projects[projectId];
         return projects[projectId].content.map((contentItem, index) => {
             return (
                 <ProjectContent
@@ -54,7 +55,8 @@ class ProjectPage extends Component {
                     type={contentItem.type}
                     title={contentItem.title}
                     text={contentItem.text}
-                    images={contentItem.images} />
+                    images={contentItem.images}
+                    highlightColor={highlightColor} />
             );
         });
     }
@@ -62,12 +64,13 @@ class ProjectPage extends Component {
     renderNextProjectCard() {
         const { projects } = Projects;
         const { projectId } = this.props.match.params;
-        const nextProjectId = (projects.length - (projectId + 1)) % (projects.length + 1);
+        const nextProjectId = (projectId + 1) % (projects.length);
         const { nextProject } = projects[projectId];
         return (
             <NextProjectCard
                 nextProjectId={nextProjectId}
                 title={nextProject.title}
+                textColor={nextProject.textColor}
                 backgroundColor={nextProject.backgroundColor}
                 image={nextProject.image}
             />

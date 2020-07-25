@@ -2,6 +2,80 @@
     "projects": [
         {
             "landing": {
+                "title": "LiVE by CF",
+                "subTitle": "UX/UI",
+                "images": {
+                    "align": "center",
+                    "src": "cf-home-page",
+                    "src_mobile": "cf-home-page"
+                }
+            },
+            "heading": {
+                "title": "LiVE by CF",
+                "subTitle": "UX/UI",
+                "backgroundColor": "rgba(249, 191, 181, 0.5)"
+            },
+            "description": {
+                "text": "LiVE by CF is a mobile app that allows their guests to browse any CF mall from wherever you are, anytime. Our job was to help develop a new digital design system incorporating the clients new brand (designed by Juniper Park) and fix smaller user experience bugs along the way. The app update is now available for IOS and Android systems.",
+                "tools": [
+                    "Figma"
+                ],
+                "date": "August 2019 - Current"
+            },
+            "highlightColor": "#F9BFB5",
+            "showMoreScreensBanner": false,
+            "contentType": "textAndImage",
+            "content": [
+                {
+                    "type": "textAndImage",
+                    "title": "Design System",
+                    "text": "Developing a new digital system outlining typography, colour, and iconography",
+                    "images": [
+                        {
+                            "src": "cf/design-system",
+                            "src_mobile": "cf/design-system-mobile",
+                            "alt_text": "LiVE by CF Design System"
+                        }
+                    ]
+                },
+                {
+                    "type": "textAndImage",
+                    "title": "Components",
+                    "text": "Restying buttons, cards, inputs and selectors.",
+                    "images": [
+                        {
+                            "src": "cf/components",
+                            "src_mobile": "cf/components-mobile",
+                            "alt_text": "LiVE by CF Components"
+                        }
+                    ]
+                },
+                {
+                    "type": "textAndImage",
+                    "title": "App Icon",
+                    "text": "Applying new brand colours to updated logo ",
+                    "images": [
+                        {
+                            "src": "cf/app-icon",
+                            "src_mobile": "cf/app-icon-mobile",
+                            "alt_text": "LiVE by CF App Icons"
+                        }
+                    ]
+                }
+            ],
+            "nextProject": {
+                "title": "Meals TO Heal",
+                "backgroundColor": "#0f1432",
+                "textColor": "white",
+                "image": {
+                    "src": "cf/next-project-meals-to-heal",
+                    "src_mobile": "cf/next-project-meals-to-heal",
+                    "alt_text": "Movember Project Toucan"
+                }
+            }
+        },
+        {
+            "landing": {
                 "title": "Yokko",
                 "subTitle": "UX/UI",
                 "images": {
@@ -23,6 +97,7 @@
                 ],
                 "date": "January 2018"
             },
+            "highlightColor": "#FBB844",
             "showMoreScreensBanner": true,
             "contentType": "textAndImage",
             "content": [

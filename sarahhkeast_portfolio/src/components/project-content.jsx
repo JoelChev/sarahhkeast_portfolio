@@ -4,13 +4,16 @@ import PropTypes from "prop-types";
 
 const projectContent = 'project-content';
 
-const ProjectContent = ({ type, title, text, images }) => {
+const ProjectContent = ({ type, title, text, images, highlightColor }) => {
 
     const renderTextImageContent = () => {
         return (
             <React.Fragment>
                 <div className={`${projectContent}__text-highlight-container`}>
-                    <div className={`${projectContent}__highlight`} />
+                    <div className={`${projectContent}__highlight`}
+                        style={{
+                            backgroundColor: highlightColor ? highlightColor : "#FBB844"
+                        }} />
                     <div className={`${projectContent}__text-container`}>
                         <h4 className={`${projectContent}__title`}>{title}</h4>
                         <span className={`${projectContent}__text`}>{text}</span>
@@ -94,6 +97,7 @@ ProjectContent.propTypes = {
     title: PropTypes.string,
     text: PropTypes.string,
     images: PropTypes.arrayOf(PropTypes.object),
+    highlightColor: PropTypes.string,
 }
 
 export default memo(ProjectContent);

@@ -3,24 +3,34 @@ import classnames from 'classnames';
 import PropTypes from "prop-types";
 
 import ArrowRightBlack from '../assets/arrow-right-black.svg';
+import ArrowRightWhite from '../assets/arrow-right-white.svg';
 
 const nextProjectCard = 'next-project-card';
 
-const NextProjectCard = ({ nextProjectId, title, backgroundColor, image }) => (
+const NextProjectCard = ({ nextProjectId, title, textColor, backgroundColor, image }) => (
     <div className={`${nextProjectCard}`}
         style={{
             backgroundColor: backgroundColor ? backgroundColor : '$color-yokko-yellow'
         }}>
         <div className={`${nextProjectCard}__title-container`}>
             <div className={`${nextProjectCard}__title-wrapper`}>
-                <span className={`${nextProjectCard}__text`}>Up Next</span>
-                <h4 className={`${nextProjectCard}__title`}>{title}</h4>
+                <span className={`${nextProjectCard}__text`}
+                    style={{
+                        color: textColor ? textColor : ''
+                    }}>Up Next</span>
+                <h4 className={`${nextProjectCard}__title`}
+                    style={{
+                        color: textColor ? textColor : ''
+                    }}>{title}</h4>
                 <div className={`${nextProjectCard}__link-container`}>
-                    <a className={`${nextProjectCard}__link`}
+                    <a className={classnames(`${nextProjectCard}__link`, textColor === "white" ? `${nextProjectCard}__link--white` : '')}
                         href={`/project/${nextProjectId}`}>
-                        <span className={`${nextProjectCard}__link-text`}>Let's Go</span>
-                        <img className={`${NextProjectCard}__link-image`}
-                            src={ArrowRightBlack}
+                        <span className={`${nextProjectCard}__link-text`}
+                            style={{
+                                color: textColor ? textColor : ''
+                            }}>Let's Go</span>
+                        <img className={`${nextProjectCard}__link-image`}
+                            src={textColor && textColor === "white" ? ArrowRightWhite : ArrowRightBlack}
                             alt='Next Project Arrow' />
                     </a>
                 </div>
@@ -40,6 +50,7 @@ const NextProjectCard = ({ nextProjectId, title, backgroundColor, image }) => (
 NextProjectCard.propTypes = {
     nextProjectId: PropTypes.number,
     title: PropTypes.string,
+    textColor: PropTypes.string,
     backgroundColor: PropTypes.string,
     image: PropTypes.arrayOf(PropTypes.object),
 }

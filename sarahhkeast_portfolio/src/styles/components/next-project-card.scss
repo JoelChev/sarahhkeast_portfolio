@@ -89,6 +89,11 @@
             text-decoration: underline;
             text-decoration-color: $color-black;
         }
+        &--white {
+            &:hover, &:active {
+                text-decoration-color: $color-white;
+            }
+        }
     }
 
     &__link-text {
@@ -103,6 +108,8 @@
 
     &__link-image {
         margin-left: 8px;
+        width: 20px;
+        height: 15px;
         @media (max-width: $breakpoint-tablet) {
             margin-bottom: -2px;
             width: 14px;
