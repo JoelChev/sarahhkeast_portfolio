@@ -23,8 +23,10 @@
                 ],
                 "date": "January 2018"
             },
+            "contentType": "textAndImage",
             "content": [
                 {
+                    "type": "textAndImage",
                     "title": "Sign Up",
                     "text": "Quick sign up flow to get expecting mothers started.",
                     "images": [
@@ -36,6 +38,7 @@
                     ]
                 },
                 {
+                    "type": "textAndImage",
                     "title": "Track",
                     "text": "Check-in with Yoko every week for information about your soon to be newborn.",
                     "images": [
@@ -47,6 +50,7 @@
                     ]
                 },
                 {
+                    "type": "textAndImage",
                     "title": "Connect",
                     "text": "Connect your motion tracking device to see the position and movement of your little one. ",
                     "images": [
@@ -82,37 +86,210 @@
                 ],
                 "date": "November 2019"
             },
+            "contentType": "gallery",
             "content": [
                 {
-                    "title": "Sign Up",
-                    "text": "Quick sign up flow to get expecting mothers started.",
+                    "type": "gallery",
                     "images": [
                         {
-                            "src": "yokko/sign-up",
-                            "src_mobile": "yokko/sign-up-mobile",
-                            "alt_text": "Yokko Signup Screen 1"
+                            "src": "movember/img-1",
+                            "src_mobile": "movember/img-1-mobile",
+                            "alt_text": "Movember Image 1"
+                        },
+                        {
+                            "src": "movember/img-2",
+                            "src_mobile": "movember/img-2-mobile",
+                            "alt_text": "Movember Image 2"
                         }
                     ]
                 },
                 {
-                    "title": "Track",
-                    "text": "Check-in with Yoko every week for information about your soon to be newborn.",
+                    "type": "gallery",
                     "images": [
                         {
-                            "src": "yokko/track",
-                            "src_mobile": "yokko/track-mobile",
-                            "alt_text": "Yokko Track Screen 1"
+                            "src": "movember/img-3",
+                            "src_mobile": "movember/img-3-mobile",
+                            "alt_text": "Movember Image 3"
+                        },
+                        {
+                            "src": "movember/img-4",
+                            "src_mobile": "movember/img-4-mobile",
+                            "alt_text": "Movember Image 4"
                         }
                     ]
                 },
                 {
-                    "title": "Connect",
-                    "text": "Connect your motion tracking device to see the position and movement of your little one. ",
+                    "type": "gallery",
                     "images": [
                         {
-                            "src": "yokko/connect",
-                            "src_mobile": "yokko/connect-mobile",
-                            "alt_text": "Yokko Connect Screen 1"
+                            "src": "movember/img-5",
+                            "src_mobile": "movember/img-5-mobile",
+                            "alt_text": "Movember Image 5"
+                        },
+                        {
+                            "src": "movember/img-6",
+                            "src_mobile": "movember/img-6-mobile",
+                            "alt_text": "Movember Image 6"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember/img-7",
+                            "src_mobile": "movember/img-7-mobile",
+                            "alt_text": "Movember Image 7"
+                        },
+                        {
+                            "src": "movember/img-8",
+                            "src_mobile": "movember/img-8-mobile",
+                            "alt_text": "Movember Image 8"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember/img-9",
+                            "src_mobile": "movember/img-9-mobile",
+                            "alt_text": "Movember Image 9"
+                        },
+                        {
+                            "src": "movember/img-10",
+                            "src_mobile": "movember/img-10-mobile",
+                            "alt_text": "Movember Image 10"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember/img-11",
+                            "src_mobile": "movember/img-11-mobile",
+                            "alt_text": "Movember Image 11"
+                        },
+                        {
+                            "src": "movember/img-12",
+                            "src_mobile": "movember/img-12-mobile",
+                            "alt_text": "Movember Image 12"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember/img-13",
+                            "src_mobile": "movember/img-13-mobile",
+                            "alt_text": "Movember Image 13"
+                        },
+                        {
+                            "src": "movember/img-14",
+                            "src_mobile": "movember/img-14-mobile",
+                            "alt_text": "Movember Image 14"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember/img-15",
+                            "src_mobile": "movember/img-15-mobile",
+                            "alt_text": "Movember Image 15"
+                        },
+                        {
+                            "src": "movember/img-16",
+                            "src_mobile": "movember/img-16-mobile",
+                            "alt_text": "Movember Image 16"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember/img-17",
+                            "src_mobile": "movember/img-17-mobile",
+                            "alt_text": "Movember Image 17"
+                        },
+                        {
+                            "src": "movember/img-18",
+                            "src_mobile": "movember/img-18-mobile",
+                            "alt_text": "Movember Image 18"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember/img-19",
+                            "src_mobile": "movember/img-19-mobile",
+                            "alt_text": "Movember Image 19"
+                        },
+                        {
+                            "src": "movember/img-20",
+                            "src_mobile": "movember/img-20-mobile",
+                            "alt_text": "Movember Image 20"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember/img-21",
+                            "src_mobile": "movember/img-21-mobile",
+                            "alt_text": "Movember Image 21"
+                        },
+                        {
+                            "src": "movember/img-22",
+                            "src_mobile": "movember/img-22-mobile",
+                            "alt_text": "Movember Image 22"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember/img-23",
+                            "src_mobile": "movember/img-23-mobile",
+                            "alt_text": "Movember Image 23"
+                        },
+                        {
+                            "src": "movember/img-24",
+                            "src_mobile": "movember/img-24-mobile",
+                            "alt_text": "Movember Image 24"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember/img-25",
+                            "src_mobile": "movember/img-25-mobile",
+                            "alt_text": "Movember Image 25"
+                        },
+                        {
+                            "src": "movember/img-26",
+                            "src_mobile": "movember/img-26-mobile",
+                            "alt_text": "Movember Image 26"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember/img-27",
+                            "src_mobile": "movember/img-27-mobile",
+                            "alt_text": "Movember Image 27"
                         }
                     ]
                 }

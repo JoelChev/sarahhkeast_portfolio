@@ -1,11 +1,11 @@
 .project-content {
     padding: 72px 0;
     display: flex;
-    max-height: 623px;
+    //max-height: 623px;
     @media (max-width: $breakpoint-tablet) {
         flex-direction: column;
         padding: 28px 18px;
-        max-height: 424px;
+        //max-height: 424px;
         margin-bottom: 56px;
     }
 
@@ -98,6 +98,37 @@
         }
     }
 
+    &__gallery-container {
+        margin: -72px auto;
+        padding: 16px 0;
+        display: flex;
+        width: calc(100% - 32px);
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+        max-height: 1205px;
+        @media (max-width: $breakpoint-tablet) {
+            flex-direction: column;
+            padding: 0 16px;
+            margin: -56px auto;
+        }
+    }
+
+    &__gallery-image {
+        margin: 0 16px;
+        max-width: 100%;
+        max-height: 100%;
+        @media (max-width: $breakpoint-tablet) {
+            display: none;
+        }
+    }
+
+    &__gallery-image-mobile {
+        margin: 16px 0;
+        @media (min-width: $breakpoint-tablet) {
+            display: none;
+        }
+    }
 
 }
 

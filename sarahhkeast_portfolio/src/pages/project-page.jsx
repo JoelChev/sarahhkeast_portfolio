@@ -50,6 +50,7 @@ class ProjectPage extends Component {
             return (
                 <ProjectContent
                     key={`contentItem-${index}`}
+                    type={contentItem.type}
                     title={contentItem.title}
                     text={contentItem.text}
                     images={contentItem.images} />
@@ -60,6 +61,7 @@ class ProjectPage extends Component {
     render() {
         const { projects } = Projects;
         const { projectId } = this.props.match.params;
+        const { contentType } = projects[projectId];
         //This makes a circular next-index.
         const nextProjectId = (projects.length - (projectId + 1)) % (projects.length + 1);
         return (
@@ -78,7 +80,8 @@ class ProjectPage extends Component {
                     {
                         this.renderProjectDescription()
                     }
-                    <div className={`${projectPage}__content-container`}>
+                    <div className={classnames(`${projectPage}__content-container`, contentType === "gallery" ?
+                        `${projectPage}__content-container--gallery` : '')}>
                         {
                             this.renderProjectContent()
                         }

@@ -41,6 +41,13 @@
         @media (max-width: $breakpoint-tablet) {
             padding: 23px 0 56px;
         }
+        &--gallery {
+            padding: 106px 0;
+            @media (max-width: $breakpoint-tablet) {
+                padding: 0;
+                padding: 56px 0;
+            }
+        }
     }
 
     &__banner-container {
