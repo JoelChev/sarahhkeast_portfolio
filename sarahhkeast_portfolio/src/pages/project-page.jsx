@@ -13,8 +13,8 @@ import Projects from '../constants/projects.json';
 import ArrowLeftBlue from '../assets/arrow-left-blue.svg';
 import YokkoBanner from '../assets/yokko/yokko-banner.png';
 import YokkoBannerSmall from '../assets/yokko/yokko-banner-mobile.png';
-import ArrowRightBlack from '../assets/arrow-right-black.svg';
-import MovemberNextProject from '../assets/movember-next-project.png';
+import MealsToHealSocial from '../assets/meals-to-heal/print-social.png';
+import MealsToHealSocialSmall from '../assets/meals-to-heal/print-social-mobile.png';
 
 const projectPage = 'projectPage';
 
@@ -63,7 +63,8 @@ class ProjectPage extends Component {
 
     renderNextProjectCard() {
         const { projects } = Projects;
-        const { projectId } = this.props.match.params;
+        let { projectId } = this.props.match.params;
+        projectId = parseInt(projectId);
         const nextProjectId = (projectId + 1) % (projects.length);
         const { nextProject } = projects[projectId];
         return (
@@ -80,9 +81,7 @@ class ProjectPage extends Component {
     render() {
         const { projects } = Projects;
         const { projectId } = this.props.match.params;
-        const { contentType, showMoreScreensBanner } = projects[projectId];
-        //This makes a circular next-index.
-        const nextProjectId = (projects.length - (projectId + 1)) % (projects.length + 1);
+        const { contentType, showMoreScreensBanner, showMealsToHealSocialMockups } = projects[projectId];
         return (
             <div className={`${projectPage}`}>
                 <Header />
@@ -118,6 +117,15 @@ class ProjectPage extends Component {
                                     <img className={`${projectPage}__banner-image`} src={YokkoBanner} alt="Yokko Banner Image" />
                                     <img className={`${projectPage}__banner-image-mobile`} src={YokkoBannerSmall} alt="Yokko Banner Image" />
                                 </div>
+                            </div>
+                            : null
+                    }
+                    {
+                        showMealsToHealSocialMockups ?
+                            <div className={`${projectPage}__meals-to-heal-container`}>
+                                <h4 className={`${projectPage}__meals-to-heal-title`}>Meals TO Heal Print and Social Mockups</h4>
+                                <img className={`${projectPage}__meals-to-heal-image`} src={MealsToHealSocial}></img>
+                                <img className={`${projectPage}__meals-to-heal-image-mobile`} src={MealsToHealSocialSmall}></img>
                             </div>
                             : null
                     }

@@ -6,8 +6,8 @@
         @media (max-width: $breakpoint-tablet) {
             flex-direction: column;;
             height: 524px;
-            padding: 0 18px;
-            width: calc(100% - 36px);
+            padding-left: 18px;
+            width: calc(100% - 18px);
     }
 
     &__title-container {
@@ -52,11 +52,13 @@
         align-items: center;
         justify-content: flex-end;
         margin-left: -15%;
+        overflow-x: hidden;
 
         @media (max-width: $breakpoint-tablet) {
             width: 100%;
             flex-direction: row;
             align-items: baseline;
+            justify-content: flex-start;
             overflow: hidden;
             margin-left: 0;
         }

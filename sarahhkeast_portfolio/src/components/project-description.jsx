@@ -8,7 +8,11 @@ const ProjectDescription = ({ text, tools, date }) => (
     <div className={`${projectDescription}`}>
         <div className={`${projectDescription}__text-container`}>
             <h4 className={`${projectDescription}__title`}>Project</h4>
-            <p className={`${projectDescription}__text`}>{text} </p>
+            {
+                text.map(textItem => {
+                    return <p className={`${projectDescription}__text`} dangerouslySetInnerHTML={{ __html: textItem }}></p>
+                })
+            }
         </div>
         <div className={`${projectDescription}__tool-date-container`}>
             <div className={`${projectDescription}__tools-container`}>
@@ -28,7 +32,7 @@ const ProjectDescription = ({ text, tools, date }) => (
 );
 
 ProjectDescription.propTypes = {
-    text: PropTypes.string,
+    text: PropTypes.arrayOf(PropTypes.string),
     tools: PropTypes.arrayOf(PropTypes.string),
     date: PropTypes.string,
 }

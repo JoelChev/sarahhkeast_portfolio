@@ -16,7 +16,10 @@
                 "backgroundColor": "rgba(249, 191, 181, 0.5)"
             },
             "description": {
-                "text": "LiVE by CF is a mobile app that allows their guests to browse any CF mall from wherever you are, anytime. Our job was to help develop a new digital design system incorporating the clients new brand (designed by Juniper Park) and fix smaller user experience bugs along the way. The app update is now available for IOS and Android systems.",
+                "text": [
+                    "LiVE by CF is a mobile app that allows their guests to browse any CF mall from wherever you are, anytime. Our job was to help develop a new digital design system incorporating the clients new brand (designed by Juniper Park) and fix smaller user experience bugs along the way. The app update is now available for IOS and Android systems.",
+                    "Marketing Site: <a href=\"https://www.cfshops.com/livebycf.html\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.cfshops.com/livebycf.html</a>"
+                ],
                 "tools": [
                     "Figma"
                 ],
@@ -24,6 +27,7 @@
             },
             "highlightColor": "#F9BFB5",
             "showMoreScreensBanner": false,
+            "showMealsToHealSocialMockups": false,
             "contentType": "textAndImage",
             "content": [
                 {
@@ -70,7 +74,84 @@
                 "image": {
                     "src": "cf/next-project-meals-to-heal",
                     "src_mobile": "cf/next-project-meals-to-heal",
-                    "alt_text": "Movember Project Toucan"
+                    "alt_text": "Meals TO Heal Logo"
+                }
+            }
+        },
+        {
+            "landing": {
+                "title": "Meals\nTO Heal",
+                "subTitle": "Brand",
+                "images": {
+                    "align": "right",
+                    "src": "meals-to-heal-home-page",
+                    "src_mobile": "meals-to-heal-home-page"
+                }
+            },
+            "heading": {
+                "title": "Meals TO Heal",
+                "subTitle": "Brand",
+                "backgroundColor": "rgba(28,167,236, 0.5)"
+            },
+            "description": {
+                "text": [
+                    "Meals TO Heal is a volunteer-driven initiative that aims to support front line hospital staff and local businesses impacted by COVID. My task was to create an inspiring and community-focused brand that will be used for their print and digital platforms.",
+                    " Site: <a href=\"https://www.mealstoheal.ca/\" target=\"_blank\" rel=\"noopener noreferrer\">https://www.mealstoheal.ca/</a>"
+                ],
+                "tools": [
+                    "Figma"
+                ],
+                "date": "April 2020 - Current"
+            },
+            "highlightColor": "#1CA7EC",
+            "showMoreScreensBanner": false,
+            "showMealsToHealSocialMockups": true,
+            "contentType": "textAndImage",
+            "content": [
+                {
+                    "type": "textAndImage",
+                    "title": "Logo",
+                    "text": "Developed a logo to be used in a variety of formats including print, web and social media platforms.",
+                    "images": [
+                        {
+                            "src": "meals-to-heal/logo",
+                            "src_mobile": "meals-to-heal/logo",
+                            "alt_text": "Meals TO Heal Logo"
+                        }
+                    ]
+                },
+                {
+                    "type": "textAndImage",
+                    "title": "Typekit & Colours",
+                    "text": "Developed a sophisticated and inviting colour palette, paired with a clean font.",
+                    "images": [
+                        {
+                            "src": "meals-to-heal/typekit",
+                            "src_mobile": "meals-to-heal/typekit",
+                            "alt_text": "Meals TO Heal Typekit"
+                        }
+                    ]
+                },
+                {
+                    "type": "textAndImage",
+                    "title": "Visuals & Illustration",
+                    "text": "Created a visual that emphasizes community and the building blocks of Meals TO Heal. Icons are FontAwesome ",
+                    "images": [
+                        {
+                            "src": "meals-to-heal/visuals",
+                            "src_mobile": "meals-to-heal/visuals",
+                            "alt_text": "Meals TO Heal Visuals"
+                        }
+                    ]
+                }
+            ],
+            "nextProject": {
+                "title": "Yokko",
+                "backgroundColor": "#F6F9E1",
+                "image": {
+                    "src": "meals-to-heal/next-project-yokko",
+                    "src_mobile": "meals-to-heal/next-project-yokko-mobile",
+                    "alt_text": "Yokko Logo"
                 }
             }
         },
@@ -90,7 +171,9 @@
                 "backgroundColor": "#f6f9e1"
             },
             "description": {
-                "text": "The connection between a mother and a baby begins from the moment of conception. With the mobile application Yokko, women are able to better connect with their children throughout their journey as one. Yokko enables parents carefully monitor their baby’s development without having to leverage medical personnel.",
+                "text": [
+                    "The connection between a mother and a baby begins from the moment of conception. With the mobile application Yokko, women are able to better connect with their children throughout their journey as one. Yokko enables parents carefully monitor their baby’s development without having to leverage medical personnel."
+                ],
                 "tools": [
                     "Sketch",
                     "Principle"
@@ -99,6 +182,7 @@
             },
             "highlightColor": "#FBB844",
             "showMoreScreensBanner": true,
+            "showMealsToHealSocialMockups": false,
             "contentType": "textAndImage",
             "content": [
                 {
@@ -164,7 +248,9 @@
                 "backgroundColor": "#fde2b4"
             },
             "description": {
-                "text": "For this project, I drew 30 illustrations of moustaches over a span of 30 days to raise money and awreness for Movember. The illustrations were posted on my art instagram everyday, encouraging my following to donate towards the cause. Every illustration is named after a style of moustache in support of the initative.",
+                "text": [
+                    "For this project, I drew 30 illustrations of moustaches over a span of 30 days to raise money and awreness for Movember. The illustrations were posted on my art instagram everyday, encouraging my following to donate towards the cause. Every illustration is named after a style of moustache in support of the initative."
+                ],
                 "tools": [
                     "Procreate",
                     "Figma"
@@ -172,6 +258,7 @@
                 "date": "November 2019"
             },
             "showMoreScreensBanner": false,
+            "showMealsToHealSocialMockups": false,
             "contentType": "gallery",
             "content": [
                 {

@@ -169,6 +169,12 @@
             left: 0;
             right: 0;
         }
+        &--right {
+            margin-left: auto;
+            text-align: center;
+            right: 0;
+            top: 25%;
+        }
     }
 
     &__image-mobile {

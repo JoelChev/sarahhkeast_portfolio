@@ -38,6 +38,23 @@
         font-size: 14px;
         line-height: 22px;
         font-weight: normal;
+        a {
+            font-size: 14px;
+            line-height: 22px;
+            color: $color-blue-1;
+            text-decoration: none;
+            &:hover, &:active {
+                text-decoration: underline;
+                text-decoration-color: $color-blue-1;
+            }
+        }
+    }
+
+    &__text-item {
+        color: $color-black;
+        font-size: 14px;
+        line-height: 22px;
+        font-weight: normal;
     }
 
     &__tool-date-container {
