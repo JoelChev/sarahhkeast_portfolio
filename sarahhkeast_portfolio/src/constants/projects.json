@@ -216,6 +216,7 @@
                     "images": [
                         {
                             "src": "yokko/connect",
+                            "maxWidth": "50%",
                             "src_mobile": "yokko/connect-mobile",
                             "alt_text": "Yokko Connect Screen 1"
                         }

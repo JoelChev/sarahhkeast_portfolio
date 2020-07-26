@@ -103,10 +103,8 @@
         width: 50%;
         margin-left: -15%;
         @media (max-width: $breakpoint-tablet) {
-            margin-left: 0;
             width: 100%;
             margin-left: 0;
-            max-height: 84%;
         }
     }
 
@@ -122,6 +120,7 @@
     &__banner-image-mobile {
         max-width: 100%;
         max-width: 100%;
+        margin-bottom: -36px;
         @media (min-width: $breakpoint-tablet) {
             display: none;
         }

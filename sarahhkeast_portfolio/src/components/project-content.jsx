@@ -26,6 +26,9 @@ const ProjectContent = ({ type, title, text, images, highlightColor }) => {
                                 <React.Fragment>
                                     <img key={`${title}-img-${index}`}
                                         className={classnames(`${projectContent}__image`, !image.src_mobile ? `${projectContent}__image--show-mobile` : '')}
+                                        style={{
+                                            maxWidth: image.maxWidth ? image.maxWidth : "100%"
+                                        }}
                                         src={require(`../assets/${image.src}.png`)}
                                         alt={image.alt_text} />
                                     {
