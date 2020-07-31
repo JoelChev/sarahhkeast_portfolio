@@ -63,8 +63,8 @@
         @media (max-width: $breakpoint-tablet) {
             width: 100%;
             flex-direction: row;
-            align-items: baseline;
-            justify-content: flex-start;
+            align-items: center;
+            justify-content: center;
             overflow: hidden;
             margin-left: 0;
         }

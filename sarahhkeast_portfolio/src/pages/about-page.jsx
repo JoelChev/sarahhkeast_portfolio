@@ -6,7 +6,7 @@ import { EMAIL, LINKEDIN, DRIBBBLE } from '../constants/contact';
 import Header from '../components/header';
 import Footer from '../components/footer';
 
-import AboutSarah from '../assets/about_sarah.png';
+import AboutSarah from '../assets/about/about_sarah.png';
 import MailBlue from '../assets/mail-blue.svg';
 import LinkedInBlue from '../assets/linkedin-blue.svg';
 import DribbbleBlue from '../assets/dribbble-blue.svg';

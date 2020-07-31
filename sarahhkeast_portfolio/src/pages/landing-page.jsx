@@ -10,7 +10,7 @@ import ContactItem from '../components/contact-item';
 
 import Projects from '../constants/projects.json';
 
-import HeroFlowers from '../assets/hero_flowers.png';
+import HeroFlowers from '../assets/landing/hero_flowers.png';
 import Mail from '../assets/mail.svg';
 import LinkedIn from '../assets/linkedin.svg';
 import Dribbble from '../assets/dribbble.svg';

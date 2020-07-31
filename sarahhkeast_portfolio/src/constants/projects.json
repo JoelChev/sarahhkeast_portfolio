@@ -6,7 +6,7 @@
                 "subTitle": "UX/UI",
                 "images": {
                     "top": "13%",
-                    "left": "20%",
+                    "left": "25%",
                     "src": "cf-home-page",
                     "src_mobile": "cf-home-page"
                 }
@@ -66,6 +66,35 @@
                             "alt_text": "LiVE by CF App Icons"
                         }
                     ]
+                },
+                {
+                    "type": "screen-gallery",
+                    "title": "My LiVE Rebrand",
+                    "text": "Applying new brand to existing components across the application.",
+                    "textColor": "white",
+                    "backgroundColor": "#3e9fc8",
+                    "images": [
+                        {
+                            "src": "cf/li-ve-by-cf-1",
+                            "src_mobile": "cf/li-ve-by-cf-1",
+                            "alt_text": "LiVE By CF Screen 1"
+                        },
+                        {
+                            "src": "cf/li-ve-by-cf-2",
+                            "src_mobile": "cf/li-ve-by-cf-2",
+                            "alt_text": "LiVE By CF Screen 2"
+                        },
+                        {
+                            "src": "cf/li-ve-by-cf-3",
+                            "src_mobile": "cf/li-ve-by-cf-3",
+                            "alt_text": "LiVE By CF Screen 3"
+                        },
+                        {
+                            "src": "cf/li-ve-by-cf-4",
+                            "src_mobile": "cf/li-ve-by-cf-4",
+                            "alt_text": "LiVE By CF Screen 4"
+                        }
+                    ]
                 }
             ],
             "nextProject": {
@@ -87,7 +116,7 @@
                     "src": "meals-to-heal-home-page",
                     "src_mobile": "meals-to-heal-home-page-mobile",
                     "top": "13%",
-                    "left": "20%"
+                    "left": "25%"
                 }
             },
             "heading": {
@@ -143,6 +172,33 @@
                             "src": "meals-to-heal/visuals",
                             "src_mobile": "meals-to-heal/visuals",
                             "alt_text": "Meals TO Heal Visuals"
+                        }
+                    ]
+                },
+                {
+                    "type": "screen-gallery",
+                    "title": "Meals TO Heal Print and Social Mockups",
+                    "backgroundColor": "#ebedf6",
+                    "images": [
+                        {
+                            "src": "meals-to-heal/social-media",
+                            "src_mobile": "meals-to-heal/social-media-mobile",
+                            "alt_text": "Meals TO Heal Social Media"
+                        },
+                        {
+                            "src": "meals-to-heal/go-fund-me",
+                            "src_mobile": "meals-to-heal/go-fund-me-mobile",
+                            "alt_text": "Meals TO Heal Go Fund Me"
+                        },
+                        {
+                            "src": "meals-to-heal/social-media-2",
+                            "src_mobile": "meals-to-heal/social-media-2-mobile",
+                            "alt_text": "Meals TO Heal Social Media 2"
+                        },
+                        {
+                            "src": "meals-to-heal/stickers",
+                            "src_mobile": "meals-to-heal/stickers-mobile",
+                            "alt_text": "Meals TO Heal Stickers"
                         }
                     ]
                 }
@@ -242,7 +298,7 @@
                 "images": {
                     "src": "movember-home-page",
                     "top": "-5%",
-                    "left": "20%",
+                    "left": "25%",
                     "src_mobile": "movember-home-page-mobile"
                 }
             },
@@ -472,12 +528,12 @@
                 }
             ],
             "nextProject": {
-                "title": "LiVE by CF",
-                "backgroundColor": "#f9bfb5",
+                "title": "Illustration Gallery",
+                "backgroundColor": "#d9e8fe",
                 "image": {
-                    "src": "movember/next-project-cf",
-                    "src_mobile": "movember/next-project-cf",
-                    "alt_text": "LiVE by CF Screens"
+                    "src": "movember/next-project-illustration",
+                    "src_mobile": "movember/next-project-illustration-mobile",
+                    "alt_text": "Illustration Gallery Logo"
                 }
             }
         },
@@ -488,7 +544,7 @@
                 "images": {
                     "src": "illustration-home-page",
                     "top": "13%",
-                    "left": "20%",
+                    "left": "25%",
                     "src_mobile": "illustration-home-page"
                 }
             },
@@ -696,8 +752,8 @@
                 "title": "LiVE by CF",
                 "backgroundColor": "#f9bfb5",
                 "image": {
-                    "src": "movember/next-project-cf",
-                    "src_mobile": "movember/next-project-cf",
+                    "src": "illustration/next-project-cf",
+                    "src_mobile": "illustration/next-project-cf",
                     "alt_text": "LiVE by CF Screens"
                 }
             }

@@ -76,6 +76,10 @@
         white-space: pre-wrap;
         text-align: left;
 
+        @media (max-width: $breakpoint-desktop) and (min-width: $breakpoint-tablet) {
+            margin-right: -4%;
+        }
+
         @media (max-width: $breakpoint-tablet) {
             white-space: normal;
             text-align: default;

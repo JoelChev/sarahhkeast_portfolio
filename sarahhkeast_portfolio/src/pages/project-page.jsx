@@ -13,8 +13,6 @@ import Projects from '../constants/projects.json';
 import ArrowLeftBlue from '../assets/arrow-left-blue.svg';
 import YokkoBanner from '../assets/yokko/yokko-banner.png';
 import YokkoBannerSmall from '../assets/yokko/yokko-banner-mobile.png';
-import MealsToHealSocial from '../assets/meals-to-heal/print-social.png';
-import MealsToHealSocialSmall from '../assets/meals-to-heal/print-social-mobile.png';
 
 const projectPage = 'projectPage';
 
@@ -49,13 +47,16 @@ class ProjectPage extends Component {
         const { projectId } = this.props.match.params;
         const { highlightColor } = projects[projectId];
         return projects[projectId].content.map((contentItem, index) => {
+            const { backgroundColor, textColor } = contentItem;
             return (
                 <ProjectContent
                     key={`contentItem-${index}`}
                     type={contentItem.type}
                     title={contentItem.title}
                     text={contentItem.text}
+                    textColor={textColor}
                     images={contentItem.images}
+                    backgroundColor={backgroundColor}
                     highlightColor={highlightColor} />
             );
         });
@@ -120,16 +121,6 @@ class ProjectPage extends Component {
                             </div>
                             : null
                     }
-                    {
-                        showMealsToHealSocialMockups ?
-                            <div className={`${projectPage}__meals-to-heal-container`}>
-                                <h4 className={`${projectPage}__meals-to-heal-title`}>Meals TO Heal Print and Social Mockups</h4>
-                                <img className={`${projectPage}__meals-to-heal-image`} src={MealsToHealSocial}></img>
-                                <img className={`${projectPage}__meals-to-heal-image-mobile`} src={MealsToHealSocialSmall}></img>
-                            </div>
-                            : null
-                    }
-
                     {
                         this.renderNextProjectCard()
                     }

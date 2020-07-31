@@ -83,36 +83,47 @@ const ProjectContent = ({ type, title, text, textColor, images, highlightColor, 
                     style={{
                         backgroundColor: backgroundColor ? backgroundColor : 'white'
                     }}>
-                    <div className={`${projectContent}__screen-text-container`}>
-                        <h4 className={`${projectContent}__screen-title`}>
+                    <div className={classnames(`${projectContent}__screen-text-container`,
+                        text ? `${projectContent}__screen-text-container--padded-bottom` : '')}>
+                        <h4 className={classnames(`${projectContent}__screen-title`)}
+                            style={{
+                                color: textColor ? textColor : ""
+                            }}>
                             {title}
                         </h4>
-                        <span className={`${projectContent}__screen-text`}>
-                            {text}
-                        </span>
-                        <div className={`${projectContent}__images`}>
-                            {
-                                images.map((image, index) => {
-                                    return (
-                                        <React.Fragment>
-                                            <img key={`${title}-img-${index}`}
-                                                className={classnames(`${projectContent}__screen-image`, !image.src_mobile ? `${projectContent}__screen-image--show-mobile` : '')}
-                                                src={require(`../assets/${image.src}.png`)}
-                                                alt={image.alt_text} />
-                                            {
-                                                image.src_mobile ?
-                                                    <img key={`${title}-img-${index}`}
-                                                        className={`${projectContent}__screen-image-mobile`}
-                                                        src={require(`../assets/${image.src_mobile}.png`)}
-                                                        alt={image.alt_text} />
-                                                    : null
-                                            }
+                        {
+                            text ?
+                                <span className={`${projectContent}__screen-text`}
+                                    style={{
+                                        color: textColor ? textColor : ""
+                                    }}>
+                                    {text}
+                                </span>
+                                : null
+                        }
+                    </div>
+                    <div className={`${projectContent}__screen-image-container`}>
+                        {
+                            images.map((image, index) => {
+                                return (
+                                    <React.Fragment>
+                                        <img key={`${title}-img-${index}`}
+                                            className={classnames(`${projectContent}__screen-image`, !image.src_mobile ? `${projectContent}__screen-image--show-mobile` : '')}
+                                            src={require(`../assets/${image.src}.png`)}
+                                            alt={image.alt_text} />
+                                        {
+                                            image.src_mobile ?
+                                                <img key={`${title}-img-${index}`}
+                                                    className={`${projectContent}__screen-image-mobile`}
+                                                    src={require(`../assets/${image.src_mobile}.png`)}
+                                                    alt={image.alt_text} />
+                                                : null
+                                        }
 
-                                        </React.Fragment>
-                                    )
-                                })
-                            }
-                        </div>
+                                    </React.Fragment>
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </React.Fragment>
