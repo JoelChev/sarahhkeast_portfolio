@@ -28,7 +28,6 @@
             },
             "highlightColor": "#F9BFB5",
             "showMoreScreensBanner": false,
-            "showMealsToHealSocialMockups": false,
             "contentType": "textAndImage",
             "content": [
                 {
@@ -136,7 +135,6 @@
             },
             "highlightColor": "#1CA7EC",
             "showMoreScreensBanner": false,
-            "showMealsToHealSocialMockups": true,
             "contentType": "textAndImage",
             "content": [
                 {
@@ -240,7 +238,6 @@
             },
             "highlightColor": "#FBB844",
             "showMoreScreensBanner": true,
-            "showMealsToHealSocialMockups": false,
             "contentType": "textAndImage",
             "content": [
                 {
@@ -318,7 +315,6 @@
                 "date": "November 2019"
             },
             "showMoreScreensBanner": false,
-            "showMealsToHealSocialMockups": false,
             "contentType": "gallery",
             "content": [
                 {
@@ -564,7 +560,6 @@
                 "date": "2017 - Current"
             },
             "showMoreScreensBanner": false,
-            "showMealsToHealSocialMockups": false,
             "contentType": "gallery",
             "content": [
                 {
