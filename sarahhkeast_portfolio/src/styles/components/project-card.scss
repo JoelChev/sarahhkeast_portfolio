@@ -180,9 +180,10 @@
     &__image-mobile {
         display: none;
         @media (max-width: $breakpoint-tablet) {
-            display: block;
-            position: absolute;
+            display: flex;
+            margin: auto;
             max-height: 100%;
+            z-index: 2;
         }
     }
 }

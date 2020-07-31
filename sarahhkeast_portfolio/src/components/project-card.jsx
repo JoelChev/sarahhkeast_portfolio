@@ -38,6 +38,10 @@ const ProjectCard = ({ id, title, subTitle, highLightedProject, leavingHighlight
                 <img className={classnames(`${projectCard}__image`,
                     images.align === 'center' ? `${projectCard}__image--center` : '',
                     images.align === 'right' ? `${projectCard}__image--right` : '')}
+                    style={{
+                        top: images.top ? images.top : '',
+                        left: images.left ? images.left : ''
+                    }}
                     src={require(`../assets/landing/${images.src}.png`)}
                     alt={`Project ${title} image`} />
                 <img className={`${projectCard}__image-mobile`}

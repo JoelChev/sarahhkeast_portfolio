@@ -5,7 +5,8 @@
                 "title": "LiVE by CF",
                 "subTitle": "UX/UI",
                 "images": {
-                    "align": "center",
+                    "top": "13%",
+                    "left": "20%",
                     "src": "cf-home-page",
                     "src_mobile": "cf-home-page"
                 }
@@ -83,9 +84,10 @@
                 "title": "Meals\nTO Heal",
                 "subTitle": "Brand",
                 "images": {
-                    "align": "right",
                     "src": "meals-to-heal-home-page",
-                    "src_mobile": "meals-to-heal-home-page"
+                    "src_mobile": "meals-to-heal-home-page-mobile",
+                    "top": "13%",
+                    "left": "20%"
                 }
             },
             "heading": {
@@ -238,8 +240,9 @@
                 "title": "Movember\nProject",
                 "subTitle": "Illustration",
                 "images": {
-                    "align": "center",
                     "src": "movember-home-page",
+                    "top": "-5%",
+                    "left": "20%",
                     "src_mobile": "movember-home-page-mobile"
                 }
             },
@@ -464,6 +467,227 @@
                             "src": "movember/img-27",
                             "src_mobile": "movember/img-27-mobile",
                             "alt_text": "Movember Image 27"
+                        }
+                    ]
+                }
+            ],
+            "nextProject": {
+                "title": "LiVE by CF",
+                "backgroundColor": "#f9bfb5",
+                "image": {
+                    "src": "movember/next-project-cf",
+                    "src_mobile": "movember/next-project-cf",
+                    "alt_text": "LiVE by CF Screens"
+                }
+            }
+        },
+        {
+            "landing": {
+                "title": "Illustration\nGallery",
+                "subTitle": "Illustration",
+                "images": {
+                    "src": "illustration-home-page",
+                    "top": "13%",
+                    "left": "20%",
+                    "src_mobile": "illustration-home-page"
+                }
+            },
+            "heading": {
+                "title": "Illustration Gallery",
+                "subTitle": "Illustration",
+                "backgroundColor": "rgba(138, 212, 226, 0.4)"
+            },
+            "description": {
+                "text": [
+                    "This page is dedicated to all of my illustrations I have created over the past 2 years. My illustrations encompass nature, animals, plants and decorative objects. "
+                ],
+                "tools": [
+                    "Procreate",
+                    "Figma"
+                ],
+                "date": "2017 - Current"
+            },
+            "showMoreScreensBanner": false,
+            "showMealsToHealSocialMockups": false,
+            "contentType": "gallery",
+            "content": [
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-1",
+                            "src_mobile": "illustration/img-1-mobile",
+                            "alt_text": "Illustration Image 1"
+                        },
+                        {
+                            "src": "illustration/img-2",
+                            "src_mobile": "illustration/img-2-mobile",
+                            "alt_text": "Illustration Image 2"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-3",
+                            "src_mobile": "illustration/img-3-mobile",
+                            "alt_text": "Illustration Image 3"
+                        },
+                        {
+                            "src": "illustration/img-4",
+                            "src_mobile": "illustration/img-4-mobile",
+                            "alt_text": "Illustration Image 4"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-5",
+                            "src_mobile": "illustration/img-5-mobile",
+                            "alt_text": "Illustration Image 5"
+                        },
+                        {
+                            "src": "illustration/img-6",
+                            "src_mobile": "illustration/img-6-mobile",
+                            "alt_text": "Illustration Image 6"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-7",
+                            "src_mobile": "illustration/img-7-mobile",
+                            "alt_text": "Illustration Image 7"
+                        },
+                        {
+                            "src": "illustration/img-8",
+                            "src_mobile": "illustration/img-8-mobile",
+                            "alt_text": "Illustration Image 8"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-9",
+                            "src_mobile": "illustration/img-9-mobile",
+                            "alt_text": "Illustration Image 9"
+                        },
+                        {
+                            "src": "illustration/img-10",
+                            "src_mobile": "illustration/img-10-mobile",
+                            "alt_text": "Illustration Image 10"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-11",
+                            "src_mobile": "illustration/img-11-mobile",
+                            "alt_text": "Illustration Image 11"
+                        },
+                        {
+                            "src": "illustration/img-12",
+                            "src_mobile": "illustration/img-12-mobile",
+                            "alt_text": "Illustration Image 12"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-13",
+                            "src_mobile": "illustration/img-13-mobile",
+                            "alt_text": "Illustration Image 13"
+                        },
+                        {
+                            "src": "illustration/img-14",
+                            "src_mobile": "illustration/img-14-mobile",
+                            "alt_text": "Illustration Image 14"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-15",
+                            "src_mobile": "illustration/img-15-mobile",
+                            "alt_text": "Illustration Image 15"
+                        },
+                        {
+                            "src": "illustration/img-16",
+                            "src_mobile": "illustration/img-16-mobile",
+                            "alt_text": "Illustration Image 16"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-17",
+                            "src_mobile": "illustration/img-17-mobile",
+                            "alt_text": "Illustration Image 17"
+                        },
+                        {
+                            "src": "illustration/img-18",
+                            "src_mobile": "illustration/img-18-mobile",
+                            "alt_text": "Illustration Image 18"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-19",
+                            "src_mobile": "illustration/img-19-mobile",
+                            "alt_text": "Illustration Image 19"
+                        },
+                        {
+                            "src": "illustration/img-20",
+                            "src_mobile": "illustration/img-20-mobile",
+                            "alt_text": "Illustration Image 20"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-21",
+                            "src_mobile": "illustration/img-21-mobile",
+                            "alt_text": "Illustration Image 21"
+                        },
+                        {
+                            "src": "illustration/img-22",
+                            "src_mobile": "illustration/img-22-mobile",
+                            "alt_text": "Illustration Image 22"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-23",
+                            "src_mobile": "illustration/img-23-mobile",
+                            "alt_text": "Illustration Image 23"
+                        },
+                        {
+                            "src": "illustration/img-24",
+                            "src_mobile": "illustration/img-24-mobile",
+                            "alt_text": "Illustration Image 24"
                         }
                     ]
                 }

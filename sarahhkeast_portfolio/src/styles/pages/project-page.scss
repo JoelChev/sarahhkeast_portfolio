@@ -76,6 +76,7 @@
             margin-top: 56px;
             margin-left: 18px;
             align-items: flex-start;
+            width: 100%;
         }
     }
 
@@ -99,12 +100,16 @@
 
     &__banner-image-container {
         display: flex;
-        justify-content: flex-end;
-        width: 50%;
+        max-width: 75%;
         margin-left: -15%;
+        @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+            margin-left: -35%;
+        }
         @media (max-width: $breakpoint-tablet) {
             width: 100%;
-            margin-left: 0;
+            margin-left: auto;
+            align-items: flex-end;
+            justify-content: flex-end;
         }
     }
 
@@ -113,14 +118,12 @@
             display: none;
         }
         @media (min-width: $breakpoint-tablet) {
-            max-width: 200%;
+            width: 1042px;
         }
     }
 
     &__banner-image-mobile {
-        max-width: 100%;
-        max-width: 100%;
-        margin-bottom: -36px;
+        max-width: 375px;
         @media (min-width: $breakpoint-tablet) {
             display: none;
         }
