@@ -3,8 +3,10 @@
         width: 100%;
         background-color: $color-yellow-highlight;
         display: flex;
+        overflow-x: hidden;
         @media (max-width: $breakpoint-tablet) {
-            flex-direction: column;;
+            flex-direction: column;
+            justify-content: space-between;
             height: 524px;
             padding-left: 18px;
             width: calc(100% - 18px);
@@ -54,6 +56,10 @@
         margin-left: -15%;
         overflow-x: hidden;
 
+        @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop) {
+            margin-left: 0;
+            align-items: flex-start;
+        }
         @media (max-width: $breakpoint-tablet) {
             width: 100%;
             flex-direction: row;
@@ -66,6 +72,9 @@
 
     &__image {
         max-height: 100%;
+        @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-desktop){
+            overflow-x: hidden;
+        }
         @media (max-width: $breakpoint-tablet) {
             display: none;
         }
