@@ -68,9 +68,13 @@
         justify-content: flex-start;
         margin-right: 15%;
         @media (max-width: $breakpoint-tablet) {
-            margin-left: 0;
-            width: 100%;
-            justify-content: space-evenly;
+            margin: 0 auto;
+            max-width: 100%;
+            flex-direction: column;
+            align-items: center;
+            img:nth-child(n+3) {
+                padding-top: 40px;
+            }
         }
     }
     
@@ -90,11 +94,13 @@
 
     &__image-mobile {
         max-width: 100%;
-        max-height: 344px;
         display: flex;
         align-items: center;
         @media (min-width: $breakpoint-tablet) {
             display: none;
+        }
+        &--padded-top {
+            padding-top: 40px;
         }
     }
 
@@ -198,6 +204,26 @@
     &__screen-image-mobile {
         margin-bottom: 56px;
         max-width: calc(100% - 18px);
+        @media (min-width: $breakpoint-tablet) {
+            display: none;
+        }
+    }
+
+    &__screen-mobile-content-title {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 600;
+        @media (min-width: $breakpoint-tablet) {
+            display: none;
+        }
+    }
+
+    &__screen-mobile-content-image-container {
+        margin-top: 24px;
+        margin-bottom: 64px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
         @media (min-width: $breakpoint-tablet) {
             display: none;
         }

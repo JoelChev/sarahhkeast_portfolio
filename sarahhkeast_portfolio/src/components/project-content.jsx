@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const projectContent = 'project-content';
 
-const ProjectContent = ({ type, title, text, textColor, images, highlightColor, backgroundColor }) => {
+const ProjectContent = ({ type, title, text, textColor, images, mobileImageContent, highlightColor, backgroundColor }) => {
 
     const renderTextImageContent = () => {
         return (
@@ -24,17 +24,22 @@ const ProjectContent = ({ type, title, text, textColor, images, highlightColor, 
                         images.map((image, index) => {
                             return (
                                 <React.Fragment>
-                                    <img key={`${title}-img-${index}`}
-                                        className={classnames(`${projectContent}__image`, !image.src_mobile ? `${projectContent}__image--show-mobile` : '')}
-                                        style={{
-                                            maxWidth: image.maxWidth ? image.maxWidth : "100%"
-                                        }}
-                                        src={require(`../assets/${image.src}.png`)}
-                                        alt={image.alt_text} />
+                                    {
+                                        image.src ?
+                                            <img key={`${title}-img-${index}`}
+                                                className={classnames(`${projectContent}__image`, !image.src_mobile ? `${projectContent}__image--show-mobile` : '')}
+                                                style={{
+                                                    maxWidth: image.maxWidth ? image.maxWidth : "100%"
+                                                }}
+                                                src={require(`../assets/${image.src}.png`)}
+                                                alt={image.alt_text} />
+                                            : null
+                                    }
                                     {
                                         image.src_mobile ?
                                             <img key={`${title}-img-${index}`}
-                                                className={`${projectContent}__image-mobile`}
+                                                className={classnames(`${projectContent}__image-mobile`,
+                                                    image.mobile_padding_top ? `${projectContent}__image-mobile--padded-top` : '')}
                                                 src={require(`../assets/${image.src_mobile}.png`)}
                                                 alt={image.alt_text} />
                                             : null
@@ -124,6 +129,36 @@ const ProjectContent = ({ type, title, text, textColor, images, highlightColor, 
                                 )
                             })
                         }
+                        {
+                            mobileImageContent.map((imageContent, index) => {
+                                return (
+                                    <React.Fragment>
+                                        {
+                                            imageContent.title ?
+                                                <h4 key={`${imageContent.title}-${index}`}
+                                                    className={`${projectContent}__screen-mobile-content-title`}
+                                                    style={{
+                                                        color: textColor ? textColor : ""
+                                                    }}>{imageContent.title}</h4>
+                                                : null
+                                        }
+                                        <div className={`${projectContent}__screen-mobile-content-image-container`}>
+                                            {
+                                                imageContent.images.map((image, index) => {
+                                                    return (
+                                                        <img key={`${imageContent.title}-img-${index}`}
+                                                            className={`${projectContent}__screen-mobile-content-image`}
+                                                            src={require(`../assets/${image.src}.png`)}
+                                                            alt={image.alt_text} />
+                                                    )
+                                                })
+
+                                            }
+                                        </div>
+                                    </React.Fragment>
+                                )
+                            })
+                        }
                     </div>
                 </div>
             </React.Fragment>
@@ -161,6 +196,8 @@ ProjectContent.propTypes = {
     text: PropTypes.string,
     textColor: PropTypes.string,
     images: PropTypes.arrayOf(PropTypes.object),
+    //MobileImageContent is used for screen gallery component's mobile content.
+    mobileImageContent: PropTypes.arrayOf(PropTypes.object),
     highlightColor: PropTypes.string,
     backgroundColor: PropTypes.string,
 }

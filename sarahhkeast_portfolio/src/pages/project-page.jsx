@@ -56,6 +56,7 @@ class ProjectPage extends Component {
                     text={contentItem.text}
                     textColor={textColor}
                     images={contentItem.images}
+                    mobileImageContent={contentItem.mobileImageContent}
                     backgroundColor={backgroundColor}
                     highlightColor={highlightColor} />
             );

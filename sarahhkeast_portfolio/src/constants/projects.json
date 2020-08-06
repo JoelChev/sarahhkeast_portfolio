@@ -37,15 +37,24 @@
                     "images": [
                         {
                             "src": "cf/design-system",
-                            "src_mobile": "cf/design-system-mobile",
+                            "src_mobile": "cf/design-system-1-mobile",
+                            "mobile_padding_top": true,
                             "alt_text": "LiVE by CF Design System"
+                        },
+                        {
+                            "src_mobile": "cf/design-system-2-mobile",
+                            "alt_text": "LiVE by CF Design System 2"
+                        },
+                        {
+                            "src_mobile": "cf/design-system-3-mobile",
+                            "alt_text": "LiVE by CF Design System 3"
                         }
                     ]
                 },
                 {
                     "type": "textAndImage",
                     "title": "Components",
-                    "text": "Restying buttons, cards, inputs and selectors.",
+                    "text": "Restyling buttons, cards, inputs and selectors.",
                     "images": [
                         {
                             "src": "cf/components",
@@ -69,29 +78,109 @@
                 {
                     "type": "screen-gallery",
                     "title": "My LiVE Rebrand",
-                    "text": "Applying new brand to existing components across the application.",
+                    "text": "Applying a new brand to existing components across the application.",
                     "textColor": "white",
                     "backgroundColor": "#3e9fc8",
                     "images": [
                         {
                             "src": "cf/li-ve-by-cf-1",
-                            "src_mobile": "cf/li-ve-by-cf-1",
                             "alt_text": "LiVE By CF Screen 1"
                         },
                         {
                             "src": "cf/li-ve-by-cf-2",
-                            "src_mobile": "cf/li-ve-by-cf-2",
                             "alt_text": "LiVE By CF Screen 2"
                         },
                         {
                             "src": "cf/li-ve-by-cf-3",
-                            "src_mobile": "cf/li-ve-by-cf-3",
                             "alt_text": "LiVE By CF Screen 3"
                         },
                         {
                             "src": "cf/li-ve-by-cf-4",
-                            "src_mobile": "cf/li-ve-by-cf-4",
                             "alt_text": "LiVE By CF Screen 4"
+                        }
+                    ],
+                    "mobileImageContent": [
+                        {
+                            "title": "Browse",
+                            "images": [
+                                {
+                                    "src": "cf/browse-mobile",
+                                    "alt_text": "LiVE By CF Browse Screen"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Search",
+                            "images": [
+                                {
+                                    "src": "cf/search-mobile",
+                                    "alt_text": "LiVE By CF Search Screen"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "View Products",
+                            "images": [
+                                {
+                                    "src": "cf/view-products-mobile",
+                                    "alt_text": "LiVE By CF View Products Screen"
+                                },
+                                {
+                                    "src": "cf/view-products-2-mobile",
+                                    "alt_text": "LiVE By CF View Products Screen 2"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "More Menu",
+                            "images": [
+                                {
+                                    "src": "cf/more-mobile",
+                                    "alt_text": "LiVE By CF More Menu Screen"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Favourite Products & Offers",
+                            "images": [
+                                {
+                                    "src": "cf/favourite-mobile",
+                                    "alt_text": "LiVE By CF Favourite Products Screen"
+                                },
+                                {
+                                    "src": "cf/favourite-2-mobile",
+                                    "alt_text": "LiVE By CF Favourite Products Screen 2"
+                                },
+                                {
+                                    "src": "cf/favourite-3-mobile",
+                                    "alt_text": "LiVE By CF Favourite Products Screen 3"
+                                },
+                                {
+                                    "src": "cf/favourite-4-mobile",
+                                    "alt_text": "LiVE By CF Favourite Products Screen 4"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Navigate",
+                            "images": [
+                                {
+                                    "src": "cf/navigate-mobile",
+                                    "alt_text": "LiVE By CF Navigate Screen"
+                                },
+                                {
+                                    "src": "cf/navigate-2-mobile",
+                                    "alt_text": "LiVE By CF Navigate Screen 2"
+                                },
+                                {
+                                    "src": "cf/navigate-3-mobile",
+                                    "alt_text": "LiVE By CF Navigate Screen 3"
+                                },
+                                {
+                                    "src": "cf/navigate-4-mobile",
+                                    "alt_text": "LiVE By CF Navigate Screen 4"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -306,7 +395,7 @@
             },
             "description": {
                 "text": [
-                    "For this project, I drew 30 illustrations of moustaches over a span of 30 days to raise money and awreness for Movember. The illustrations were posted on my art instagram everyday, encouraging my following to donate towards the cause. Every illustration is named after a style of moustache in support of the initative."
+                    "For this project, I drew 30 illustrations of moustaches over a span of 30 days to raise money and awareness for Movember. The illustrations were posted on my art instagram everyday, encouraging my following to donate towards the cause. Every illustration is named after a style of moustache in support of the initiative."
                 ],
                 "tools": [
                     "Procreate",
