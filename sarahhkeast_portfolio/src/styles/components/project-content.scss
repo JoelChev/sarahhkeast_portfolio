@@ -69,7 +69,7 @@
         margin-right: 15%;
         @media (max-width: $breakpoint-tablet) {
             margin: 0 auto;
-            max-width: 100%;
+            width: 100%;
             flex-direction: column;
             align-items: center;
             img:nth-child(n+3) {
@@ -173,8 +173,15 @@
         font-weight: 600;
         @media (max-width: $breakpoint-tablet) {
             margin-top: 56px;
-            font-size: 24px;
-            line-height: 22px;
+            font-size: 18px;
+            line-height: 28px;
+        }
+        &--large {
+            @media (max-width: $breakpoint-tablet) {
+                margin-top: 56px;
+                font-size: 24px;
+                line-height: 22px;
+            }
         }
     }
 

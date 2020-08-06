@@ -53,6 +53,7 @@ class ProjectPage extends Component {
                     key={`contentItem-${index}`}
                     type={contentItem.type}
                     title={contentItem.title}
+                    titleSize={contentItem.titleSize}
                     text={contentItem.text}
                     textColor={textColor}
                     images={contentItem.images}

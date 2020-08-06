@@ -39,14 +39,17 @@
                             "src": "cf/design-system",
                             "src_mobile": "cf/design-system-1-mobile",
                             "mobile_padding_top": true,
+                            "mobile_large": true,
                             "alt_text": "LiVE by CF Design System"
                         },
                         {
                             "src_mobile": "cf/design-system-2-mobile",
+                            "mobile_large": true,
                             "alt_text": "LiVE by CF Design System 2"
                         },
                         {
                             "src_mobile": "cf/design-system-3-mobile",
+                            "mobile_large": true,
                             "alt_text": "LiVE by CF Design System 3"
                         }
                     ]
@@ -78,6 +81,7 @@
                 {
                     "type": "screen-gallery",
                     "title": "My LiVE Rebrand",
+                    "titleSize": "large",
                     "text": "Applying a new brand to existing components across the application.",
                     "textColor": "white",
                     "backgroundColor": "#3e9fc8",
@@ -233,7 +237,8 @@
                     "images": [
                         {
                             "src": "meals-to-heal/logo",
-                            "src_mobile": "meals-to-heal/logo",
+                            "src_mobile": "meals-to-heal/logo-mobile",
+                            "mobile_large": true,
                             "alt_text": "Meals TO Heal Logo"
                         }
                     ]
@@ -245,7 +250,8 @@
                     "images": [
                         {
                             "src": "meals-to-heal/typekit",
-                            "src_mobile": "meals-to-heal/typekit",
+                            "src_mobile": "meals-to-heal/typekit-mobile",
+                            "mobile_large": true,
                             "alt_text": "Meals TO Heal Typekit"
                         }
                     ]
@@ -257,7 +263,8 @@
                     "images": [
                         {
                             "src": "meals-to-heal/visuals",
-                            "src_mobile": "meals-to-heal/visuals",
+                            "src_mobile": "meals-to-heal/visuals-mobile",
+                            "mobile_large": true,
                             "alt_text": "Meals TO Heal Visuals"
                         }
                     ]

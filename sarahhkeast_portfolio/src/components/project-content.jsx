@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const projectContent = 'project-content';
 
-const ProjectContent = ({ type, title, text, textColor, images, mobileImageContent, highlightColor, backgroundColor }) => {
+const ProjectContent = ({ type, title, titleSize, text, textColor, images, mobileImageContent, highlightColor, backgroundColor }) => {
 
     const renderTextImageContent = () => {
         return (
@@ -40,7 +40,8 @@ const ProjectContent = ({ type, title, text, textColor, images, mobileImageConte
                                             <img key={`${title}-img-${index}`}
                                                 className={classnames(`${projectContent}__image-mobile`,
                                                     image.mobile_padding_top ? `${projectContent}__image-mobile--padded-top` : '',
-                                                    images.length > 1 ? `${projectContent}__image-mobile--large` : '')}
+                                                    images.length > 1 ? `${projectContent}__image-mobile--large` : '',
+                                                    image.mobile_large ? `${projectContent}__image-mobile--large` : '')}
                                                 src={require(`../assets/${image.src_mobile}.png`)}
                                                 alt={image.alt_text} />
                                             : null
@@ -91,7 +92,8 @@ const ProjectContent = ({ type, title, text, textColor, images, mobileImageConte
                     }}>
                     <div className={classnames(`${projectContent}__screen-text-container`,
                         text ? `${projectContent}__screen-text-container--padded-bottom` : '')}>
-                        <h4 className={classnames(`${projectContent}__screen-title`)}
+                        <h4 className={classnames(`${projectContent}__screen-title`,
+                            titleSize == 'large' ? `${projectContent}__screen-title--large` : '')}
                             style={{
                                 color: textColor ? textColor : ""
                             }}>
@@ -197,6 +199,8 @@ ProjectContent.propTypes = {
     type: PropTypes.string,
     title: PropTypes.string,
     text: PropTypes.string,
+    //TitleSize configures if the title is larger or not (only for screen gallery right now)
+    titleSize: PropTypes.string,
     textColor: PropTypes.string,
     images: PropTypes.arrayOf(PropTypes.object),
     //MobileImageContent is used for screen gallery component's mobile content.
