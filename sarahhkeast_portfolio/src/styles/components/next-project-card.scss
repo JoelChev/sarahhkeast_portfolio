@@ -9,7 +9,8 @@
             justify-content: space-between;
             height: 524px;
             padding-left: 18px;
-            width: calc(100% - 18px);
+            padding-right: 18px;
+            width: calc(100% - 36px);
     }
 
     &__title-container {
@@ -81,7 +82,7 @@
     }
 
     &__image-mobile {
-        max-height: 100%;
+        max-width: 100%;
         @media (min-width: $breakpoint-tablet) {
             display: none;
         }

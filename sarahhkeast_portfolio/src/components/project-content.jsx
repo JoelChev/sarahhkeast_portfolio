@@ -136,7 +136,7 @@ const ProjectContent = ({ type, title, titleSize, text, textColor, images, mobil
                             mobileImageContent ?
                                 mobileImageContent.map((imageContent, index) => {
                                     return (
-                                        <React.Fragment>
+                                        <div className={`${projectContent}__screen-mobile-content-container`}>
                                             {
                                                 imageContent.title ?
                                                     <h4 key={`${imageContent.title}-${index}`}
@@ -144,6 +144,15 @@ const ProjectContent = ({ type, title, titleSize, text, textColor, images, mobil
                                                         style={{
                                                             color: textColor ? textColor : ""
                                                         }}>{imageContent.title}</h4>
+                                                    : null
+                                            }
+                                            {
+                                                imageContent.text ?
+                                                    <span key={`${imageContent.text}-${index}`}
+                                                        className={`${projectContent}__screen-mobile-content-text`}
+                                                        style={{
+                                                            color: textColor ? textColor : ""
+                                                        }}>{imageContent.text}</span>
                                                     : null
                                             }
                                             <div className={`${projectContent}__screen-mobile-content-image-container`}>
@@ -159,7 +168,8 @@ const ProjectContent = ({ type, title, titleSize, text, textColor, images, mobil
 
                                                 }
                                             </div>
-                                        </React.Fragment>
+                                        </div>
+
                                     )
                                 })
                                 : null

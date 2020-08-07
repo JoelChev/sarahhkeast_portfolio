@@ -276,23 +276,56 @@
                     "images": [
                         {
                             "src": "meals-to-heal/social-media",
-                            "src_mobile": "meals-to-heal/social-media-mobile",
                             "alt_text": "Meals TO Heal Social Media"
                         },
                         {
                             "src": "meals-to-heal/go-fund-me",
-                            "src_mobile": "meals-to-heal/go-fund-me-mobile",
                             "alt_text": "Meals TO Heal Go Fund Me"
                         },
                         {
                             "src": "meals-to-heal/social-media-2",
-                            "src_mobile": "meals-to-heal/social-media-2-mobile",
                             "alt_text": "Meals TO Heal Social Media 2"
                         },
                         {
                             "src": "meals-to-heal/stickers",
-                            "src_mobile": "meals-to-heal/stickers-mobile",
                             "alt_text": "Meals TO Heal Stickers"
+                        }
+                    ],
+                    "mobileImageContent": [
+                        {
+                            "title": "Social Media Mockups",
+                            "images": [
+                                {
+                                    "src": "meals-to-heal/social-media-mobile",
+                                    "alt_text": "Meals TO Heal Social Media"
+                                }
+                            ]
+                        },
+                        {
+                            "images": [
+                                {
+                                    "src": "meals-to-heal/go-fund-me-mobile",
+                                    "alt_text": "Meals TO Heal Social Media"
+                                }
+                            ]
+                        },
+                        {
+                            "images": [
+                                {
+                                    "src": "meals-to-heal/social-media-2-mobile",
+                                    "alt_text": "Meals TO Heal Social Media"
+                                }
+                            ]
+                        },
+                        {
+                            "title": "Printed Stickers",
+                            "text": "Used stickers to send positive messages to front-line workers",
+                            "images": [
+                                {
+                                    "src": "meals-to-heal/stickers-mobile",
+                                    "alt_text": "Meals TO Heal Stickers"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -844,7 +877,7 @@
                 "backgroundColor": "#f9bfb5",
                 "image": {
                     "src": "illustration/next-project-cf",
-                    "src_mobile": "illustration/next-project-cf",
+                    "src_mobile": "illustration/next-project-cf-mobile",
                     "alt_text": "LiVE by CF Screens"
                 }
             }

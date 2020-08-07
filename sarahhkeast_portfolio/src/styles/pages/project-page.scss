@@ -125,12 +125,12 @@
             display: none;
         }
         @media (min-width: $breakpoint-tablet) {
-            // width: 1042px;
+            max-width: 790px;
         }
     }
 
     &__banner-image-mobile {
-        // max-width: 375px;
+        max-width: 375px;
         @media (min-width: $breakpoint-tablet) {
             display: none;
         }
