@@ -259,6 +259,7 @@
         margin-left: auto;
         margin-right: auto;
         display: grid;
+        justify-content: center;
         @media (min-width: $breakpoint-tablet) {
             display: none;
         }

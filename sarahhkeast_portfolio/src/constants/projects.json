@@ -62,6 +62,7 @@
                         {
                             "src": "cf/components",
                             "src_mobile": "cf/components-mobile",
+                            "mobile_large": true,
                             "alt_text": "LiVE by CF Components"
                         }
                     ]
@@ -74,6 +75,7 @@
                         {
                             "src": "cf/app-icon",
                             "src_mobile": "cf/app-icon-mobile",
+                            "mobile_large": true,
                             "alt_text": "LiVE by CF App Icons"
                         }
                     ]
