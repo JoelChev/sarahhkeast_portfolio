@@ -42,6 +42,7 @@
                             "mobile_title": "Typekit",
                             "mobile_padding_top": true,
                             "mobile_large": true,
+                            "mobile_max_width": "615px",
                             "alt_text": "LiVE by CF Design System"
                         },
                         {

@@ -48,6 +48,9 @@ const ProjectContent = ({ type, title, titleSize, text, textColor, images, align
                                                     image.mobile_padding_top ? `${projectContent}__image-mobile--padded-top` : '',
                                                     images.length > 1 ? `${projectContent}__image-mobile--large` : '',
                                                     image.mobile_large ? `${projectContent}__image-mobile--large` : '')}
+                                                style={{
+                                                    maxHeight: image.mobile_max_height ? image.mobile_max_height : ""
+                                                }}
                                                 src={require(`../assets/${image.src_mobile}.png`)}
                                                 alt={image.alt_text} />
                                             : null
