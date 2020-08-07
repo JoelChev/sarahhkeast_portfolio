@@ -76,6 +76,11 @@
                 padding-top: 40px;
             }
         }
+        &--left-mobile {
+            @media (max-width: $breakpoint-tablet) {
+            align-items: flex-start;
+            }
+        }
     }
     
     &__image {
@@ -89,6 +94,17 @@
                 display: flex;
                 align-items: center;;
             }
+        }
+    }
+
+    &__image-mobile-title {
+        font-size: 18px;
+        line-height: 38px;
+        color: $color-black;
+        margin-top: 40px;
+        margin-bottom: 18px;
+        @media (min-width: $breakpoint-tablet) {
+            display: none;
         }
     }
 

@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const projectContent = 'project-content';
 
-const ProjectContent = ({ type, title, titleSize, text, textColor, images, mobileImageContent, highlightColor, backgroundColor }) => {
+const ProjectContent = ({ type, title, titleSize, text, textColor, images, alignMobileImages, mobileImageContent, highlightColor, backgroundColor }) => {
 
     const renderTextImageContent = () => {
         return (
@@ -19,11 +19,17 @@ const ProjectContent = ({ type, title, titleSize, text, textColor, images, mobil
                         <span className={`${projectContent}__text`}>{text}</span>
                     </div>
                 </div>
-                <div className={`${projectContent}__content-images`}>
+                <div className={classnames(`${projectContent}__content-images`,
+                    alignMobileImages == 'left' ? `${projectContent}__content-images--left-mobile` : '')}>
                     {
                         images.map((image, index) => {
                             return (
                                 <React.Fragment>
+                                    {
+                                        image.mobile_title ?
+                                            <h4 className={`${projectContent}__image-mobile-title`}>{image.mobile_title}</h4>
+                                            : null
+                                    }
                                     {
                                         image.src ?
                                             <img key={`${title}-img-${index}`}
@@ -213,6 +219,8 @@ ProjectContent.propTypes = {
     titleSize: PropTypes.string,
     textColor: PropTypes.string,
     images: PropTypes.arrayOf(PropTypes.object),
+    //AlignMobileImages is used to line up mobile textImages.
+    alignMobileImages: PropTypes.string,
     //MobileImageContent is used for screen gallery component's mobile content.
     mobileImageContent: PropTypes.arrayOf(PropTypes.object),
     highlightColor: PropTypes.string,

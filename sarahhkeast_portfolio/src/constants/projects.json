@@ -34,21 +34,25 @@
                     "type": "textAndImage",
                     "title": "Design System",
                     "text": "Developing a new digital system outlining typography, colour, and iconography",
+                    "alignMobileImages": "left",
                     "images": [
                         {
                             "src": "cf/design-system",
                             "src_mobile": "cf/design-system-1-mobile",
+                            "mobile_title": "Typekit",
                             "mobile_padding_top": true,
                             "mobile_large": true,
                             "alt_text": "LiVE by CF Design System"
                         },
                         {
                             "src_mobile": "cf/design-system-2-mobile",
+                            "mobile_title": "Colours",
                             "mobile_large": true,
                             "alt_text": "LiVE by CF Design System 2"
                         },
                         {
                             "src_mobile": "cf/design-system-3-mobile",
+                            "mobile_title": "Iconography",
                             "mobile_large": true,
                             "alt_text": "LiVE by CF Design System 3"
                         }
