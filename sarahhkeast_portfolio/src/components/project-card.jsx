@@ -47,6 +47,9 @@ const ProjectCard = ({ id, title, subTitle, highLightedProject, leavingHighlight
                     alt={`Project ${title} image`} />
                 <img className={`${projectCard}__image-mobile`}
                     src={require(`../assets/landing/${images.src_mobile}.png`)}
+                    style={{
+                        maxHeight: images.maxHeightMobile ? images.maxHeightMobile : '',
+                    }}
                     alt={`Project ${title} image`} />
             </div>
         </a>

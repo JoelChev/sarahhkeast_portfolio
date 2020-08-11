@@ -9,7 +9,7 @@
                     "left": "25%",
                     "maxHeight": "100%",
                     "src": "cf-home-page",
-                    "src_mobile": "cf-home-page"
+                    "src_mobile": "cf-home-page-mobile"
                 }
             },
             "heading": {
@@ -116,6 +116,15 @@
                         }
                     ],
                     "mobileImageContent": [
+                        {
+                            "title": "Loading Screen",
+                            "images": [
+                                {
+                                    "src": "cf/load-mobile",
+                                    "alt_text": "LiVE By CF Load Screen"
+                                }
+                            ]
+                        },
                         {
                             "title": "Browse",
                             "images": [
@@ -712,7 +721,8 @@
                     "top": "13%",
                     "left": "25%",
                     "maxHeight": "100%",
-                    "src_mobile": "illustration-home-page"
+                    "src_mobile": "illustration-home-page-mobile",
+                    "maxHeightMobile": "260px"
                 }
             },
             "heading": {
@@ -738,11 +748,13 @@
                     "images": [
                         {
                             "src": "illustration/img-1",
+                            "maxHeight": "675px",
                             "src_mobile": "illustration/img-1-mobile",
                             "alt_text": "Illustration Image 1"
                         },
                         {
                             "src": "illustration/img-2",
+                            "maxHeight": "675px",
                             "src_mobile": "illustration/img-2-mobile",
                             "alt_text": "Illustration Image 2"
                         }
@@ -753,11 +765,13 @@
                     "images": [
                         {
                             "src": "illustration/img-3",
+                            "maxHeight": "627px",
                             "src_mobile": "illustration/img-3-mobile",
                             "alt_text": "Illustration Image 3"
                         },
                         {
                             "src": "illustration/img-4",
+                            "maxHeight": "627px",
                             "src_mobile": "illustration/img-4-mobile",
                             "alt_text": "Illustration Image 4"
                         }
@@ -768,11 +782,13 @@
                     "images": [
                         {
                             "src": "illustration/img-5",
+                            "maxHeight": "627px",
                             "src_mobile": "illustration/img-5-mobile",
                             "alt_text": "Illustration Image 5"
                         },
                         {
                             "src": "illustration/img-6",
+                            "maxHeight": "627px",
                             "src_mobile": "illustration/img-6-mobile",
                             "alt_text": "Illustration Image 6"
                         }
@@ -783,11 +799,13 @@
                     "images": [
                         {
                             "src": "illustration/img-7",
+                            "maxHeight": "386px",
                             "src_mobile": "illustration/img-7-mobile",
                             "alt_text": "Illustration Image 7"
                         },
                         {
                             "src": "illustration/img-8",
+                            "maxHeight": "438px",
                             "src_mobile": "illustration/img-8-mobile",
                             "alt_text": "Illustration Image 8"
                         }
@@ -798,11 +816,13 @@
                     "images": [
                         {
                             "src": "illustration/img-9",
+                            "maxHeight": "438px",
                             "src_mobile": "illustration/img-9-mobile",
                             "alt_text": "Illustration Image 9"
                         },
                         {
                             "src": "illustration/img-10",
+                            "maxHeight": "438px",
                             "src_mobile": "illustration/img-10-mobile",
                             "alt_text": "Illustration Image 10"
                         }
@@ -813,11 +833,13 @@
                     "images": [
                         {
                             "src": "illustration/img-11",
+                            "maxHeight": "438px",
                             "src_mobile": "illustration/img-11-mobile",
                             "alt_text": "Illustration Image 11"
                         },
                         {
                             "src": "illustration/img-12",
+                            "maxHeight": "273px",
                             "src_mobile": "illustration/img-12-mobile",
                             "alt_text": "Illustration Image 12"
                         }
@@ -828,11 +850,13 @@
                     "images": [
                         {
                             "src": "illustration/img-13",
+                            "maxHeight": "584px",
                             "src_mobile": "illustration/img-13-mobile",
                             "alt_text": "Illustration Image 13"
                         },
                         {
                             "src": "illustration/img-14",
+                            "maxHeight": "584px",
                             "src_mobile": "illustration/img-14-mobile",
                             "alt_text": "Illustration Image 14"
                         }
@@ -843,11 +867,13 @@
                     "images": [
                         {
                             "src": "illustration/img-15",
+                            "maxHeight": "584px",
                             "src_mobile": "illustration/img-15-mobile",
                             "alt_text": "Illustration Image 15"
                         },
                         {
                             "src": "illustration/img-16",
+                            "maxHeight": "584px",
                             "src_mobile": "illustration/img-16-mobile",
                             "alt_text": "Illustration Image 16"
                         }
@@ -858,11 +884,13 @@
                     "images": [
                         {
                             "src": "illustration/img-17",
+                            "maxHeight": "438px",
                             "src_mobile": "illustration/img-17-mobile",
                             "alt_text": "Illustration Image 17"
                         },
                         {
                             "src": "illustration/img-18",
+                            "maxHeight": "438px",
                             "src_mobile": "illustration/img-18-mobile",
                             "alt_text": "Illustration Image 18"
                         }
@@ -873,11 +901,13 @@
                     "images": [
                         {
                             "src": "illustration/img-19",
+                            "maxHeight": "438px",
                             "src_mobile": "illustration/img-19-mobile",
                             "alt_text": "Illustration Image 19"
                         },
                         {
                             "src": "illustration/img-20",
+                            "maxHeight": "584px",
                             "src_mobile": "illustration/img-20-mobile",
                             "alt_text": "Illustration Image 20"
                         }
@@ -888,11 +918,13 @@
                     "images": [
                         {
                             "src": "illustration/img-21",
+                            "maxHeight": "584px",
                             "src_mobile": "illustration/img-21-mobile",
                             "alt_text": "Illustration Image 21"
                         },
                         {
                             "src": "illustration/img-22",
+                            "maxHeight": "584px",
                             "src_mobile": "illustration/img-22-mobile",
                             "alt_text": "Illustration Image 22"
                         }
@@ -903,13 +935,27 @@
                     "images": [
                         {
                             "src": "illustration/img-23",
+                            "maxHeight": "584px",
                             "src_mobile": "illustration/img-23-mobile",
                             "alt_text": "Illustration Image 23"
                         },
                         {
                             "src": "illustration/img-24",
+                            "maxHeight": "328px",
                             "src_mobile": "illustration/img-24-mobile",
                             "alt_text": "Illustration Image 24"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-25",
+                            "maxHeight": "304px",
+                            "src_mobile": "illustration/img-25",
+                            "maxHeightMobile": "304px",
+                            "alt_text": "Illustration Image 25"
                         }
                     ]
                 }
