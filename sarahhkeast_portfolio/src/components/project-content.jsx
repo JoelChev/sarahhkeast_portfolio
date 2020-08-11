@@ -74,6 +74,7 @@ const ProjectContent = ({ type, title, titleSize, text, textColor, images, align
                             return (
                                 <React.Fragment>
                                     <img className={`${projectContent}__gallery-image`}
+                                        style={{ maxHeight: image.maxHeight ? image.maxHeight : '' }}
                                         src={require(`../assets/${image.src}.png`)}
                                         alt={image.alt_text} />
                                     {
@@ -126,6 +127,7 @@ const ProjectContent = ({ type, title, titleSize, text, textColor, images, align
                                     <React.Fragment>
                                         <img key={`${title}-img-${index}`}
                                             className={classnames(`${projectContent}__screen-image`, !image.src_mobile ? `${projectContent}__screen-image--show-mobile` : '')}
+                                            style={{ maxHeight: image.maxHeight ? image.maxHeight : '' }}
                                             src={require(`../assets/${image.src}.png`)}
                                             alt={image.alt_text} />
                                         {

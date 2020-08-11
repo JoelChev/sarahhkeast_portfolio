@@ -7,6 +7,7 @@
                 "images": {
                     "top": "13%",
                     "left": "25%",
+                    "maxHeight": "100%",
                     "src": "cf-home-page",
                     "src_mobile": "cf-home-page"
                 }
@@ -95,18 +96,22 @@
                     "images": [
                         {
                             "src": "cf/li-ve-by-cf-1",
+                            "maxHeight": "501px",
                             "alt_text": "LiVE By CF Screen 1"
                         },
                         {
                             "src": "cf/li-ve-by-cf-2",
+                            "maxHeight": "501px",
                             "alt_text": "LiVE By CF Screen 2"
                         },
                         {
                             "src": "cf/li-ve-by-cf-3",
+                            "maxHeight": "501px",
                             "alt_text": "LiVE By CF Screen 3"
                         },
                         {
                             "src": "cf/li-ve-by-cf-4",
+                            "maxHeight": "501px",
                             "alt_text": "LiVE By CF Screen 4"
                         }
                     ],
@@ -342,7 +347,9 @@
                 "backgroundColor": "#F6F9E1",
                 "image": {
                     "src": "meals-to-heal/next-project-yokko",
+                    "maxHeight": "350px",
                     "src_mobile": "meals-to-heal/next-project-yokko-mobile",
+                    "maxHeightMobile": "303px",
                     "alt_text": "Yokko Logo"
                 }
             }
@@ -458,11 +465,13 @@
                     "images": [
                         {
                             "src": "movember/img-1",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-1-mobile",
                             "alt_text": "Movember Image 1"
                         },
                         {
                             "src": "movember/img-2",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-2-mobile",
                             "alt_text": "Movember Image 2"
                         }
@@ -473,11 +482,13 @@
                     "images": [
                         {
                             "src": "movember/img-3",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-3-mobile",
                             "alt_text": "Movember Image 3"
                         },
                         {
                             "src": "movember/img-4",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-4-mobile",
                             "alt_text": "Movember Image 4"
                         }
@@ -488,11 +499,13 @@
                     "images": [
                         {
                             "src": "movember/img-5",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-5-mobile",
                             "alt_text": "Movember Image 5"
                         },
                         {
                             "src": "movember/img-6",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-6-mobile",
                             "alt_text": "Movember Image 6"
                         }
@@ -503,11 +516,13 @@
                     "images": [
                         {
                             "src": "movember/img-7",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-7-mobile",
                             "alt_text": "Movember Image 7"
                         },
                         {
                             "src": "movember/img-8",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-8-mobile",
                             "alt_text": "Movember Image 8"
                         }
@@ -518,11 +533,13 @@
                     "images": [
                         {
                             "src": "movember/img-9",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-9-mobile",
                             "alt_text": "Movember Image 9"
                         },
                         {
                             "src": "movember/img-10",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-10-mobile",
                             "alt_text": "Movember Image 10"
                         }
@@ -533,11 +550,13 @@
                     "images": [
                         {
                             "src": "movember/img-11",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-11-mobile",
                             "alt_text": "Movember Image 11"
                         },
                         {
                             "src": "movember/img-12",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-12-mobile",
                             "alt_text": "Movember Image 12"
                         }
@@ -548,11 +567,13 @@
                     "images": [
                         {
                             "src": "movember/img-13",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-13-mobile",
                             "alt_text": "Movember Image 13"
                         },
                         {
                             "src": "movember/img-14",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-14-mobile",
                             "alt_text": "Movember Image 14"
                         }
@@ -563,11 +584,13 @@
                     "images": [
                         {
                             "src": "movember/img-15",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-15-mobile",
                             "alt_text": "Movember Image 15"
                         },
                         {
                             "src": "movember/img-16",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-16-mobile",
                             "alt_text": "Movember Image 16"
                         }
@@ -578,11 +601,13 @@
                     "images": [
                         {
                             "src": "movember/img-17",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-17-mobile",
                             "alt_text": "Movember Image 17"
                         },
                         {
                             "src": "movember/img-18",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-18-mobile",
                             "alt_text": "Movember Image 18"
                         }
@@ -593,11 +618,13 @@
                     "images": [
                         {
                             "src": "movember/img-19",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-19-mobile",
                             "alt_text": "Movember Image 19"
                         },
                         {
                             "src": "movember/img-20",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-20-mobile",
                             "alt_text": "Movember Image 20"
                         }
@@ -608,11 +635,13 @@
                     "images": [
                         {
                             "src": "movember/img-21",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-21-mobile",
                             "alt_text": "Movember Image 21"
                         },
                         {
                             "src": "movember/img-22",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-22-mobile",
                             "alt_text": "Movember Image 22"
                         }
@@ -623,11 +652,13 @@
                     "images": [
                         {
                             "src": "movember/img-23",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-23-mobile",
                             "alt_text": "Movember Image 23"
                         },
                         {
                             "src": "movember/img-24",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-24-mobile",
                             "alt_text": "Movember Image 24"
                         }
@@ -638,11 +669,13 @@
                     "images": [
                         {
                             "src": "movember/img-25",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-25-mobile",
                             "alt_text": "Movember Image 25"
                         },
                         {
                             "src": "movember/img-26",
+                            "maxHeight": "584px",
                             "src_mobile": "movember/img-26-mobile",
                             "alt_text": "Movember Image 26"
                         }
@@ -653,6 +686,7 @@
                     "images": [
                         {
                             "src": "movember/img-27",
+                            "maxHeight": "1205px",
                             "src_mobile": "movember/img-27-mobile",
                             "alt_text": "Movember Image 27"
                         }
@@ -677,6 +711,7 @@
                     "src": "illustration-home-page",
                     "top": "13%",
                     "left": "25%",
+                    "maxHeight": "100%",
                     "src_mobile": "illustration-home-page"
                 }
             },
@@ -884,7 +919,9 @@
                 "backgroundColor": "#f9bfb5",
                 "image": {
                     "src": "illustration/next-project-cf",
+                    "maxHeight": "322px",
                     "src_mobile": "illustration/next-project-cf-mobile",
+                    "maxHeightMobile": "262px",
                     "alt_text": "LiVE by CF Screens"
                 }
             }

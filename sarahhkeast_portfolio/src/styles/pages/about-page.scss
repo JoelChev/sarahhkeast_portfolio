@@ -60,8 +60,13 @@
         }
     }
 
+    &__image-container {
+        overflow-x: hidden;
+        margin-right: 18px;
+    }
+
     &__image {
-        max-width: 100%;
+        max-height: 693px;
     }
 
     &__contact-resume-container {

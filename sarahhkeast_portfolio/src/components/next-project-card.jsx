@@ -38,10 +38,16 @@ const NextProjectCard = ({ nextProjectId, title, textColor, backgroundColor, ima
         </div>
         <div className={`${nextProjectCard}__image-container`}>
             <img className={`${nextProjectCard}__image`}
+                style={{
+                    maxHeight: image.maxHeight ? image.maxHeight : ''
+                }}
                 src={require(`../assets/${image.src}.png`)}
                 alt={`${image.alt_text}`} />
             <img className={`${nextProjectCard}__image-mobile`}
                 src={require(`../assets/${image.src_mobile}.png`)}
+                style={{
+                    maxHeight: image.maxHeightMobile ? image.maxHeightMobile : ''
+                }}
                 alt={`${image.alt_text}`} />
         </div>
     </div>

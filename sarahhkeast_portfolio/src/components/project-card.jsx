@@ -40,7 +40,8 @@ const ProjectCard = ({ id, title, subTitle, highLightedProject, leavingHighlight
                     images.align === 'right' ? `${projectCard}__image--right` : '')}
                     style={{
                         top: images.top ? images.top : '',
-                        left: images.left ? images.left : ''
+                        left: images.left ? images.left : '',
+                        maxHeight: images.maxHeight ? images.maxHeight : '',
                     }}
                     src={require(`../assets/landing/${images.src}.png`)}
                     alt={`Project ${title} image`} />
