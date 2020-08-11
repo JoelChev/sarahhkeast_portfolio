@@ -956,6 +956,13 @@
                             "src_mobile": "illustration/img-25",
                             "maxHeightMobile": "304px",
                             "alt_text": "Illustration Image 25"
+                        },
+                        {
+                            "src": "illustration/img-26",
+                            "maxHeight": "471px",
+                            "src_mobile": "illustration/img-26",
+                            "maxHeightMobile": "471px",
+                            "alt_text": "Illustration Image 26"
                         }
                     ]
                 }
