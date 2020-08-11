@@ -66,14 +66,14 @@ class AboutPage extends Component {
                     </div>
                     <div className={`${aboutPage}__resume-container`}>
                         <h4 className={`${aboutPage}__resume-title`}>
-                            Resumé
+                            Résumé
                         </h4>
                         <a className={`${aboutPage}__resume-item`}
                             href={`${process.env.PUBLIC_URL}/SarahKeastResume.pdf`} target="_blank" rel="noopener noreferrer">
-                            <span className={`${aboutPage}__resume-text`}>Sarah Keast Resumé</span>
+                            <span className={`${aboutPage}__resume-text`}>Sarah Keast Résumé</span>
                             <img className={`${aboutPage}__resume-image`}
                                 src={LinkBlue}
-                                alt="Resumé" />
+                                alt="Résumé" />
                         </a>
                     </div>
                 </div>
