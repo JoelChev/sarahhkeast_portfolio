@@ -707,7 +707,9 @@
                 "backgroundColor": "#d9e8fe",
                 "image": {
                     "src": "movember/next-project-illustration",
+                    "maxHeight": "305px",
                     "src_mobile": "movember/next-project-illustration-mobile",
+                    "maxHeightMobile": "285px",
                     "alt_text": "Illustration Gallery Logo"
                 }
             }
@@ -953,14 +955,14 @@
                         {
                             "src": "illustration/img-25",
                             "maxHeight": "304px",
-                            "src_mobile": "illustration/img-25",
+                            "src_mobile": "illustration/img-25-mobile",
                             "maxHeightMobile": "304px",
                             "alt_text": "Illustration Image 25"
                         },
                         {
                             "src": "illustration/img-26",
                             "maxHeight": "471px",
-                            "src_mobile": "illustration/img-26",
+                            "src_mobile": "illustration/img-26-mobile",
                             "maxHeightMobile": "471px",
                             "alt_text": "Illustration Image 26"
                         }

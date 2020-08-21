@@ -80,6 +80,7 @@ const ProjectContent = ({ type, title, titleSize, text, textColor, images, align
                                     {
                                         image.src_mobile ?
                                             <img className={`${projectContent}__gallery-image-mobile`}
+                                                style={{ maxHeight: image.maxHeightMobile ? image.maxHeightMobile : '' }}
                                                 src={require(`../assets/${image.src_mobile}.png`)}
                                                 alt={image.alt_text} />
                                             : null
