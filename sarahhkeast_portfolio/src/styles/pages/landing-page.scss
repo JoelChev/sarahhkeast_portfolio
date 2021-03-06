@@ -94,6 +94,89 @@
         }
     }
 
+    &__under-construction-container {
+        margin-top: 60px;
+        margin-bottom: -50px;
+        height: 300px;
+        width: 100%;
+        background-color: $color-blue-1;
+        display: flex;
+        flex-direction: column;
+        @media (max-width: $breakpoint-tablet) {
+            height: 420px;
+            padding: 0 18px;
+            width: calc(100% - 36px);
+            margin-top: 50px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__under-construction-title {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 52px;
+        color: $color-white;
+        margin-top: 56px;
+        margin-bottom: 24px;
+    }
+
+    &__under-construction-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: $color-white;
+        max-width: 672px;
+        margin-top: 0;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__under-construction-mobile-warning-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: $color-white;
+        margin: 0 8px;
+        text-decoration: none;
+        margin-bottom: 32px;
+        @media (min-width: $breakpoint-tablet) {
+            display: none;
+        }
+    }
+
+    &__figma-case-studies-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        &:hover, &:active {
+            text-decoration: underline;
+            text-decoration-color: $color-white;
+        }
+    }
+
+    &__figma-case-logo {
+        width: 24px;
+        height: 24px;
+    }
+
+    &__figma-case-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        color: $color-white;
+        margin: 0 8px;
+        text-decoration: none;
+        @media (max-width: $breakpoint-tablet) {
+            font-size: 18px;
+        }
+    }
+
+    &__figma-link-image {
+        width: 12px;
+        height: 12px;
+    }
 
     &__project-list-container {
         margin-top: 106px;

@@ -14,9 +14,8 @@ import HeroFlowers from '../assets/landing/hero_flowers.png';
 import Mail from '../assets/mail.svg';
 import LinkedIn from '../assets/linkedin.svg';
 import Dribbble from '../assets/dribbble.svg';
-import ArrowRightBlue from '../assets/arrow-right-blue.svg';
-import Yokko from '../assets/landing/yokko-home-page.png';
-import YokkoSmall from '../assets/landing/yokko-home-page-mobile.png';
+import Figma from '../assets/figma.svg';
+import LinkWhite from '../assets/link-white.svg';
 
 const landingPage = 'landingPage';
 
@@ -80,6 +79,22 @@ class LandingPage extends Component {
                     <div className={`${landingPage}__project-list-title-container`}>
                         <h2 className={`${landingPage}__project-list-title`}>Work</h2>
                         <div className={`${landingPage}__project-list-spacer`}></div>
+                    </div>
+                    <div className={`${landingPage}__under-construction-container`}>
+                        <h2 className={`${landingPage}__under-construction-title`}>Portfolio Under Construction!</h2>
+                        <p className={`${landingPage}__under-construction-text`}>
+                            A lot of great things have happened over the past year. To see my most up to date work, click the link below!</p>
+                        <p className={`${landingPage}__under-construction-mobile-warning-text`}>* Link can only be viewed on a Desktop *</p>
+                        <a className={`${landingPage}__figma-case-studies-link`}
+                            href='/' target="_blank" rel="noopener noreferrer">
+                            <img className={`${landingPage}__figma-case-logo`}
+                                src={Figma}
+                                alt="Sarah's Case Studies Link" />
+                            <span className={`${landingPage}__figma-case-text`}>Sarah's Case Studies</span>
+                            <img className={`${landingPage}__figma-link-image`}
+                                src={LinkWhite}
+                                alt="Sarah's Case Studies Link" />
+                        </a>
                     </div>
                     {
                         this.renderProjectCards()
