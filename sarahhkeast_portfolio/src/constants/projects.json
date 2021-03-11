@@ -442,7 +442,7 @@
         },
         {
             "landing": {
-                "title": "Movember\nProject",
+                "title": "Movember\n2019 Project",
                 "subTitle": "Illustration",
                 "images": {
                     "src": "movember-home-page",
@@ -452,7 +452,7 @@
                 }
             },
             "heading": {
-                "title": "Movember Project",
+                "title": "Movember 2019 Project",
                 "subTitle": "Illustration",
                 "backgroundColor": "#fde2b4"
             },
@@ -734,17 +734,169 @@
             },
             "description": {
                 "text": [
-                    "This page is dedicated to all of my illustrations I have created over the past 2 years. My illustrations encompass nature, animals, plants and decorative objects. "
+                    "This page is dedicated to all of my illustrations I have created over the years. My illustrations encompass nature, animals, plants and decorative objects."
                 ],
                 "tools": [
-                    "Procreate",
-                    "Figma"
+                    "Procreate"
                 ],
                 "date": "2017 - Current"
             },
             "showMoreScreensBanner": false,
             "contentType": "gallery",
             "content": [
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-27",
+                            "maxHeight": "675px",
+                            "src_mobile": "illustration/img-27-mobile",
+                            "alt_text": "Illustration Image 27"
+                        },
+                        {
+                            "src": "illustration/img-28",
+                            "maxHeight": "675px",
+                            "src_mobile": "illustration/img-28-mobile",
+                            "alt_text": "Illustration Image 28"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-29",
+                            "maxHeight": "675px",
+                            "src_mobile": "illustration/img-29-mobile",
+                            "alt_text": "Illustration Image 29"
+                        },
+                        {
+                            "src": "illustration/img-30",
+                            "maxHeight": "675px",
+                            "src_mobile": "illustration/img-30-mobile",
+                            "alt_text": "Illustration Image 30"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-31",
+                            "maxHeight": "675px",
+                            "src_mobile": "illustration/img-31-mobile",
+                            "alt_text": "Illustration Image 31"
+                        },
+                        {
+                            "src": "illustration/img-32",
+                            "maxHeight": "675px",
+                            "src_mobile": "illustration/img-32-mobile",
+                            "alt_text": "Illustration Image 32"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-33",
+                            "maxHeight": "675px",
+                            "src_mobile": "illustration/img-33-mobile",
+                            "alt_text": "Illustration Image 33"
+                        },
+                        {
+                            "src": "illustration/img-34",
+                            "maxHeight": "675px",
+                            "src_mobile": "illustration/img-34-mobile",
+                            "alt_text": "Illustration Image 34"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-35",
+                            "maxHeight": "675px",
+                            "src_mobile": "illustration/img-35-mobile",
+                            "alt_text": "Illustration Image 35"
+                        },
+                        {
+                            "src": "illustration/img-36",
+                            "maxHeight": "675px",
+                            "src_mobile": "illustration/img-36-mobile",
+                            "alt_text": "Illustration Image 36"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-37",
+                            "maxHeight": "675px",
+                            "src_mobile": "illustration/img-37-mobile",
+                            "alt_text": "Illustration Image 37"
+                        },
+                        {
+                            "src": "illustration/img-38",
+                            "maxHeight": "675px",
+                            "src_mobile": "illustration/img-38-mobile",
+                            "alt_text": "Illustration Image 38"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-39",
+                            "maxHeight": "675px",
+                            "src_mobile": "illustration/img-39-mobile",
+                            "alt_text": "Illustration Image 39"
+                        },
+                        {
+                            "src": "illustration/img-40",
+                            "maxHeight": "675px",
+                            "src_mobile": "illustration/img-40-mobile",
+                            "alt_text": "Illustration Image 40"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-41",
+                            "maxHeight": "675px",
+                            "src_mobile": "illustration/img-41-mobile",
+                            "alt_text": "Illustration Image 41"
+                        },
+                        {
+                            "src": "illustration/img-42",
+                            "maxHeight": "675px",
+                            "src_mobile": "illustration/img-42-mobile",
+                            "alt_text": "Illustration Image 42"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "illustration/img-43",
+                            "maxHeight": "675px",
+                            "src_mobile": "illustration/img-43-mobile",
+                            "alt_text": "Illustration Image 43"
+                        },
+                        {
+                            "src": "illustration/img-44",
+                            "maxHeight": "675px",
+                            "src_mobile": "illustration/img-44-mobile",
+                            "alt_text": "Illustration Image 44"
+                        }
+                    ]
+                },
                 {
                     "type": "gallery",
                     "images": [
