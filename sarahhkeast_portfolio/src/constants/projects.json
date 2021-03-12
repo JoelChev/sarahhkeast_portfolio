@@ -431,7 +431,7 @@
                 }
             ],
             "nextProject": {
-                "title": "Movember Project",
+                "title": "Movember 2019 Project",
                 "backgroundColor": "#FBB844",
                 "image": {
                     "src": "yokko/next-project-movember",
@@ -445,10 +445,10 @@
                 "title": "Movember\n2019 Project",
                 "subTitle": "Illustration",
                 "images": {
-                    "src": "movember-home-page",
+                    "src": "movember-2019-home-page",
                     "top": "-5%",
                     "left": "25%",
-                    "src_mobile": "movember-home-page-mobile"
+                    "src_mobile": "movember-2019-home-page-mobile"
                 }
             },
             "heading": {
@@ -473,15 +473,15 @@
                     "type": "gallery",
                     "images": [
                         {
-                            "src": "movember/img-1",
+                            "src": "movember-2019/img-1",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-1-mobile",
+                            "src_mobile": "movember-2019/img-1-mobile",
                             "alt_text": "Movember Image 1"
                         },
                         {
-                            "src": "movember/img-2",
+                            "src": "movember-2019/img-2",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-2-mobile",
+                            "src_mobile": "movember-2019/img-2-mobile",
                             "alt_text": "Movember Image 2"
                         }
                     ]
@@ -490,15 +490,15 @@
                     "type": "gallery",
                     "images": [
                         {
-                            "src": "movember/img-3",
+                            "src": "movember-2019/img-3",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-3-mobile",
+                            "src_mobile": "movember-2019/img-3-mobile",
                             "alt_text": "Movember Image 3"
                         },
                         {
-                            "src": "movember/img-4",
+                            "src": "movember-2019/img-4",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-4-mobile",
+                            "src_mobile": "movember-2019/img-4-mobile",
                             "alt_text": "Movember Image 4"
                         }
                     ]
@@ -507,15 +507,15 @@
                     "type": "gallery",
                     "images": [
                         {
-                            "src": "movember/img-5",
+                            "src": "movember-2019/img-5",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-5-mobile",
+                            "src_mobile": "movember-2019/img-5-mobile",
                             "alt_text": "Movember Image 5"
                         },
                         {
-                            "src": "movember/img-6",
+                            "src": "movember-2019/img-6",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-6-mobile",
+                            "src_mobile": "movember-2019/img-6-mobile",
                             "alt_text": "Movember Image 6"
                         }
                     ]
@@ -524,15 +524,15 @@
                     "type": "gallery",
                     "images": [
                         {
-                            "src": "movember/img-7",
+                            "src": "movember-2019/img-7",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-7-mobile",
+                            "src_mobile": "movember-2019/img-7-mobile",
                             "alt_text": "Movember Image 7"
                         },
                         {
-                            "src": "movember/img-8",
+                            "src": "movember-2019/img-8",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-8-mobile",
+                            "src_mobile": "movember-2019/img-8-mobile",
                             "alt_text": "Movember Image 8"
                         }
                     ]
@@ -541,15 +541,15 @@
                     "type": "gallery",
                     "images": [
                         {
-                            "src": "movember/img-9",
+                            "src": "movember-2019/img-9",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-9-mobile",
+                            "src_mobile": "movember-2019/img-9-mobile",
                             "alt_text": "Movember Image 9"
                         },
                         {
-                            "src": "movember/img-10",
+                            "src": "movember-2019/img-10",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-10-mobile",
+                            "src_mobile": "movember-2019/img-10-mobile",
                             "alt_text": "Movember Image 10"
                         }
                     ]
@@ -558,15 +558,15 @@
                     "type": "gallery",
                     "images": [
                         {
-                            "src": "movember/img-11",
+                            "src": "movember-2019/img-11",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-11-mobile",
+                            "src_mobile": "movember-2019/img-11-mobile",
                             "alt_text": "Movember Image 11"
                         },
                         {
-                            "src": "movember/img-12",
+                            "src": "movember-2019/img-12",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-12-mobile",
+                            "src_mobile": "movember-2019/img-12-mobile",
                             "alt_text": "Movember Image 12"
                         }
                     ]
@@ -575,15 +575,15 @@
                     "type": "gallery",
                     "images": [
                         {
-                            "src": "movember/img-13",
+                            "src": "movember-2019/img-13",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-13-mobile",
+                            "src_mobile": "movember-2019/img-13-mobile",
                             "alt_text": "Movember Image 13"
                         },
                         {
-                            "src": "movember/img-14",
+                            "src": "movember-2019/img-14",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-14-mobile",
+                            "src_mobile": "movember-2019/img-14-mobile",
                             "alt_text": "Movember Image 14"
                         }
                     ]
@@ -592,15 +592,15 @@
                     "type": "gallery",
                     "images": [
                         {
-                            "src": "movember/img-15",
+                            "src": "movember-2019/img-15",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-15-mobile",
+                            "src_mobile": "movember-2019/img-15-mobile",
                             "alt_text": "Movember Image 15"
                         },
                         {
-                            "src": "movember/img-16",
+                            "src": "movember-2019/img-16",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-16-mobile",
+                            "src_mobile": "movember-2019/img-16-mobile",
                             "alt_text": "Movember Image 16"
                         }
                     ]
@@ -609,15 +609,15 @@
                     "type": "gallery",
                     "images": [
                         {
-                            "src": "movember/img-17",
+                            "src": "movember-2019/img-17",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-17-mobile",
+                            "src_mobile": "movember-2019/img-17-mobile",
                             "alt_text": "Movember Image 17"
                         },
                         {
-                            "src": "movember/img-18",
+                            "src": "movember-2019/img-18",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-18-mobile",
+                            "src_mobile": "movember-2019/img-18-mobile",
                             "alt_text": "Movember Image 18"
                         }
                     ]
@@ -626,15 +626,15 @@
                     "type": "gallery",
                     "images": [
                         {
-                            "src": "movember/img-19",
+                            "src": "movember-2019/img-19",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-19-mobile",
+                            "src_mobile": "movember-2019/img-19-mobile",
                             "alt_text": "Movember Image 19"
                         },
                         {
-                            "src": "movember/img-20",
+                            "src": "movember-2019/img-20",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-20-mobile",
+                            "src_mobile": "movember-2019/img-20-mobile",
                             "alt_text": "Movember Image 20"
                         }
                     ]
@@ -643,15 +643,15 @@
                     "type": "gallery",
                     "images": [
                         {
-                            "src": "movember/img-21",
+                            "src": "movember-2019/img-21",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-21-mobile",
+                            "src_mobile": "movember-2019/img-21-mobile",
                             "alt_text": "Movember Image 21"
                         },
                         {
-                            "src": "movember/img-22",
+                            "src": "movember-2019/img-22",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-22-mobile",
+                            "src_mobile": "movember-2019/img-22-mobile",
                             "alt_text": "Movember Image 22"
                         }
                     ]
@@ -660,15 +660,15 @@
                     "type": "gallery",
                     "images": [
                         {
-                            "src": "movember/img-23",
+                            "src": "movember-2019/img-23",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-23-mobile",
+                            "src_mobile": "movember-2019/img-23-mobile",
                             "alt_text": "Movember Image 23"
                         },
                         {
-                            "src": "movember/img-24",
+                            "src": "movember-2019/img-24",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-24-mobile",
+                            "src_mobile": "movember-2019/img-24-mobile",
                             "alt_text": "Movember Image 24"
                         }
                     ]
@@ -677,15 +677,15 @@
                     "type": "gallery",
                     "images": [
                         {
-                            "src": "movember/img-25",
+                            "src": "movember-2019/img-25",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-25-mobile",
+                            "src_mobile": "movember-2019/img-25-mobile",
                             "alt_text": "Movember Image 25"
                         },
                         {
-                            "src": "movember/img-26",
+                            "src": "movember-2019/img-26",
                             "maxHeight": "584px",
-                            "src_mobile": "movember/img-26-mobile",
+                            "src_mobile": "movember-2019/img-26-mobile",
                             "alt_text": "Movember Image 26"
                         }
                     ]
@@ -694,9 +694,9 @@
                     "type": "gallery",
                     "images": [
                         {
-                            "src": "movember/img-27",
+                            "src": "movember-2019/img-27",
                             "maxHeight": "1205px",
-                            "src_mobile": "movember/img-27-mobile",
+                            "src_mobile": "movember-2019/img-27-mobile",
                             "alt_text": "Movember Image 27"
                         }
                     ]
@@ -706,9 +706,294 @@
                 "title": "Illustration Gallery",
                 "backgroundColor": "#d9e8fe",
                 "image": {
-                    "src": "movember/next-project-illustration",
+                    "src": "movember-2019/next-project-illustration",
                     "maxHeight": "305px",
-                    "src_mobile": "movember/next-project-illustration-mobile",
+                    "src_mobile": "movember-2019/next-project-illustration-mobile",
+                    "maxHeightMobile": "285px",
+                    "alt_text": "Illustration Gallery Logo"
+                }
+            }
+        },
+        {
+            "landing": {
+                "title": "Movember\n2020 Project",
+                "subTitle": "Illustration",
+                "images": {
+                    "src": "movember-2020-home-page",
+                    "top": "-5%",
+                    "left": "25%",
+                    "src_mobile": "movember-2020-home-page"
+                }
+            },
+            "heading": {
+                "title": "Movember 2020 Project",
+                "subTitle": "Illustration",
+                "backgroundColor": "#E7F6F9"
+            },
+            "description": {
+                "text": [
+                    "For this project, I drew 30 illustrations of moustaches over a span of 30 days to raise money and awreness for Movember. The illustrations were posted on my art instagram everyday, encouraging my following to donate towards the cause. Every illustration is named after a style of moustache in support of the initative. My 2020 challenge was monster themed. "
+                ],
+                "tools": [
+                    "Procreate",
+                    "Figma"
+                ],
+                "date": "November 2020"
+            },
+            "showMoreScreensBanner": false,
+            "contentType": "gallery",
+            "content": [
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember-2020/img-1",
+                            "maxHeight": "1209px",
+                            "src_mobile": "movember-2020/img-1-mobile",
+                            "alt_text": "Movember Image 1"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember-2020/img-2",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-2-mobile",
+                            "alt_text": "Movember Image 2"
+                        },
+                        {
+                            "src": "movember-2020/img-3",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-3-mobile",
+                            "alt_text": "Movember Image 3"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember-2020/img-4",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-4-mobile",
+                            "alt_text": "Movember Image 4"
+                        },
+                        {
+                            "src": "movember-2020/img-5",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-5-mobile",
+                            "alt_text": "Movember Image 5"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember-2020/img-6",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-6-mobile",
+                            "alt_text": "Movember Image 6"
+                        },
+                        {
+                            "src": "movember-2020/img-7",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-7-mobile",
+                            "alt_text": "Movember Image 7"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember-2020/img-8",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-8-mobile",
+                            "alt_text": "Movember Image 8"
+                        },
+                        {
+                            "src": "movember-2020/img-9",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-9-mobile",
+                            "alt_text": "Movember Image 9"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember-2020/img-10",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-10-mobile",
+                            "alt_text": "Movember Image 10"
+                        },
+                        {
+                            "src": "movember-2019/img-11",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-11-mobile",
+                            "alt_text": "Movember Image 11"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember-2020/img-12",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-12-mobile",
+                            "alt_text": "Movember Image 12"
+                        },
+                        {
+                            "src": "movember-2020/img-13",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-13-mobile",
+                            "alt_text": "Movember Image 13"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember-2020/img-14",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2019/img-14-mobile",
+                            "alt_text": "Movember Image 14"
+                        },
+                        {
+                            "src": "movember-2020/img-15",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-15-mobile",
+                            "alt_text": "Movember Image 15"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember-2020/img-16",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-16-mobile",
+                            "alt_text": "Movember Image 16"
+                        },
+                        {
+                            "src": "movember-2020/img-17",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-17-mobile",
+                            "alt_text": "Movember Image 17"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember-2020/img-18",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-18-mobile",
+                            "alt_text": "Movember Image 18"
+                        },
+                        {
+                            "src": "movember-2020/img-19",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-19-mobile",
+                            "alt_text": "Movember Image 19"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember-2020/img-20",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-20-mobile",
+                            "alt_text": "Movember Image 20"
+                        },
+                        {
+                            "src": "movember-2020/img-21",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-21-mobile",
+                            "alt_text": "Movember Image 21"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember-2020/img-22",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-22-mobile",
+                            "alt_text": "Movember Image 22"
+                        },
+                        {
+                            "src": "movember-2020/img-23",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-23-mobile",
+                            "alt_text": "Movember Image 23"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember-2020/img-24",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-24-mobile",
+                            "alt_text": "Movember Image 24"
+                        },
+                        {
+                            "src": "movember-2019/img-25",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-25-mobile",
+                            "alt_text": "Movember Image 25"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember-2020/img-26",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-26-mobile",
+                            "alt_text": "Movember Image 26"
+                        },
+                        {
+                            "src": "movember-2020/img-27",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-27-mobile",
+                            "alt_text": "Movember Image 27"
+                        }
+                    ]
+                },
+                {
+                    "type": "gallery",
+                    "images": [
+                        {
+                            "src": "movember-2020/img-28",
+                            "maxHeight": "584px",
+                            "src_mobile": "movember-2020/img-28-mobile",
+                            "alt_text": "Movember Image 28"
+                        }
+                    ]
+                }
+            ],
+            "nextProject": {
+                "title": "Illustration Gallery",
+                "backgroundColor": "#d9e8fe",
+                "image": {
+                    "src": "movember-2019/next-project-illustration",
+                    "maxHeight": "305px",
+                    "src_mobile": "movember-2019/next-project-illustration-mobile",
                     "maxHeightMobile": "285px",
                     "alt_text": "Illustration Gallery Logo"
                 }
